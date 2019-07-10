@@ -29,6 +29,11 @@ You'll need to [install npm](https://docs.npmjs.com/downloading-and-installing-n
 
 To add a component you can use npm/Yarn or install it manually.
 
+### Create a new component
+
+1. `gulp vf-component`
+2. [Docs](https://visual-framework.github.io/vf-welcome/documentation/#components)
+
 ### By package
 
 - installation: `yarn add @visual-framework/vf-logo`
