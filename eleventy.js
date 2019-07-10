@@ -115,7 +115,7 @@ module.exports = function(config) {
     htmlTemplateEngine : ["njk", "md"],
     markdownTemplateEngine : "njk",
     passthroughFileCopy: true,
-    pathPrefix: "/vf-eleventy/"
+    pathPrefix: "/vf-demo-design-system/"
   };
 
 };

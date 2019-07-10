@@ -10,6 +10,8 @@
   "author": "Ken Hawkins <ken.hawkins@embl.de> (https://www.embl.de/aboutus/communication_outreach/)",
   "main": "gulpfile.js",
   "vfConfig": {
+    "vfName": "Demo component library",
+    "vfNamespace": "vfdemo-",
     "vfComponentPath": "./src/components",
     "vfBuildDestination": "./build",
     "vfThemePath": "@frctl/mandelbrot"

@@ -7,7 +7,7 @@ layout: layouts/base.njk
 {% render '@vf-intro', {"vf_intro_phase": "alpha", "vf_intro_heading": siteConfig.siteInformation.title,
   "vf_intro_lede": siteConfig.siteInformation.short_description,
   "vf_intro_text": [
-    "☝️ that also means dynamic building of just the CSS and JS you need."
+    "You can use this configuration add and create VF components and component libraries."
   ]
 } %}
 
