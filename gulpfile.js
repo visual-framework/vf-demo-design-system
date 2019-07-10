@@ -51,6 +51,13 @@ gulp.task('eleventy', function(done) {
   }
 });
 
+// gulp.task('component:create')
+const shell = require('gulp-shell');
+gulp.task('vf-component', shell.task(
+  ['yo ./src/components/vf-core-components/vf-core/tools/component-generator/']
+));
+
+
 // Let's build this sucker.
 gulp.task('build', gulp.series(
   'vf-clean',
