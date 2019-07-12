@@ -48,7 +48,7 @@ gulp.task('eleventy', function(done) {
 
   function fractalReadyCallback(fractal) {
     global.fractal = fractal; // save fractal globally
-    const eleventy = require('@11ty/eleventy/cmd.js');
+    global.eleventy = require('@11ty/eleventy/cmd.js');
     done();
   }
 });

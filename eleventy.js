@@ -14,6 +14,12 @@ module.exports = function(config) {
 
     // For now we're just touching a watched file until we can figure out something better
     // https://github.com/11ty/eleventy/issues/604
+    // A solution will likely require a PR or forking eleventy's cmd.js
+    // to `module.exports = elev;` and then we can:
+    // ```
+    // global.eleventy.restart()
+    // global.eleventy.write()
+    // ```
     touch('src/site/_data/fractalEnvironment.js');
     console.log('Manual rebuild of 11ty triggered')
   });
