@@ -14,6 +14,8 @@ process.argv.push('--config=eleventy.js');
 
 // Watch folders for changess
 gulp.task('watch', function() {
+  gulp.watch(['./src/components/**/*.scss'], gulp.parallel('vf-css'));
+  gulp.watch(['./src/components/**/*.js'], gulp.parallel('vf-scripts'));
   gulp.watch(['./src/scss/**/*.scss','./src/scss/*.scss'], gulp.parallel('css'));
   gulp.watch(['./src/js/**/*.js','./src/js/*.js'], gulp.parallel('js'));
 });
