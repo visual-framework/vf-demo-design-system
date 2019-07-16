@@ -36,13 +36,7 @@
       </div>
 
     </header>
-    <div class="vf-body">
-      <div class="vf-grid">
-        <div>
-          {{ content | safe }}
-        </div>
-      </div>
-    </div>
+    {{ content | safe }}
     {% include "footer.njk" %}
   </body>
 </html>

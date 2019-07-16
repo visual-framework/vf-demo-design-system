@@ -1,0 +1,24 @@
+---
+title: Component details
+date: 2019-04-09 12:24:50
+tags: posts
+layout: layouts/components.njk
+templateEngineOverride: njk, md
+pagination:
+  data: fractalEnvironment.localComponents
+  size: 1
+permalink: components/{{ pagination.items[0].name | slug }}/index.html
+---
+
+{% render '@vf-breadcrumbs--default', {
+  "component-type": "block",
+  "breadcrumbs": [
+    {
+      "text": "Components",
+      "url": '/components' | url
+    },
+    {
+      "text": pagination.items[0].title
+    }
+  ]
+} %}

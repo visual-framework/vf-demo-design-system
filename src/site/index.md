@@ -20,12 +20,18 @@ layout: layouts/base.njk
 
 ## What you get
 
-- the Eleventy static site generator
+- a highly componentised structure for your design system and documentation
+- a documentation site powered by the [Eleventy](https://www.11ty.io) static site generator
 - access to the Visual Framework component system
+- a [/components]({{'/components' | url}}) url to document and demonstrate all components available
 
-### Component installation
+## Adding components
 
-To add a component you can use npm/Yarn or install it manually.
+After adding a component, rerun `gulp dev` to ensure it's fully detected by the environment.
+
+### Installation from npm
+
+To add a component from `vf-core` (or other sources) you can use Yarn:
 
 - installation: `yarn add @visual-framework/vf-logo`
 - updating: `yarn upgrade-interactive --latest`
@@ -35,22 +41,19 @@ To add a component you can use npm/Yarn or install it manually.
 1. Download a pattern
 2. Copy it to `./src/components/vf-component-name`
 
-In either case you'll need to re-run `gulp dev` to access the pattern.
-
 ### Add your own local component
 
 You can add a custom VF-compatible component to `./src/components` and use it in
 your site.
 
+- `gulp vf-component`
+
 You'll find a `vf-sample` component there, we've used it below:
 
-<div class="vf-box">
-{% verbatim %}
-Code: {% render "@vf-sample", {text: "with some text"} %}
-{% endverbatim %}
+<pre><code>{%- verbatim %}Code: {% render "@vf-sample", {text: "with some text"} %}{% endverbatim %}
 
-Returns: {% render "@vf-sample", {text: "with some text"} %}
-</div>
+Returns: {% render "@vf-sample", {text: "with some text"}, false, { escape: false, beautify: true, highlight: true } %}
+</code></pre>
 
 </div>
 </section>

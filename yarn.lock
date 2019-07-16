@@ -452,6 +452,13 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-box/-/vf-box-0.0.37.tgz#972f0cee2806631291871e3aa3bd4d4a837988c3"
   integrity sha512-LrVNmaoC/UKEUyVQ8r2r4oVlPUbv+qDNZroGiv398KA4lsgdnce3henn1WWXlbzUsQcY1WPAfRHq2Yt59U3KuA==
 
+"@visual-framework/vf-breadcrumbs@^0.0.39":
+  version "0.0.39"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-breadcrumbs/-/vf-breadcrumbs-0.0.39.tgz#221a2a204ff8664c3b99358d3f433492f35ce524"
+  integrity sha512-DaCPsr0pv8uHgx4IYG5tZi7YHcmp8ggT5LvYTS9GhahXI3e86XGvZp9zPAqTQ8kg7bFcBHAwWzKPWHxwzirzTQ==
+  dependencies:
+    "@visual-framework/vf-list" "^0.0.37"
+
 "@visual-framework/vf-button@^0.0.37":
   version "0.0.37"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-button/-/vf-button-0.0.37.tgz#8c48e4fa876c2ee998ed2be9583bd331bca0443c"
@@ -5594,9 +5601,10 @@ js-beautify@1.6.14:
     mkdirp "~0.5.0"
     nopt "~3.0.1"
 
-js-beautify@^1.6.12, js-beautify@^1.6.2:
+js-beautify@^1.10.0, js-beautify@^1.6.12, js-beautify@^1.6.2:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/js-beautify/-/js-beautify-1.10.0.tgz#9753a13c858d96828658cd18ae3ca0e5783ea672"
+  integrity sha512-OMwf/tPDpE/BLlYKqZOhqWsd3/z2N3KOlyn1wsCRGFwViE8LOQTcDtathQvHvZc+q+zWmcNAbwKSC+iJoMaH2Q==
   dependencies:
     config-chain "^1.1.12"
     editorconfig "^0.15.3"
@@ -7352,11 +7360,6 @@ object.map@^1.0.0:
   dependencies:
     for-own "^1.0.0"
     make-iterator "^1.0.0"
-
-object.observe@^0.2.6:
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/object.observe/-/object.observe-0.2.6.tgz#7603c5dc91f05e7fe78ce2dcc45fc95dbb764f0b"
-  integrity sha1-dgPF3JHwXn/njOLcxF/JXbt2Tws=
 
 object.omit@^2.0.0:
   version "2.0.1"

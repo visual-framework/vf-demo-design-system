@@ -1,0 +1,24 @@
+---
+title: Component overview
+date: 2019-04-09 12:24:50
+tags: components
+templateEngineOverride: njk
+layout: layouts/page.njk
+---
+
+<div class="vf-content">
+{% markdown %}
+
+# Installed components
+
+Here are the components available in your design system.
+{% endmarkdown %}
+
+<ul>
+{%- for item in fractalEnvironment.localComponents %}
+  {%- if item.isHidden == false %}
+<li><a class="vf-link" href="{{ item.handle}}">{{ item.title }}</a></li>
+  {% endif %}
+{% endfor -%}
+</ul>
+</div>
