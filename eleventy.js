@@ -133,7 +133,7 @@ module.exports = function(config) {
     htmlTemplateEngine : ["njk", "md"],
     markdownTemplateEngine : "njk",
     passthroughFileCopy: true,
-    pathPrefix: "/vf-demo-design-system/"
+    pathPrefix: "/vf-demo-design-system/" // if your site is deployed to a sub-url, otherwise comment out
   };
 
 };
