@@ -5,6 +5,8 @@ templateEngineOverride: njk, md
 ---
 
 {# Use this template for main sections of a site. #}
+<div class="vf-body">
+
 
 <section class="vf-intro | embl-grid embl-grid--has-centered-content">
   <div></div>
@@ -14,25 +16,32 @@ templateEngineOverride: njk, md
   </div>
 </section>
 
-<main class="embl-grid embl-grid--has-centered-content">
+<main class="vf-grid embl-grid--has-centered-content">
   <div></div>
   <div class="vf-content">
+
 {{ content | safe }}
+
   </div>
 </main>
 
+{%- for post in collections.posts %}
+{% if section == post.data.section %}
+{% set absolutePostUrl %}{{ metadata.id }}{{ post.url | url }}{% endset %}
 <section class="embl-grid embl-grid--has-centered-content">
-  <div></div>
+  <div class="vf-section-header">
+    <h2 class="vf-section-header__heading">
+      <a href="{{ absolutePostUrl }}" class="vf-link">{{ post.data.title }}</a>
+    </h2>
+  </div>
   <div class="vf-content">
-    {%- for post in collections.posts %}
-      {% if section == post.data.section %}
-        {% set absolutePostUrl %}{{ metadata.id }}{{ post.url | url }}{% endset %}
-
-## [{{ post.data.title }}]({{ absolutePostUrl }})
 
 {{ post.data.subtitle }}
 
-      {% endif %}
-    {%- endfor %}
   </div>
 </section>
+{% endif %}
+{%- endfor %}
+
+
+</div>
