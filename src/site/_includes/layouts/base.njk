@@ -9,7 +9,7 @@
     <link rel="stylesheet" media="all" href="{{ '/css/app.css' | url }}" />
     <title>{{ title or (renderData and renderData.title) or siteConfig.siteInformation.title}}</title>
   </head>
-  <body class="{{ bodyClass }}" >
+  <body class="{{ bodyClass }} vf-body" >
     <header class="vf-global-header">
 
       <div class="vf-global-header__inner">
@@ -17,7 +17,7 @@
         <a href="https://visual-framework.github.io/vf-welcome/" class="vf-logo--responsive" title="Visual Framework 2.0">
           <span class="vf-sr-only">Visual Framework 2.0</span>
         </a>
-        <a href="{{ '/' | url }}" class="vf-link | vf-global-header__site-name">{{ siteConfig.siteInformation.title }}</a>
+        {# <a href="{{ '/' | url }}" class="vf-link | vf-global-header__site-name">{{ siteConfig.siteInformation.title }}</a> #}
 
         <nav class="vf-navigation vf-navigation--global">
           <ul class="vf-navigation__list | vf-list--inline">
@@ -42,23 +42,29 @@
        component pages use a different breadcrumb template. #}
     <nav class="vf-breadcrumbs" aria-label="Breadcrumb">
       <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
-        {# <li class="vf-breadcrumbs__item">
-          <a href="/" class="vf-breadcrumbs__link">Home</a>
-        </li> #}
         <li class="vf-breadcrumbs__item">
+          <a href="{{ '/' | url }}" class="vf-breadcrumbs__link">{{siteConfig.siteInformation.title}}</a>
+        </li>
           {% if section == "gettingstarted" %}
+          <li class="vf-breadcrumbs__item">
             <a href="{{'/getting-started/' | url}}" class="vf-breadcrumbs__link">Getting started</a>
+          </li>
           {% endif %}
           {% if section == "guidelines" %}
+          <li class="vf-breadcrumbs__item">
             <a href="{{'/brand-guidelines/' | url}}" class="vf-breadcrumbs__link">Brand guidelines</a>
+          </li>
           {% endif %}
           {% if section == "styles" %}
+          <li class="vf-breadcrumbs__item">
             <a href="{{'/styles/' | url}}" class="vf-breadcrumbs__link">Styles</a>
+          </li>
           {% endif %}
-          {# {% if section == "components" %}
+          {% if section == "components" %}
+          <li class="vf-breadcrumbs__item">
             <a href="{{'/components/' | url}}" class="vf-breadcrumbs__link">Components</a>
-          {% endif %} #}
-        </li>
+          </li>
+          {% endif %}
         <li class="vf-breadcrumbs__item">
           {{ title }}
         </li>
