@@ -11,7 +11,7 @@ pagination:
 permalink: components/{{ pagination.items[0].name | slug }}/index.html
 ---
 
-{% render '@vf-breadcrumbs--default', {
+{# {% render '@vf-breadcrumbs--default', {
   "component-type": "block",
   "breadcrumbs": [
     {
@@ -22,4 +22,6 @@ permalink: components/{{ pagination.items[0].name | slug }}/index.html
       "text": pagination.items[0].title
     }
   ]
-} %}
+} %} #}
+
+<!-- no special content -->

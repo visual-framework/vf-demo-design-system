@@ -623,6 +623,11 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-logo/-/vf-logo-1.0.0-alpha.2.tgz#3bb5b3ec6a9c6ee461b512bce7b595345f943606"
   integrity sha512-TxqsDFPZqhD6OC7JBjWSjlH4UZuuonRvcni2TAOTMyYLedcYuvW6SIkIExU9YrTBdMIkrhjGnPogegxG+HNa/A==
 
+"@visual-framework/vf-navigation@^1.0.0-alpha.2":
+  version "1.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-navigation/-/vf-navigation-1.0.0-alpha.2.tgz#1ff39982e999970dddd2da4cfde9dcb0684998e6"
+  integrity sha512-qG/KVw1qb2lxxlHdk87mSA1YXEqOFoApMkT3JvEBq/2fjPCIJYGxVIDyb0IcKe19E5W1r24tigzFMDAQEC0JUg==
+
 "@visual-framework/vf-no-js@1.0.0-rc.2":
   version "1.0.0-rc.2"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-no-js/-/vf-no-js-1.0.0-rc.2.tgz#8a67b283d6d2d703ffb1389b6dd4cc8116acd984"

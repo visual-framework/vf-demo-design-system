@@ -1,20 +1,15 @@
 ---
+is_index: true
 title: Component overview
-date: 2019-04-09 12:24:50
+subtitle: Here are the installed components available in your design system.
+date: 2018-04-09 12:24:50
 section: components
-tags: components
+tags: sections
 templateEngineOverride: njk
-layout: layouts/page.njk
+layout: layouts/section.njk
 ---
 
 <div class="vf-content">
-{% markdown %}
-
-# Installed components
-
-Here are the components available in your design system.
-{% endmarkdown %}
-
 <ul>
 {%- for item in fractalEnvironment.localComponents %}
   {%- if item.isHidden == false %}

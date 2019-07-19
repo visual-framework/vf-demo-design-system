@@ -1,16 +1,12 @@
 <div class="vf-grid">
   <div class="vf-body--text">
     Geting started links:
+    <a href="https://github.com/visual-framework/vf-welcome/documentation" class="vf-link">VF Docs</a> |
     <a href="https://github.com/visual-framework/vf-eleventy" class="vf-link">View vf-eleventy on GitHub</a> |
-    <a href="https://github.com/visual-framework/vf-core" class="vf-link">VF-Core v2.0</a> |
     <a href="https://discord.gg/XHAvkUX" class="vf-link">Chat for help</a>
 
     {% if serverInfo.environment == "development" %}
-    <code class="vf-code-example">
-      <pre class="vf-code-example__pre">
-⚠️ You're running the {{serverInfo.environment}} command.
-      </pre>
-    </code>
+    <p><code class="vf-code-example__pre"> ⚠️ You're running the {{serverInfo.environment}} command; Page location {{ page.inputPath }} </code></p>
     {% endif %}
 
   </div>

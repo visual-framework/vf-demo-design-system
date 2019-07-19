@@ -14,12 +14,6 @@ templateEngineOverride: njk
 
     {% set variants = component.variants.items %}
 
-    {% render '@vf-badge', {text: component.name, theme: 'tertiary'} %}
-
-    <small>{% markdown %}
-      File system location: `components/{{ component.baseHandle }}`
-    {% endmarkdown %}</small>
-
     {% if component.notes %}
       {{ component.notes | string | markdown | safe }}
     {% else %}
@@ -27,6 +21,12 @@ templateEngineOverride: njk
         # {{ component.title }}
       {% endmarkdown %}
     {% endif %}
+
+    <hr/>
+    <small>{% markdown %}
+      File system location: `components/{{ component.baseHandle }}`
+    {% endmarkdown %}</small>
+
 
     {% if collectionComponents %}
 
