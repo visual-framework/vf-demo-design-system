@@ -6,5 +6,23 @@ module.exports = {
     url: "https://visual-framework.github.io/vf-demo-design-system/",
     author: "Visual Framework system",
     email: "ken.hawkins@embl.de",
+  },
+  sections: {
+    gettingstarted: {
+      url: '/getting-started',
+      title: 'Getting started'
+    },
+    guidelines: {
+      url: '/guidelines',
+      title: 'Guidelines'
+    },
+    styles: {
+      url: '/styles',
+      title: 'Styles'
+    },
+    components: {
+      url: '/components',
+      title: 'Components'
+    }
   }
 };
