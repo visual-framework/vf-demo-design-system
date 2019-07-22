@@ -48,11 +48,12 @@ templateEngineOverride: njk, md
 {% set absolutePostUrl %}{{ metadata.id }}{{ post.url | url }}{% endset %}
 <section class="embl-grid embl-grid--has-centered-content">
   <div class="vf-section-header">
-    <h2 class="vf-section-header__heading">
-      <a href="{{ absolutePostUrl }}" class="vf-link">{{ post.data.title }}</a>
-    </h2>
   </div>
   <div class="vf-content">
+
+<h2>
+  <a href="{{ absolutePostUrl }}" class="vf-link">{{ post.data.title }}</a>
+</h2>
 
 {{ post.data.subtitle }}
 

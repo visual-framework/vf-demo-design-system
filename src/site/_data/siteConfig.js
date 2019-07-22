@@ -8,13 +8,13 @@ module.exports = {
     email: "ken.hawkins@embl.de",
   },
   sections: {
-    gettingstarted: {
-      url: '/getting-started',
-      title: 'Getting started'
-    },
     guidelines: {
       url: '/guidelines',
       title: 'Guidelines'
+    },
+    patterns: {
+      url: '/patterns',
+      title: 'Patterns'
     },
     styles: {
       url: '/styles',
