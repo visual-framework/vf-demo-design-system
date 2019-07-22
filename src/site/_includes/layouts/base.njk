@@ -47,7 +47,7 @@
         {% if is_index != true %}
           {# load section breadcrumbs from siteConfig.js #}
           <li class="vf-breadcrumbs__item">
-            <a href="{{ siteConfig.sections[section].url }}" class="vf-breadcrumbs__link">{{ siteConfig.sections[section].title }}</a>
+            <a href="{{ siteConfig.sections[section].url | url }}" class="vf-breadcrumbs__link">{{ siteConfig.sections[section].title }}</a>
           </li>
         {% endif %}
         <li class="vf-breadcrumbs__item">

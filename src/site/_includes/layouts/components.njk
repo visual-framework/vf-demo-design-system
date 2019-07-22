@@ -40,7 +40,7 @@ templateEngineOverride: njk
       <ul class="vf-list vf-list--unordered">
         {%- for component in collectionComponents %}
           {% if component.isHidden == false %}
-            <li class="vf-list__item"><a class="vf-link" href="{{ component.handle}}">{{ component.title }}</a></li>
+            <li class="vf-list__item"><a class="vf-link" href="{{ component.handle}}">{{ component.title }}</a> <code> {{ component.name }} </code></li>
           {% endif %}
         {% endfor -%}
       </ul>
@@ -152,7 +152,7 @@ templateEngineOverride: njk
 
     <ul class="vf-list vf-list--unordered">
       {%- for item in fractalEnvironment.localComponents %}
-        <li class="vf-list__item"><a class="vf-link" href="../{{ item.handle}}">{{ item.title }}</a></li>
+        <li class="vf-list__item vf-content"><a class="vf-link" href="../{{ item.handle}}">{{ item.title }}</a> <code> {{ item.name }} </code></li>
       {% endfor -%}
     </ul>
   </section>

@@ -33,7 +33,7 @@ templateEngineOverride: njk, md
 {% endif %}
 {%- endfor %}
 
-{% if sectionHasSubposts %}
+{% if sectionHasSubposts and hideSubPosts != true %}
 <section class="vf-grid embl-grid--has-centered-content">
   <div></div>
   <div class="vf-content">
@@ -45,7 +45,7 @@ templateEngineOverride: njk, md
 
 {%- for post in collections.posts %}
 {% if section == post.data.section %}
-{% set absolutePostUrl %}{{ metadata.id }}{{ post.url | url }}{% endset %}
+{% set absolutePostUrl %}{{ metadata.id }}{{ section.url }}{% endset %}
 <section class="embl-grid embl-grid--has-centered-content">
   <div class="vf-section-header">
   </div>

@@ -33,6 +33,7 @@ is_index: true
   <div class="vf-content">
     <h2 class="vf-text vf-text-heading--1 vf-text--invert">Design system sections</h2>
     {# show all pages classes as sections #}
+    {# by default, 11ty sorts by `date` field #}
     {%- for section in collections.sections  %}
       {% if section.data.is_index == true %}
         {% set absolutePostUrl %}{{ metadata.id }}{{ section.url }}{% endset %}

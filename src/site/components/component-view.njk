@@ -1,5 +1,5 @@
 ---
-title: Component details
+title: Local components
 date: 2019-04-09 12:24:50
 tags: posts
 layout: layouts/components.njk
@@ -8,6 +8,7 @@ templateEngineOverride: njk, md
 pagination:
   data: fractalEnvironment.localComponents
   size: 1
+slug: "{{ pagination.items[0].name | slug }}"
 permalink: components/{{ pagination.items[0].name | slug }}/index.html
 ---
 
