@@ -1,7 +1,7 @@
 ---
 is_index: true
-title: Customising your design system site
-subtitle: Now that you've installed `vf-demo-design-system` learn how it works and how to adapt it to your needs.
+title: Customising your design system
+subtitle: Now that you've installed `vf-demo-design-system`, learn how it works and how to adapt it to your needs.
 section: customising
 tags: sections
 date: 2018-08-21 12:24:50
@@ -12,36 +12,41 @@ layout: layouts/section.njk
 
 To make full use of this boilerplate, you'll need to be familiar with these projects:
 
-- [Visual Framework for life science websites](https://visual-framework.github.io/vf-welcome/): designed for use when you don't want your other CSS and JS to break
-- [Gulp](https://gulpjs.com/): a task runner to get Fractal and Eleventy to "talk to each other" and other niceties around file optimisation and Sass
-- [Fractal component library](https://fractal.build/): modular and nested components
-- [Eleventy static site generator](https://www.11ty.io): fast and flexible templating, and adapted to use of Fractal components
-- [Nunjucks](https://mozilla.github.io/nunjucks/): "A rich and powerful templating language for JavaScript" that's used by both Fractal and Eleventy
+- [Visual Framework for life science websites](#how-vf): designed for use when you don't want your other CSS and JS to break
+- [Gulp](#how-gulp): a task runner to get Fractal and Eleventy to "talk to each other" and other niceties around file optimisation and Sass
+- [Fractal component library](#how-fractal): modular and nested components
+- [Eleventy static site generator](#how-eleventy): fast and flexible templating, and adapted to use of Fractal components
+- [Nunjucks](#how-nunjucks): "A rich and powerful templating language for JavaScript", it's common to Fractal, Eleventy and also used by the Visual Framework
 
 ## How things work
 
+<a name="how-vf"></a>
 ### 1. [Visual Framework](https://visual-framework.github.io/vf-welcome)
 
 - The Visual Framework is a methedology [around components and how they're made](https://visual-framework.github.io/vf-welcome/documentation/#getting-started); and
 - This boilerplate uses the [`vf-core`](https://github.com/visual-framework/vf-core) to assemble Sass and component structure
 
+<a name="how-gulp"></a>
 ### 2. [Gulp](https://gulpjs.com)
 
 - Gulp will initiate all the tasks and for local development `gulp dev` is your go-to command
 - Review `./gulpfile.js` for insight into the specific tasks
 
+<a name="how-fractal"></a>
 ### 3. [Fractal](https://fractal.build)
 
 - Fractal is responsible for assembling the Visual Framework-compatible components and their templates
 - Local components live in `.src/components`
 - Visual Framework core components are installed by `yarn` to `node_modules` and symlinked from `.src/components/vf-core-components`
 
+<a name="how-eleventy"></a>
 ### 4. [Eleventy](https://www.11ty.io)
 
 - Eleventy is responsible for page building and high level templates
 - Eleventy is also passed the Visual Framework components via Fractal so you have full use of a component's assets and Nunjuck templates
 - Review `./eleventy.js` for insight into the configuration
 
+<a name="how-nunjucks"></a>
 ### 5. [Nunjucks](https://mozilla.github.io/nunjucks/)
 
 This templating language is used throughout so you can not only use a nice templatin language but also have direct access to component templates:
@@ -54,7 +59,11 @@ Want Markdown? You can use it for entire files or by with Nunjuck blocks and tag
 
 #### Markdown file support
 
-Name your file with the Markdown suffix (`index.md`) or a page's [front matter](https://www.11ty.io/docs/data-frontmatter/) `templateEngineOverride: njk, md`
+Name your file with the Markdown suffix (`index.md`) or a page's [front matter](https://www.11ty.io/docs/data-frontmatter/):
+
+```
+templateEngineOverride: njk, md
+```
 
 #### Markdown filter
 
@@ -63,17 +72,16 @@ Name your file with the Markdown suffix (`index.md`) or a page's [front matter](
 
 #### Markdown tag
 
+<div>
 <pre><code>Nunjcuks: {%- verbatim %}
 {% markdown %}
 [A link](#)
 {% endmarkdown %}
 {% endverbatim %}</pre></code>
+</div>
 
 <pre><code>
-Returns:
-{% markdown -%}
-[A link](#)
-{%- endmarkdown -%}</pre></code>
+Returns: {% markdown -%}[A link](#){%- endmarkdown -%}</pre></code>
 
 ## Actions to do, files to edit
 
@@ -108,7 +116,7 @@ There's usually a need for "edge cases":
 - JS: `./src/js/your-js-file.scss`, and reference like `{{ '/js/scripts.js' | url }}`
 - Images: `./src/site/images`, and reference like `{{ '/images/myimage.png' | url }}`
 
-## Outputs
+## Outputs: what is made
 
 When you run `gulp dev` or `gulp build`, Eleventy will build your static pages and trigger the Visual Framework.
 
@@ -119,13 +127,20 @@ When you run `gulp dev` or `gulp build`, Eleventy will build your static pages a
 ## Deploying your design system
 
 - Manually: run `gulp build` and copy `./build` to your server
-- CI: See `.travis.yml` file for ideas
+- CI: See `./travis.yml` file for ideas
 
 Common issue: Not deploying to the right subdirectory? Make sure in `./eleventy.js`
 you've updated `pathPrefix`.
 
 ## The component library
 
-A full component library is available at [/components]({{ '/components' | url }})
+A full component library is available at [`/components`]({{ '/components' | url }})
 
-## Sections
+The component library is generated by tapping into an export Fractal's component index:
+
+1. the component list is updated whenever a component is edited or added
+1. the data is eposed to Eleventy at `./src/site/_data/fractalEnvironment.js`
+1. individual component pages are created using Eleventy's [pagination feature](https://www.11ty.io/docs/pagination/)
+    - `./src/site/components/component-view.njk`
+    - `./src/site/components/vf-core-components.njk`
+1. a page template drives the layout of the components `./src/site/_includes/layouts/components.njk`

@@ -8,7 +8,7 @@ is_index: true
 {% set homepageIntroText %}
 
   {% markdown %}
-  This boilerplate is a highly componentised structure for your design system and documentation powered by the [Eleventy](https://www.11ty.io) static site generator and [Fractal component library](https://fractal.build/). It gives access to the [Visual Framework](https://visual-framework.github.io/vf-welcome/) component system, including a [`/components`]({{'/components' | url}}) url to document and demonstrate all components available. You can combine the documentation and components to make higher-level patterns and guidance.
+  Use this component-based boilerplate to deliver and document your design system. Still need to install it? [Follow this guide](https://github.com/visual-framework/create-vf-eleventy#create-vf-eleventy).
   {% endmarkdown %}
 
 {% endset %}
@@ -37,11 +37,11 @@ is_index: true
       {% if section.data.is_index == true %}
         {% set absolutePostUrl %}{{ metadata.id }}{{ section.url }}{% endset %}
 
-          {% markdown %}
-          ## [{{ section.data.title }}]({{ absolutePostUrl | url }})
+        {% markdown %}
+        ## [{{ section.data.title }}]({{ absolutePostUrl | url }})
 
-          {{ section.data.subtitle }}
-          {% endmarkdown %}
+        {{ section.data.subtitle }}
+        {% endmarkdown %}
 
       {% endif %}
     {%- endfor %}

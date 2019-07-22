@@ -19,5 +19,3 @@ For questions, including advice and approvals, contact the Design Team Lead: [de
 ## What is corporate design?
 
 Corporate design is the manner in which an organisation presents itself visually to the public. A good corporate design should readily identify the organisation; differentiate it from other organisations; and provide a coherent design system across all communications channels.  Visual consistency is key — it should not matter whether content is print or digital.
-
-## Sections

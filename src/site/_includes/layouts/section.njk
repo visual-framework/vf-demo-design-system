@@ -9,7 +9,7 @@ templateEngineOverride: njk, md
   <div></div>
   <div>
     <h1 class="vf-intro__heading">{{title}}</h1>
-    <div class="vf-lede">{{subtitle | markdown | safe }}</div>
+    <div class="vf-lede">{{subtitle | markdown | safe | replace("<p>", "<span class='vf-content'>") | replace("</p>", "</span>") }}</div>
   </div>
 </section>
 
@@ -21,6 +21,27 @@ templateEngineOverride: njk, md
 
   </div>
 </main>
+
+{# See if a section has subposts. #}
+{# Unfortunately there's not a more elegent way to see how many posts there are with a data attribute without adding 11ty config overhead #}
+{% set sectionHasSubposts = false %}
+{%- for post in collections.posts %}
+{% if section == post.data.section %}
+{% set sectionHasSubposts = true %}
+{# {% break %} #}
+{# break is not yet implemented in nunjucks: https://github.com/mozilla/nunjucks/issues/296 #}
+{% endif %}
+{%- endfor %}
+
+{% if sectionHasSubposts %}
+<section class="vf-grid embl-grid--has-centered-content">
+  <div></div>
+  <div class="vf-content">
+
+## In this section
+
+  </div>
+</section>
 
 {%- for post in collections.posts %}
 {% if section == post.data.section %}
@@ -39,3 +60,5 @@ templateEngineOverride: njk, md
 </section>
 {% endif %}
 {%- endfor %}
+
+{% endif %} {# END: {% if sectionHasSubposts %} #}

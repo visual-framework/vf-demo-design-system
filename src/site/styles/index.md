@@ -8,4 +8,4 @@ date: 2018-08-25 12:24:50
 layout: layouts/section.njk
 ---
 
-## Sections
+Information on styles.

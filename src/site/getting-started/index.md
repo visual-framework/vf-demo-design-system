@@ -11,5 +11,3 @@ layout: layouts/section.njk
 You can use this section to get users up to speed on what they need to do to start using your design system.
 
 This file is at `./src/site/getting-started/index.md`
-
-## Sections
