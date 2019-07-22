@@ -10,7 +10,7 @@
   "author": "Ken Hawkins <ken.hawkins@embl.de> (https://www.embl.de/aboutus/communication_outreach/)",
   "main": "gulpfile.js",
   "vfConfig": {
-    "vfName": "Demo design system",
+    "vfName": "Design system boilerplate",
     "vfNamespace": "vfdemo-",
     "vfComponentPath": "./src/components",
     "vfBuildDestination": "./build",
