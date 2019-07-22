@@ -7,25 +7,25 @@
     {# <link rel="stylesheet" media="all" href="https://dev.assets.emblstatic.net/vf/develop/css/styles.css" /> #}
     <link rel="stylesheet" media="all" href="{{ '/css/styles.css' | url }}" />
     <link rel="stylesheet" media="all" href="{{ '/css/app.css' | url }}" />
-    <title>{{ title or (renderData and renderData.title) or siteConfig.siteInformation.title}}</title>
+    <title>{{ pagination.items[0].name or title or (renderData and renderData.title)}} | {{ siteConfig.siteInformation.title }}</title>
   </head>
-  <body class="{{ bodyClass }}" >
+  <body class="{{ bodyClass }} vf-body" >
     <header class="vf-global-header">
 
       <div class="vf-global-header__inner">
 
-        <a href="{{ '/' | url }}" class="vf-logo--responsive" title="Visual Framework 2.0">
+        <a href="https://visual-framework.github.io/vf-welcome/" class="vf-logo--responsive" title="Visual Framework 2.0">
           <span class="vf-sr-only">Visual Framework 2.0</span>
         </a>
-        {# <a href="{{ '/' | url }}" class="vf-link | vf-global-header__site-name">Visual Framework 2.0</a> #}
+        {# <a href="{{ '/' | url }}" class="vf-link | vf-global-header__site-name">{{ siteConfig.siteInformation.title }}</a> #}
 
         <nav class="vf-navigation vf-navigation--global">
           <ul class="vf-navigation__list | vf-list--inline">
             <li class="vf-navigation__item">
-              <a href="{{ '/' | url }}" class="vf-navigation__link">About the Visual Framework</a>
+              <a href="https://visual-framework.github.io/vf-welcome/" class="vf-navigation__link">About the Visual Framework</a>
             </li>
             <li class="vf-navigation__item">
-              <a href="{{ '/documentation' | url }}" class="vf-navigation__link">Documentation</a>
+              <a href="https://visual-framework.github.io/vf-welcome/documentation" class="vf-navigation__link">Documentation</a>
             </li>
             <li class="vf-navigation__item">
               <a href="https://discord.gg/XHAvkUX" class="vf-navigation__link">Help, chat</a>
@@ -36,6 +36,31 @@
       </div>
 
     </header>
+    {% if page.url != '/' %}
+    {# don't show breadcrumb on homepage #}
+    <nav class="vf-breadcrumbs" aria-label="Breadcrumb">
+      <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
+        <li class="vf-breadcrumbs__item">
+          <a href="{{ '/' | url }}" class="vf-breadcrumbs__link">{{siteConfig.siteInformation.title}}</a>
+        </li>
+        {# don't show section link on a section #}
+        {% if is_index != true %}
+          {# load section breadcrumbs from siteConfig.js #}
+          <li class="vf-breadcrumbs__item">
+            <a href="{{ siteConfig.sections[section].url | url }}" class="vf-breadcrumbs__link">{{ siteConfig.sections[section].title }}</a>
+          </li>
+        {% endif %}
+        <li class="vf-breadcrumbs__item">
+          {% if pagination.items[0].name %}
+            {{ pagination.items[0].name }}
+          {% else %}
+            {{ title }}
+          {% endif %}
+        </li>
+      </ul>
+    </nav>
+    {% endif %}
+
     {{ content | safe }}
     {% include "footer.njk" %}
   </body>

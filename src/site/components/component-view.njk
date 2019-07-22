@@ -1,16 +1,18 @@
 ---
-title: Component details
+title: Local components
 date: 2019-04-09 12:24:50
 tags: posts
 layout: layouts/components.njk
+section: components
 templateEngineOverride: njk, md
 pagination:
   data: fractalEnvironment.localComponents
   size: 1
+slug: "{{ pagination.items[0].name | slug }}"
 permalink: components/{{ pagination.items[0].name | slug }}/index.html
 ---
 
-{% render '@vf-breadcrumbs--default', {
+{# {% render '@vf-breadcrumbs--default', {
   "component-type": "block",
   "breadcrumbs": [
     {
@@ -21,4 +23,6 @@ permalink: components/{{ pagination.items[0].name | slug }}/index.html
       "text": pagination.items[0].title
     }
   ]
-} %}
+} %} #}
+
+<!-- no special content -->

@@ -1,8 +1,9 @@
 ---
-title: Component details
+title: Components from `vf-core`
 date: 2019-04-09 12:24:50
 tags: posts
 layout: layouts/components.njk
+section: components
 templateEngineOverride: njk, md
 pagination:
   data: fractalEnvironment.vfCoreComponents
@@ -10,7 +11,7 @@ pagination:
 permalink: components/vf-core-components/{{ pagination.items[0].name | slug }}/index.html
 ---
 
-{% render '@vf-breadcrumbs--default', {
+{# {% render '@vf-breadcrumbs--default', {
   "component-type": "block",
   "breadcrumbs": [
     {
@@ -25,4 +26,6 @@ permalink: components/vf-core-components/{{ pagination.items[0].name | slug }}/i
       "text": pagination.items[0].title
     }
   ]
-} %}
+} %} #}
+
+<!-- no special content -->
