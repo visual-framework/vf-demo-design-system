@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" media="all" href="/vf-demo-design-system/css/styles.css" />
+    <link rel="stylesheet" media="all" href="/vf-demo-design-system/css/app.css" />
+    <title>vf-lede | Design system boilerplate</title>
+  </head>
+  <body class=" vf-body" >
+    <header class="vf-global-header">
+
+      <div class="vf-global-header__inner">
+
+        <a href="https://visual-framework.github.io/vf-welcome/" class="vf-logo--responsive" title="Visual Framework 2.0">
+          <span class="vf-sr-only">Visual Framework 2.0</span>
+        </a>
+        
+
+        <nav class="vf-navigation vf-navigation--global">
+          <ul class="vf-navigation__list | vf-list--inline">
+            <li class="vf-navigation__item">
+              <a href="https://visual-framework.github.io/vf-welcome/" class="vf-navigation__link">About the Visual Framework</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a href="https://visual-framework.github.io/vf-welcome/documentation" class="vf-navigation__link">Documentation</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a href="https://discord.gg/XHAvkUX" class="vf-navigation__link">Help, chat</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </header>
+    
+    
+    <nav class="vf-breadcrumbs" aria-label="Breadcrumb">
+      <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
+        <li class="vf-breadcrumbs__item">
+          <a href="/vf-demo-design-system/" class="vf-breadcrumbs__link">Design system boilerplate</a>
+        </li>
+        
+        
+          
+          <li class="vf-breadcrumbs__item">
+            <a href="/vf-demo-design-system/components" class="vf-breadcrumbs__link">Components</a>
+          </li>
+        
+        <li class="vf-breadcrumbs__item">
+          
+            vf-lede
+          
+        </li>
+      </ul>
+    </nav>
+    
+
+    
+<div class="vf-grid">
+  <section class="vf-content component-library-notes">
+
+    <!-- no special content -->
+
+
+    
+    
+
+    
+
+    
+      <h1>vf-lede component</h1>
+<p><a href="https://badge.fury.io/js/%40visual-framework%2Fvf-lede"><img src="https://badge.fury.io/js/%40visual-framework%2Fvf-lede.svg" alt="npm version"></a></p>
+<h2>Install</h2>
+<p>This repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install <code>primer-buttons</code> with this command.</p>
+<pre><code>$ yarn add --dev @visual-framework/vf-lede
+</code></pre>
+<h2>Usage</h2>
+<p>The source files included are written in [Sass][sass] (<code>scss</code>) You can simply point your sass <code>include-path</code> at your <code>node_modules</code> directory and import it like this.</p>
+<pre><code>@import &quot;@visual-framework/vf-lede/index.scss&quot;;
+</code></pre>
+<p><em>Make sure you import any requirements along with the modules.</em></p>
+
+    
+
+    <hr/>
+    <small><p>File system location: <code>components/vf-lede</code></p>
+</small>
+
+
+    
+  </section>
+</div>
+
+
+  <div class="vf-grid">
+    <section>
+       <h1 class="vf-text vf-text-heading--display vf-text--invert">Variants</h1> 
+    </section>
+  </div>
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Default
+           <span class="vf-badge vf-badge--pill">beta</span> 
+
+           <span class="vf-badge vf-badge--pill">block</span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-lede--default', {
+  &quot;component-type&quot;: &quot;block&quot;,
+  &quot;vf_lede_text&quot;: &quot;Lede text is a generic type of conent for different diseases in which cells divide many more times than usual. &lt;a href=\&quot;#\&quot;&gt;This abnormal growth&lt;/a&gt; can affect many cell types in almost any part of the body.&quot;
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+          <p class="vf-lede">Lede text is a generic type of conent for different diseases in which cells divide many more times than usual. <a href="#">This abnormal growth</a> can affect many cell types in almost any part of the body.</p>
+
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-lede"</span>&gt;</span>Lede text is a generic type of conent for different diseases in which cells divide many more times than usual. <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>This abnormal growth<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> can affect many cell types in almost any part of the body.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-lede/vf-lede.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-lede/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-lede/index.scss">index.scss</a></li>
+<li><a href="components/vf-core-components/vf-lede/package.json">package.json</a></li>
+<li><a href="components/vf-core-components/vf-lede/vf-lede.css">vf-lede.css</a></li>
+<li><a href="components/vf-core-components/vf-lede/vf-lede.js">vf-lede.js</a></li>
+<li><a href="components/vf-core-components/vf-lede/vf-lede.scss">vf-lede.scss</a></li>
+<li><a href="components/vf-core-components/vf-lede/vf-lede.variables.scss">vf-lede.variables.scss</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+<div class="vf-grid">
+  <section>
+    <h2>All components in this design system</h2>
+
+
+    <ul class="vf-list vf-list--unordered">
+        <li class="vf-list__item vf-content"><a class="vf-link" href="../vf-componenet-rollup">Visual Framework Componet Rollup</a> <code> vf-componenet-rollup </code></li>
+      
+        <li class="vf-list__item vf-content"><a class="vf-link" href="../vf-core-components">Vf Core Components</a> <code> vf-core-components </code></li>
+      
+        <li class="vf-list__item vf-content"><a class="vf-link" href="../vf-sample">Visual Framework Sample Component</a> <code> vf-sample </code></li>
+      </ul>
+  </section>
+</div>
+
+<div class="vf-grid">
+  <div class="footnote">
+    <p class="vf-text--body">
+      This page is part of the components section.
+    </p>
+  </div>
+</div>
+
+    
+
+<!-- This page was generated on Invalid DateTime -->
+<script src="/vf-demo-design-system/scripts/srcipts.js"></script>
+
+  </body>
+</html>

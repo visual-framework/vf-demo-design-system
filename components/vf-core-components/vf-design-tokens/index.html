@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" media="all" href="/vf-demo-design-system/css/styles.css" />
+    <link rel="stylesheet" media="all" href="/vf-demo-design-system/css/app.css" />
+    <title>vf-design-tokens | Design system boilerplate</title>
+  </head>
+  <body class=" vf-body" >
+    <header class="vf-global-header">
+
+      <div class="vf-global-header__inner">
+
+        <a href="https://visual-framework.github.io/vf-welcome/" class="vf-logo--responsive" title="Visual Framework 2.0">
+          <span class="vf-sr-only">Visual Framework 2.0</span>
+        </a>
+        
+
+        <nav class="vf-navigation vf-navigation--global">
+          <ul class="vf-navigation__list | vf-list--inline">
+            <li class="vf-navigation__item">
+              <a href="https://visual-framework.github.io/vf-welcome/" class="vf-navigation__link">About the Visual Framework</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a href="https://visual-framework.github.io/vf-welcome/documentation" class="vf-navigation__link">Documentation</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a href="https://discord.gg/XHAvkUX" class="vf-navigation__link">Help, chat</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </header>
+    
+    
+    <nav class="vf-breadcrumbs" aria-label="Breadcrumb">
+      <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
+        <li class="vf-breadcrumbs__item">
+          <a href="/vf-demo-design-system/" class="vf-breadcrumbs__link">Design system boilerplate</a>
+        </li>
+        
+        
+          
+          <li class="vf-breadcrumbs__item">
+            <a href="/vf-demo-design-system/components" class="vf-breadcrumbs__link">Components</a>
+          </li>
+        
+        <li class="vf-breadcrumbs__item">
+          
+            vf-design-tokens
+          
+        </li>
+      </ul>
+    </nav>
+    
+
+    
+<div class="vf-grid">
+  <section class="vf-content component-library-notes">
+
+    <!-- no special content -->
+
+
+    
+    
+
+    
+
+    
+      <h1>vf-design-tokens</h1>
+<p>These are the colour, typography, spacing, and other stylistic decisions as design tokens for consumption</p>
+<h2>Building</h2>
+<p>To update these run <code>gulp vf-tokens</code> from <code>./components/vf-design-tokens</code>.</p>
+
+    
+
+    <hr/>
+    <small><p>File system location: <code>components/vf-design-tokens</code></p>
+</small>
+
+
+    
+  </section>
+</div>
+
+
+  <div class="vf-grid">
+    <section>
+       <h1 class="vf-text vf-text-heading--display vf-text--invert">Variants</h1> 
+    </section>
+  </div>
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Default
+           <span class="vf-badge vf-badge--pill">alhpa</span> 
+
+           <span class="vf-badge vf-badge--pill"></span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-design-tokens--default', {
+  &quot;colors&quot;: null,
+  &quot;spacing&quot;: null,
+  &quot;typography&quot;: null
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+          
+
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-design-tokens/vf-design-tokens.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-design-tokens/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-design-tokens/gulpfile.js">gulpfile.js</a></li>
+<li><a href="components/vf-core-components/vf-design-tokens/package.json">package.json</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Colours
+           <span class="vf-badge vf-badge--pill">alhpa</span> 
+
+           <span class="vf-badge vf-badge--pill"></span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-design-tokens--colours', {
+  &quot;colors&quot;: null,
+  &quot;spacing&quot;: null,
+  &quot;typography&quot;: null
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+          <style>
+/* vf-swatches might one day be a component, but for now it's CSS we'll just use for the design token demonstration */
+.vf-swatches {
+  grid-row-gap: 32px;
+  margin: 48px 0;
+}
+.vf-swatch {
+  border: 1px solid #d0d0ce;
+  display: grid;
+  grid-template-rows: 160px 1fr;
+}
+
+.vf-swatch__details {
+  padding: 16px;
+  border-top: 1px solid #d0d0ce;
+}
+.vf-swatch:nth-of-type(6),
+.vf-swatch:nth-of-type(11) {
+  grid-column-start: 1;
+}
+.vf-swatch__colour {
+  /* margin: 16px;
+  height: calc(100% - 32px);
+  width: calc(100% - 32px); */
+  height: 100%;
+  width: 100%;
+}
+.vf-swatch__colour-name {
+  margin: 0 0 12px 0;
+}
+
+.vf-swatch__colour-hex,
+.vf-swatch__sass-variable,
+.vf-swatch__comment,
+.vf-swatch__css-property {
+  margin: 0 0 12px 0;
+}
+
+.vf-swatch__colour-hex,
+.vf-swatch__sass-variable,
+.vf-swatch__css-property {
+  font-family: monospace;
+  font-size: 1em;
+  align-items: start;
+}
+
+.vf-swatch__colour-hex,
+.vf-swatch__sass-variable,
+.vf-swatch__css-property {
+  font-family: 'IBM Plex Mono', Monaco, Consolas, 'Lucida Console', monospace;
+  font-size: 14px;
+}
+
+.vf-swatch__notes {
+  margin: 12px 0 0px 0;
+}
+
+.vf-swatch__notes,
+.vf-swatch__colour-name,
+.vf-swatch__meta {
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+}
+.vf-swatch__colour-name {
+  padding: 16px;
+}
+
+.vf-swatch__meta {
+  font-size: 16px;
+}
+
+.vf-swatch__details p {
+  margin-bottom: 16px;
+}
+.vf-swatch__details p:last-of-type {
+  margin-bottom: 0;
+}
+</style>
+
+
+<main class="vf-swatches | vf-grid vf-grid__col-3">
+
+<p>Something went wrong.</p>
+
+</main>
+
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-comment">/* vf-swatches might one day be a component, but for now it's CSS we'll just use for the design token demonstration */</span>
+  <span class="hljs-selector-class">.vf-swatches</span> {
+    <span class="hljs-attribute">grid-row-gap</span>: <span class="hljs-number">32px</span>;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">48px</span> <span class="hljs-number">0</span>;
+  }
+
+  <span class="hljs-selector-class">.vf-swatch</span> {
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#d0d0ce</span>;
+    <span class="hljs-attribute">display</span>: grid;
+    <span class="hljs-attribute">grid-template-rows</span>: <span class="hljs-number">160px</span> <span class="hljs-number">1</span>fr;
+  }
+
+  <span class="hljs-selector-class">.vf-swatch__details</span> {
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span>;
+    <span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#d0d0ce</span>;
+  }
+
+  <span class="hljs-selector-class">.vf-swatch</span><span class="hljs-selector-pseudo">:nth-of-type(6)</span>,
+  <span class="hljs-selector-class">.vf-swatch</span><span class="hljs-selector-pseudo">:nth-of-type(11)</span> {
+    <span class="hljs-attribute">grid-column-start</span>: <span class="hljs-number">1</span>;
+  }
+
+  <span class="hljs-selector-class">.vf-swatch__colour</span> {
+    <span class="hljs-comment">/* margin: 16px;
+  height: calc(100% - 32px);
+  width: calc(100% - 32px); */</span>
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  }
+
+  <span class="hljs-selector-class">.vf-swatch__colour-name</span> {
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">12px</span> <span class="hljs-number">0</span>;
+  }
+
+  <span class="hljs-selector-class">.vf-swatch__colour-hex</span>,
+  <span class="hljs-selector-class">.vf-swatch__sass-variable</span>,
+  <span class="hljs-selector-class">.vf-swatch__comment</span>,
+  <span class="hljs-selector-class">.vf-swatch__css-property</span> {
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">12px</span> <span class="hljs-number">0</span>;
+  }
+
+  <span class="hljs-selector-class">.vf-swatch__colour-hex</span>,
+  <span class="hljs-selector-class">.vf-swatch__sass-variable</span>,
+  <span class="hljs-selector-class">.vf-swatch__css-property</span> {
+    <span class="hljs-attribute">font-family</span>: monospace;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1em</span>;
+    <span class="hljs-attribute">align-items</span>: start;
+  }
+
+  <span class="hljs-selector-class">.vf-swatch__colour-hex</span>,
+  <span class="hljs-selector-class">.vf-swatch__sass-variable</span>,
+  <span class="hljs-selector-class">.vf-swatch__css-property</span> {
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">'IBM Plex Mono'</span>, Monaco, Consolas, <span class="hljs-string">'Lucida Console'</span>, monospace;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+  }
+
+  <span class="hljs-selector-class">.vf-swatch__notes</span> {
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">12px</span> <span class="hljs-number">0</span> <span class="hljs-number">0px</span> <span class="hljs-number">0</span>;
+  }
+
+  <span class="hljs-selector-class">.vf-swatch__notes</span>,
+  <span class="hljs-selector-class">.vf-swatch__colour-name</span>,
+  <span class="hljs-selector-class">.vf-swatch__meta</span> {
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">'IBM Plex Sans'</span>, Helvetica, Arial, sans-serif;
+  }
+
+  <span class="hljs-selector-class">.vf-swatch__colour-name</span> {
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span>;
+  }
+
+  <span class="hljs-selector-class">.vf-swatch__meta</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+  }
+
+  <span class="hljs-selector-class">.vf-swatch__details</span> <span class="hljs-selector-tag">p</span> {
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">16px</span>;
+  }
+
+  <span class="hljs-selector-class">.vf-swatch__details</span> <span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:last-of-type</span> {
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+
+
+<span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-swatches | vf-grid vf-grid__col-3"</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Something went wrong.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-design-tokens/vf-design-tokens--colours.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-design-tokens/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-design-tokens/gulpfile.js">gulpfile.js</a></li>
+<li><a href="components/vf-core-components/vf-design-tokens/package.json">package.json</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Spacing
+           <span class="vf-badge vf-badge--pill">alhpa</span> 
+
+           <span class="vf-badge vf-badge--pill"></span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-design-tokens--spacing', {
+  &quot;colors&quot;: null,
+  &quot;spacing&quot;: null,
+  &quot;typography&quot;: null
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+          
+<style>
+.swatches {
+    grid-row-gap: 32px;
+}
+.swatch {
+  border: 2px solid #333;
+}
+.swatch__details {
+  padding: 16px;
+}
+.spacing__example {
+  border-bottom: 2px solid #333;
+  background-color: #f3f3f3;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+<main class="swatches | vf-grid vf-grid__col-4">
+
+<p>Something went wrong.</p>
+
+</main>
+
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-class">.swatches</span> {
+    <span class="hljs-attribute">grid-row-gap</span>: <span class="hljs-number">32px</span>;
+  }
+
+  <span class="hljs-selector-class">.swatch</span> {
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid <span class="hljs-number">#333</span>;
+  }
+
+  <span class="hljs-selector-class">.swatch__details</span> {
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span>;
+  }
+
+  <span class="hljs-selector-class">.spacing__example</span> {
+    <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">2px</span> solid <span class="hljs-number">#333</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f3f3f3</span>;
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
+    <span class="hljs-attribute">justify-content</span>: center;
+    <span class="hljs-attribute">align-items</span>: center;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"swatches | vf-grid vf-grid__col-4"</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Something went wrong.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-design-tokens/vf-design-tokens--spacing.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-design-tokens/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-design-tokens/gulpfile.js">gulpfile.js</a></li>
+<li><a href="components/vf-core-components/vf-design-tokens/package.json">package.json</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Typography
+           <span class="vf-badge vf-badge--pill">alhpa</span> 
+
+           <span class="vf-badge vf-badge--pill"></span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-design-tokens--typography', {
+  &quot;colors&quot;: null,
+  &quot;spacing&quot;: null,
+  &quot;typography&quot;: null
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+          <main class="vf-swatches | vf-grid vf-grid__col-2">
+
+
+<p>Something went wrong.</p>
+
+</main>
+
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-swatches | vf-grid vf-grid__col-2"</span>&gt;</span>
+
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Something went wrong.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-design-tokens/vf-design-tokens--typography.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-design-tokens/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-design-tokens/gulpfile.js">gulpfile.js</a></li>
+<li><a href="components/vf-core-components/vf-design-tokens/package.json">package.json</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+<div class="vf-grid">
+  <section>
+    <h2>All components in this design system</h2>
+
+
+    <ul class="vf-list vf-list--unordered">
+        <li class="vf-list__item vf-content"><a class="vf-link" href="../vf-componenet-rollup">Visual Framework Componet Rollup</a> <code> vf-componenet-rollup </code></li>
+      
+        <li class="vf-list__item vf-content"><a class="vf-link" href="../vf-core-components">Vf Core Components</a> <code> vf-core-components </code></li>
+      
+        <li class="vf-list__item vf-content"><a class="vf-link" href="../vf-sample">Visual Framework Sample Component</a> <code> vf-sample </code></li>
+      </ul>
+  </section>
+</div>
+
+<div class="vf-grid">
+  <div class="footnote">
+    <p class="vf-text--body">
+      This page is part of the components section.
+    </p>
+  </div>
+</div>
+
+    
+
+<!-- This page was generated on Invalid DateTime -->
+<script src="/vf-demo-design-system/scripts/srcipts.js"></script>
+
+  </body>
+</html>

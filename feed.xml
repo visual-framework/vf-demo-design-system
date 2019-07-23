@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Design system boilerplate</title>
+  <subtitle>This demonstrates how a design system can be built using the the Visual Framework component system.</subtitle>
+  <link href="https://visual-framework.github.io/vf-eleventy/feed.xml" rel="self"/>
+  <link href="https://visual-framework.github.io/vf-demo-design-system/"/>
+  <updated>2019-07-23T14:46:55.393+00:00</updated>
+  <id>https://visual-framework.github.io/vf-eleventy</id>
+  <author>
+    <name>Visual Framework system</name>
+    <email>ken.hawkins@embl.de</email>
+  </author>
+  
+  <entry>
+    <title>Design Principles</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/brand-guidelines/design-principles/"/>
+    <updated>2018-08-22T12:24:50+00:00</updated>
+    <id>https://visual-framework.github.io/vf-eleventy/brand-guidelines/design-principles/</id>
+    <content type="html">&lt;p&gt;You might also want to add some principles&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Editorial style guide</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/brand-guidelines/editorial-styleguide/"/>
+    <updated>2018-08-22T12:24:50+00:00</updated>
+    <id>https://visual-framework.github.io/vf-eleventy/brand-guidelines/editorial-styleguide/</id>
+    <content type="html">&lt;p&gt;You might not want to put your editorial style guide on this site, but it would be
+a good idea to reference it.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Logo</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/brand-guidelines/logo/"/>
+    <updated>2018-08-22T12:24:50+00:00</updated>
+    <id>https://visual-framework.github.io/vf-eleventy/brand-guidelines/logo/</id>
+    <content type="html">&lt;p&gt;You may not use or reproduce our logo without our explicit consent.&lt;/p&gt;
+&lt;p&gt;And some guidance on how to technically and correctly use the logo.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Boilerplate for a generic page</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/patterns/boilerplate-generic/"/>
+    <updated>2018-08-22T12:24:50+00:00</updated>
+    <id>https://visual-framework.github.io/vf-eleventy/patterns/boilerplate-generic/</id>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot; class=&quot;vf-no-js&quot;&gt;
+&lt;head&gt;
+  &lt;script&gt;
+// Detect if JS is on and swap vf-no-js for vf-js on the html element
+(function(H){H.className=H.className.replace(/\bvf-no-js\b/,&#39;vf-js&#39;)})(document.documentElement);
+&lt;/script&gt;
+
+  &lt;title&gt;Boilerplate for a generic page | Design system boilerplate&lt;/title&gt;
+
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta content=&quot;width=device-width, initial-scale=1, minimum-scale=1&quot; name=&quot;viewport&quot;&gt;
+
+  &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;180x180&quot; href=&quot;https://dev.assets.emblstatic.net/vf/assets/vf-favicon/assets/apple-touch-icon.png&quot;&gt;
+&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;32x32&quot; href=&quot;https://dev.assets.emblstatic.net/vf/assets/vf-favicon/assets/favicon-32x32.png&quot;&gt;
+&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;16x16&quot; href=&quot;https://dev.assets.emblstatic.net/vf/assets/vf-favicon/assets/favicon-16x16.png&quot;&gt;
+&lt;link rel=&quot;manifest&quot; href=&quot;https://dev.assets.emblstatic.net/vf/assets/vf-favicon/assets/site.webmanifest&quot;&gt;
+&lt;link rel=&quot;mask-icon&quot; href=&quot;https://dev.assets.emblstatic.net/vf/assets/vf-favicon/assets/safari-pinned-tab.svg&quot; color=&quot;#ffffff&quot;&gt;
+&lt;meta name=&quot;msapplication-TileColor&quot; content=&quot;#ffffff&quot;&gt;
+&lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot;&gt;
+
+  &lt;!-- Could not render component &#39;@embl-content-meta-properties&#39; - component not found. --&gt;
+
+  &lt;link rel=&quot;stylesheet&quot; media=&quot;all&quot; href=&quot;https://visual-framework.github.io/vf-demo-design-system/css/styles.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; media=&quot;all&quot; href=&quot;https://visual-framework.github.io/vf-demo-design-system/css/app.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header class=&quot;vf-header&quot;&gt;
+    &lt;header class=&quot;vf-global-header&quot;&gt;
+
+  &lt;div class=&quot;vf-global-header__inner&quot;&gt;
+
+&lt;a href=&quot;http://www.embl.de/&quot; class=&quot;vf-logo--responsive&quot;&gt;
+  &lt;span class=&quot;vf-sr-only&quot;&gt;Visual Framework 2.0&lt;/span&gt;
+&lt;/a&gt;
+
+    &lt;p class=&quot;vf-global-header__site-name&quot;&gt;Visual Framework for Life Science websites&lt;/p&gt;
+
+&lt;nav class=&quot;vf-navigation vf-navigation--global&quot;&gt;
+  &lt;ul class=&quot;vf-navigation__list | vf-list--inline&quot;&gt;
+    &lt;li class=&quot;vf-navigation__item&quot;&gt;
+      &lt;a href=&quot;javascript:Void(0);&quot; class=&quot;vf-navigation__link&quot;&gt;services&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;vf-navigation__item&quot;&gt;
+      &lt;a href=&quot;javascript:Void(0);&quot; class=&quot;vf-navigation__link&quot;&gt;research&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;vf-navigation__item&quot;&gt;
+      &lt;a href=&quot;javascript:Void(0);&quot; class=&quot;vf-navigation__link&quot;&gt;training&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;vf-navigation__item&quot;&gt;
+      &lt;a href=&quot;javascript:Void(0);&quot; class=&quot;vf-navigation__link&quot;&gt;about us&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+  &lt;/div&gt;
+
+&lt;/header&gt;
+
+  &lt;/header&gt;
+
+  &lt;!-- dismissible banner --&gt;
+  &lt;section class=&quot;vf-banner vf-banner--fixed vf-banner--bottom vf-banner--phase&quot; data-vf-js-banner=&quot;&quot; data-vf-js-banner-state=&quot;dismissible&quot; data-vf-js-banner-button-text=&quot;Close notice&quot;&gt;
+    &lt;div class=&quot;vf-banner__content&quot; data-vf-js-banner-text=&quot;&quot;&gt;
+      &lt;div&gt;
+        &lt;h3 class=&quot;vf-text vf-text-heading--4&quot;&gt;
+          Don&#39;t need to customise the EMBL Design Language for Websites?
+        &lt;/h3&gt;
+        &lt;p class=&quot;vf-banner__text&quot;&gt;Here&#39;s the core CSS and JS you need. Don&#39;t forget to &lt;a href=&quot;http://dev.beta.embl.org/guidelines/visual-framework/dev-docs/&quot; class=&quot;vf-link&quot;&gt;consult the component library&lt;/a&gt;.&lt;/p&gt;
+        &lt;code class=&quot;Code Code--lang-html vf-code-example&quot;&gt;&lt;pre class=&quot;vf-code-example__pre&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;rel&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;https://dev.assets.emblstatic.net/vf/develop/css/styles.css&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;https://dev.assets.emblstatic.net/vf/develop/scripts/scripts.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;
+        &lt;/pre&gt;&lt;/code&gt;
+      &lt;/div&gt;
+    &lt;/div&gt; 
+  &lt;/section&gt;
+
+
+  &lt;div class=&quot;vf-body&quot;&gt;
+    &lt;section class=&quot;vf-intro | embl-grid embl-grid--has-centered-content&quot;&gt;
+  &lt;div&gt;&lt;!-- empty --&gt;&lt;/div&gt;
+  &lt;div&gt;
+    &lt;h1 class=&quot;vf-intro__heading vf-intro__heading--has-tag&quot;&gt;Cancer &lt;a href=&quot;https://visual-framework.github.io/vf-eleventy/patterns/boilerplate-generic/&quot; class=&quot;vf-badge vf-badge--primary vf-badge--phases&quot;&gt;beta&lt;/a&gt;&lt;/h1&gt;
+&lt;p class=&quot;vf-lede&quot;&gt;Cancer is a generic term for lots of different diseases in which cells divide many more times than usual. This abnormal growth can affect many cell types in almost any part of the body.&lt;/p&gt;
+&lt;p class=&quot;vf-intro__text&quot;&gt;Cancer is a multi-stage process. Normal cells begin to divide abnormally, spreading beyond their normal boundaries, and abnormal tissue growth causes swellings called tumours to form. Tumours can be benign – with no harmful effect on the body – or malignant, invading healthy tissue and interfering with normal bodily functions.&lt;/p&gt;
+&lt;p class=&quot;vf-intro__text&quot;&gt;There are more than 100 types of cancer and symptoms vary depending on the type. &lt;a class=&quot;vf-link&quot; href=&quot;javascript:Void(0);&quot;&gt;Read more about Cancer&lt;/a&gt;.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+  &lt;/div&gt;
+
+  &lt;!-- Could not render component &#39;@vf-footer&#39; - component not found. --&gt;
+
+  
+
+  &lt;!-- This page was generated on Invalid DateTime --&gt;
+  &lt;script src=&quot;https://visual-framework.github.io/vf-demo-design-system/scripts/srcipts.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Pattern sub-page</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/patterns/pattern-holder/"/>
+    <updated>2018-08-22T12:24:50+00:00</updated>
+    <id>https://visual-framework.github.io/vf-eleventy/patterns/pattern-holder/</id>
+    <content type="html">&lt;p&gt;Need a sub-page? Add it here.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Illustration and Infographics</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/styles/illustration-and-infographics/"/>
+    <updated>2018-08-22T12:24:50+00:00</updated>
+    <id>https://visual-framework.github.io/vf-eleventy/styles/illustration-and-infographics/</id>
+    <content type="html">&lt;p&gt;To come&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Images</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/styles/images/"/>
+    <updated>2018-08-22T12:24:50+00:00</updated>
+    <id>https://visual-framework.github.io/vf-eleventy/styles/images/</id>
+    <content type="html">&lt;p&gt;To come.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Typography</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/styles/typography/"/>
+    <updated>2018-08-22T12:24:50+00:00</updated>
+    <id>https://visual-framework.github.io/vf-eleventy/styles/typography/</id>
+    <content type="html">&lt;h3&gt;Typeface: IBM Plex&lt;/h3&gt;
+&lt;p&gt;EMBL uses open-source typeface &lt;a href=&quot;https://github.com/ibm/plex&quot;&gt;IBM Plex&lt;/a&gt;. IBM Plex is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Font_superfamily&quot;&gt;super-family&lt;/a&gt; typeface designed to meet the needs of a modern brand typeface:&lt;/p&gt;
+&lt;ul class=&quot;vf-list vf-list--unordered&quot;&gt;
+&lt;li class=&quot;vf-list__item&quot;&gt;Adaptable: It is adaptable to many media types: projection, or print, to high and low resolution screens. &lt;/li&gt;
+&lt;li class=&quot;vf-list__item&quot;&gt;Legibility: Plex is designed to be legible at even the smallest sizes.&lt;/li&gt;
+&lt;li class=&quot;vf-list__item&quot;&gt;Active support: It is under constant improvement and was recently released in Variable Font format. &lt;/li&gt;
+&lt;li class=&quot;vf-list__item&quot;&gt;Ubiquitous: Plex is available to freely download from [GitHub](https://github.com/ibm/plex). It is also available on [Google Fonts](https://fonts.google.com/featured/Plex) for download and embedding directly in digital products&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;p&gt;EMBL uses two typefaces from the IBM Plex family; Sans and Mono. &lt;em&gt;Sans&lt;/em&gt; is to be used for all communications material. &lt;em&gt;Mono&lt;/em&gt; is reserved for high impact communications and is to be used as a display weight only.&lt;/p&gt;
+&lt;h4&gt;Web products and services&lt;/h4&gt;
+&lt;p&gt;When using IBM Plex for digital products, you can use &lt;a href=&quot;https://fonts.google.com/featured/Plex&quot;&gt;Google Fonts&lt;/a&gt; to serve the fonts directly. The font stacks are as follows:&lt;/p&gt;
+&lt;h5&gt;Sans Serif font stack&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;font-family: &#39;IBM Plex Sans&#39;, &#39;Helvetica Neue&#39;, Arial, sans-serif;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5&gt;Mono font stack&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;font-family: &#39;IBM Plex Mono&#39;, &#39;Menlo&#39;, &#39;DejaVu Sans Mono&#39;, &#39;Bitstream Vera Sans Mono&#39;, Courier, monospace;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;Microsoft Office&lt;/h4&gt;
+&lt;p&gt;We cannot embed IBM Plex into our distributable Microsoft Office templates such as Powerpoint and Word. For this case, we will use a typeface that looks close to IBM Plex but is distributed as part of the Microsoft Office installation. This typeface is &lt;em&gt;Franklin Gothic&lt;/em&gt;.&lt;/p&gt;
+&lt;h4&gt;Mailchimp&lt;/h4&gt;
+&lt;p&gt;Mailchimp is used for our email newsletter distributions. The template builder includes some webfonts, but not IBM Plex currently. Therefore we are substituting IBM Plex for &lt;em&gt;Source Sans Pro&lt;/em&gt;.&lt;/p&gt;
+&lt;style&gt;
+.vf-swatch {
+  grid-column: 2 / -2 !important;
+}
+&lt;/style&gt;
+&lt;p&gt;bugger&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Local components</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/components/vf-componenet-rollup/"/>
+    <updated>2019-04-09T12:24:50+00:00</updated>
+    <id>https://visual-framework.github.io/vf-eleventy/components/vf-componenet-rollup/</id>
+    <content type="html">&lt;!-- no special content --&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Components from `vf-core`</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/components/vf-core-components/embl-grid/"/>
+    <updated>2019-04-09T12:24:50+00:00</updated>
+    <id>https://visual-framework.github.io/vf-eleventy/components/vf-core-components/embl-grid/</id>
+    <content type="html">&lt;!-- no special content --&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>I&#39;m an update</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/posts/sample-post/"/>
+    <updated>2019-04-09T12:24:50+00:00</updated>
+    <id>https://visual-framework.github.io/vf-eleventy/posts/sample-post/</id>
+    <content type="html">&lt;p&gt;I&#39;m some content.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Colours</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/styles/colour/"/>
+    <updated>2019-07-23T14:46:55.393+00:00</updated>
+    <id>https://visual-framework.github.io/vf-eleventy/styles/colour/</id>
+    <content type="html">&lt;p&gt;The set below shows all the colours for the EMBL brand. Other colours are not allowed. Any kind of colour coding in alignment with a service, group etc. is not allowed. Our main colour is white, in order to underline the bespoke usage of white space in our visual example.&lt;/p&gt;
+&lt;h2&gt;The colour set: Overview&lt;/h2&gt;
+&lt;p&gt;Besides logo, typeface and graphical elements, colours are one the most important parts of a corporate design.&lt;/p&gt;
+&lt;p&gt;The set below shows all the colours for the EMBL brand. Other colours are not allowed. Any kind of colour coding in alignment with a service, group etc. is not allowed. Our main colour is white, in order to underline the bespoke usage of white space in our visual example.&lt;/p&gt;
+&lt;style&gt;
+.swatches {
+  grid-row-gap: 32px;
+  margin: 48px 0;
+}
+.swatch {
+  border: 2px solid #333;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.swatch__details {
+  padding: 16px;
+}
+.swatch:nth-of-type(6),
+.swatch:nth-of-type(11) {
+  grid-column-start: 1;
+}
+.swatch__colour {
+  border-right: 2px solid #333;
+  height: 100%;
+  width: 100%;
+}
+.swatch__colour-name {
+  margin: 0 0 12px 0;
+}
+
+.swatch__colour-hex,
+.swatch__sass-variable,
+.swatch__comment,
+.swatch__css-property {
+  margin: 0 0 12px 0;
+}
+
+.swatch__colour-hex,
+.swatch__sass-variable,
+.swatch__css-property {
+  font-family: monospace;
+  font-size: 1em;
+  align-items: start;
+}
+
+.swatch__colour-hex,
+.swatch__sass-variable,
+.swatch__css-property {
+  font-family: &#39;IBM Plex Mono&#39;, Monaco, Consolas, &#39;Lucida Console&#39;, monospace;
+}
+.swatch__notes {
+  margin: 12px 0 0px 0;
+}
+.swatch__notes,
+.swatch__colour-name,
+.swatch__meta {
+  font-family: &#39;IBM Plex Sans&#39;, Helvetica, Arial, sans-serif;
+}
+.swatch__meta {
+  display: block;
+  margin-bottom: 4px;
+}
+.swatch__css-property {
+  margin-bottom: 0;
+}
+&lt;/style&gt;
+&lt;main class=&quot;swatches | vf-grid vf-grid__col-2&quot;&gt;
+&lt;p&gt;bugger&lt;/p&gt;
+&lt;/main&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Spacing</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/styles/spacing/"/>
+    <updated>2019-07-23T14:46:55.393+00:00</updated>
+    <id>https://visual-framework.github.io/vf-eleventy/styles/spacing/</id>
+    <content type="html">&lt;style&gt;
+.swatches {
+    grid-row-gap: 32px;
+}
+.swatch {
+  border: 2px solid #333;
+}
+.swatch__details {
+  padding: 16px;
+}
+.spacing__example {
+  border-bottom: 2px solid #333;
+  background-color: #f3f3f3;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+&lt;/style&gt;
+&lt;main class=&quot;swatches | vf-grid vf-grid__col-4&quot;&gt;
+&lt;p&gt;bugger&lt;/p&gt;
+&lt;/main&gt;
+</content>
+  </entry>
+</feed>

@@ -1,0 +1,96 @@
+[
+  {
+    "url": "/customising/",
+    "title": "Customising your design system",
+    "index": "## major projects use make full use this boilerplate &#39;ll need familiar with these projects: [Visual Framework life science websites](#howvf): designed when don&#39;t want your other CSS JS break [Gulp](#howgulp): task runner get Fractal Eleventy &quot;talk each other&quot; niceties around file optimisation Sass [Fractal component library](#howfractal): modular nested components [Eleventy static site generator](#howeleventy): fast flexible templating adapted [Nunjucks](#hownunjucks): &quot; rich powerful templating language JavaScript&quot; &#39;s common Fractal also used by Visual Framework## How things work### 1 Framework](https://visualframeworkgithubio/vfwelcome) methedology [around components how they&#39;re made](https://visualframeworkgithubio/vfwelcome/documentation/#gettingstarted); This boilerplate uses [`vfcore`](https://githubcom/visualframework/vfcore) assemble Sass structure### 2 [Gulp](https://gulpjscom) Gulp will initiate tasks local development `gulp dev` go command Review `/gulpfilejs` insight into specific tasks### 3 [Fractal](https://fractalbuild) responsible assembling Frameworkcompatible their templates Local live `src/components` core are installed `yarn` `node_modules` symlinked from `src/components/vfcorecomponents`### 4 [Eleventy](https://www11tyio) page building high level passed via have component&#39;s assets Nunjuck `/eleventyjs` configuration### 5 [Nunjucks](https://mozillagithubio/nunjucks/)This throughout can only nice templatin direct access templates:Code: {% render &quot;@vfsample&quot; {text: &quot;with some text&quot;} %}Returns: pI&#39;m sample text/pWant Markdown entire files blocks tags#### Markdown supportName suffix (`indexmd`) page&#39;s [front matter](https://www11tyio/docs/datafrontmatter/):```templateEngineOverride: njk md```#### filterNunjcuks:{{ &quot;&#39;m `markdown`&quot; | markdown safe }}Returns: pIm codemarkdown/code/p#### tagNunjcuks:{% %}[ link](#){% endmarkdown %}Returns: link## Actions editNow that know bit about configuration here&#39;s start customising### Browse add components See what already installed: [/components](/vfdemodesignsystem/components) [Browse vfcore components](https://visualframeworkgithubio/vfcore/#components) [Directions add premade components](https://visualframeworkgithubio/vfeleventy/) Then reference new `/src/components/vfcomponenetrollup/indexscss`### Configuration options `/packagejson` update `vfConfig` property `src/site/_data/siteConfigjs` name email options `pathPrefix` comment out deploy subdirectory### Customise templatesPage templates located `src/site/_data/site/_includes/layouts` learn [more layout&#39;s Eleventy&#39;s docs](https://www11tyio/docs/layouts/)### Add pagesPages `src/site/_data/site/` Have look existing pages copy them pages### CSS JS imagesThere&#39;s usually &quot;edge cases&quot;: CSS/Sass: `/src/scss/appscss` like `/vfdemodesignsystem/css/appcss` JS: `/src/js/yourjsfilescss` `/vfdemodesignsystem/js/scriptsjs` Images: `/src/site/images` `/vfdemodesignsystem/images/myimagepng`## Outputs: madeWhen run build` build trigger Framework Generated output `/build` `` ``## Deploying design system Manually: build` `/build` server CI: `/travisyml` ideasCommon issue: deploying right subdirectory Make sure `/eleventyjs`&#39;ve updated `pathPrefix`## library library available [`/components`](/vfdemodesignsystem/components) generated tapping export Fractal&#39;s index:1 list whenever edited added1 data eposed `/src/site/_data/fractalEnvironmentjs`1 individual created using [pagination feature](https://www11tyio/docs/pagination/) `/src/site/components/componentviewnjk` `/src/site/components/vfcorecomponentsnjk`1 template drives layout `/src/site/_includes/layouts/componentsnjk`"
+  },
+  {
+    "url": "/brand-guidelines/design-principles/",
+    "title": "Design Principles",
+    "index": " might also want add some principles"
+  },
+  {
+    "url": "/brand-guidelines/editorial-styleguide/",
+    "title": "Editorial style guide",
+    "index": " might want put your editorial style guide this site would good idea reference "
+  },
+  {
+    "url": "/brand-guidelines/logo/",
+    "title": "Logo",
+    "index": " may use reproduce our logo without explicit consent some guidance how technically correctly logo"
+  },
+  {
+    "url": "/",
+    "title": "",
+    "index": " Design system boilerplate alphaThis demonstrates how design can built using Visual Framework component system Use this componentbased deliver document your system Still need install Follow guide sections Customising systemNow that &#39;ve installed vfdemodesignsystem learn works adapt needs Brand guidelinesHigh level guidance brand StylesColours illustrations images type: lowerlevel styling Component overviewThese components are available Patterns boilerplatesMore than components should things"
+  },
+  {
+    "url": "/patterns/boilerplate-generic/",
+    "title": "Boilerplate for a generic page",
+    "index": " // Detect JS swap vfjs vfjs html element(function(H){HclassName=HclassNamereplace(/\bvfjs\b/&#39;vfjs&#39;)})(documentdocumentElement); Boilerplate generic page | Design system boilerplate &lt; href=&quot;http://wwwemblde&quot;class=&quot;vflogoresponsive&quot;&gt; Visual Framework 20 Life Science websites services research training about us Don&#39;t need customise EMBL Language Websites Here&#39;s core CSS need forget consult component library link rel=&quot;stylesheet&quot; href=&quot;https://devassetsemblstaticnet/vf/develop/css/stylescss&quot;script src=&quot;https://devassetsemblstaticnet/vf/develop/scripts/scriptsjs&quot;/script Cancer betaCancer term lots different diseases which cells divide many more times than usual This abnormal growth can affect cell types almost any part bodyCancer multistage process Normal begin abnormally spreading beyond their normal boundaries tissue causes swellings called tumours form Tumours benign – with harmful effect body malignant invading healthy interfering bodily functionsThere are 100 cancer symptoms vary depending type Read Cancer"
+  },
+  {
+    "url": "/patterns/pattern-holder/",
+    "title": "Pattern sub-page",
+    "index": "Need subpage Add here"
+  },
+  {
+    "url": "/styles/illustration-and-infographics/",
+    "title": "Illustration and Infographics",
+    "index": " come"
+  },
+  {
+    "url": "/styles/images/",
+    "title": "Images",
+    "index": " come"
+  },
+  {
+    "url": "/styles/typography/",
+    "title": "Typography",
+    "index": "Typeface: IBM PlexEMBL uses opensource typeface Plex Plex superfamily designed meet needs modern brand typeface:Adaptable: adaptable many media types: projection print high low resolution screens Legibility: legible even smallest sizesActive support: under constant improvement recently released Variable Font format Ubiquitous: available freely download from [GitHub](https://githubcom/ibm/plex) also [Google Fonts](https://fontsgooglecom/featured/Plex) embedding directly digital productsUsageEMBL two typefaces family; Sans Mono used communications material Mono reserved impact display weight onlyWeb products servicesWhen using products can use Google Fonts serve fonts directly font stacks are follows:Sans Serif stackfontfamily: &#39;IBM Sans&#39; &#39;Helvetica Neue&#39; Arial sansserif;Mono Mono&#39; &#39;Menlo&#39; &#39;DejaVu &#39;Bitstream Vera Courier monospace;Microsoft Office cannot embed into our distributable Microsoft Office templates such Powerpoint Word this case will that looks close distributed part installation This Franklin GothicMailchimpMailchimp email newsletter distributions template builder includes some webfonts currently Therefore substituting Source Provfswatch { gridcolumn: 2 / 2 !important;}bugger"
+  },
+  {
+    "url": "/brand-guidelines/",
+    "title": "Brand guidelines",
+    "index": " bran organisation&#39;s visual identity print onlineDesigners writers should informed rules recommendations below They can protect strengthen brand by creating compelling engaging brand content guidelines describe good design user experience this covered extensively elsewhere rather they provide overview key branding elements how use them contextWhat corporate designCorporate manner which organisation presents itself visually public readily identify organisation; differentiate from other organisations; coherent system across communications channels Visual consistency matter whether content digital"
+  },
+  {
+    "url": "/styles/",
+    "title": "Styles",
+    "index": "Here document broad concepts that transcend any one component pattern"
+  },
+  {
+    "url": "/components/vf-componenet-rollup/",
+    "title": "Local components",
+    "index": ""
+  },
+  {
+    "url": "/components/",
+    "title": "Component overview",
+    "index": " Nunjucks templates well any CSS Sass JS image are available use## Where&#39;s CSS JSThey&#39;re generated by `vfcomponenetrollup`: `` ``## componentsVisual Framework Componet Rollup vfcomponenetrollup Vf Core Components vfcorecomponents Visual Sample Component vfsample "
+  },
+  {
+    "url": "/components/vf-core-components/embl-grid/",
+    "title": "Components from `vf-core`",
+    "index": ""
+  },
+  {
+    "url": "/posts/sample-post/",
+    "title": "I&#39;m an update",
+    "index": "&#39;m some content"
+  },
+  {
+    "url": "/patterns/",
+    "title": "Patterns and boilerplates",
+    "index": "Where components offere technical implementations patterns boilerplates showhow things should come together facilitate tasks goals"
+  },
+  {
+    "url": "/styles/colour/",
+    "title": "Colours",
+    "index": " set below shows colours EMBL brand Other are allowed Any kind colour coding alignment with service group etc Our main white order underline bespoke usage white space our visual example set: OverviewBesides logo typeface graphical elements one most important parts corporate design exampleswatches { gridrowgap: 32px; margin: 48px 0;}swatch border: 2px solid #333; display: grid; gridtemplatecolumns: 1fr 2fr;}swatch__details padding: 16px;}swatch:nthtype(6)swatch:nthtype(11) gridcolumnstart: 1;}swatch__colour borderright: height: 100%; width: 100%;}swatch__colourname 0 12px 0;}swatch__colourhexswatch__sassvariableswatch__commentswatch__cssproperty 0;}swatch__colourhexswatch__sassvariableswatch__cssproperty fontfamily: monospace; fontsize: 1em; alignitems: start;}swatch__colourhexswatch__sassvariableswatch__cssproperty &#39;IBM Plex Mono&#39; Monaco Consolas &#39;Lucida Console&#39; monospace;}swatch__notes 0px 0;}swatch__notesswatch__colournameswatch__meta Sans&#39; Helvetica Arial sansserif;}swatch__meta block; marginbottom: 4px;}swatch__cssproperty 0;}bugger"
+  },
+  {
+    "url": "/styles/spacing/",
+    "title": "Spacing",
+    "index": "swatches { gridrowgap: 32px;}swatch border: 2px solid #333;}swatch__details padding: 16px;}spacing__example borderbottom: #333; backgroundcolor: #f3f3f3; display: flex; width: 100%; height: 200px; justifycontent: center; alignitems: center;}bugger"
+  }]

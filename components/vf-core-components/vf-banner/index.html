@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" media="all" href="/vf-demo-design-system/css/styles.css" />
+    <link rel="stylesheet" media="all" href="/vf-demo-design-system/css/app.css" />
+    <title>vf-banner | Design system boilerplate</title>
+  </head>
+  <body class=" vf-body" >
+    <header class="vf-global-header">
+
+      <div class="vf-global-header__inner">
+
+        <a href="https://visual-framework.github.io/vf-welcome/" class="vf-logo--responsive" title="Visual Framework 2.0">
+          <span class="vf-sr-only">Visual Framework 2.0</span>
+        </a>
+        
+
+        <nav class="vf-navigation vf-navigation--global">
+          <ul class="vf-navigation__list | vf-list--inline">
+            <li class="vf-navigation__item">
+              <a href="https://visual-framework.github.io/vf-welcome/" class="vf-navigation__link">About the Visual Framework</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a href="https://visual-framework.github.io/vf-welcome/documentation" class="vf-navigation__link">Documentation</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a href="https://discord.gg/XHAvkUX" class="vf-navigation__link">Help, chat</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </header>
+    
+    
+    <nav class="vf-breadcrumbs" aria-label="Breadcrumb">
+      <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
+        <li class="vf-breadcrumbs__item">
+          <a href="/vf-demo-design-system/" class="vf-breadcrumbs__link">Design system boilerplate</a>
+        </li>
+        
+        
+          
+          <li class="vf-breadcrumbs__item">
+            <a href="/vf-demo-design-system/components" class="vf-breadcrumbs__link">Components</a>
+          </li>
+        
+        <li class="vf-breadcrumbs__item">
+          
+            vf-banner
+          
+        </li>
+      </ul>
+    </nav>
+    
+
+    
+<div class="vf-grid">
+  <section class="vf-content component-library-notes">
+
+    <!-- no special content -->
+
+
+    
+    
+
+    
+
+    
+      <h1>vf-banner component</h1>
+<p><a href="https://badge.fury.io/js/%40visual-framework%2Fvf-banner"><img src="https://badge.fury.io/js/%40visual-framework%2Fvf-banner.svg" alt="npm version"></a></p>
+<h2>Reflecting status</h2>
+<ul>
+<li>General notice <code>vf-banner vf-banner--notice</code></li>
+<li>In development services <code>vf-banner vf-banner--phase</code></li>
+<li>Success (to come) <code>vf-banner vf-banner--success</code></li>
+<li>Alert (to come) <code>vf-banner vf-banner--alert</code></li>
+<li>Warning (to come) <code>vf-banner vf-banner--warning</code></li>
+</ul>
+<h2>JS Documentation for <code>--modal</code> variant</h2>
+<p>Like all JS-enabled components in the Visual Framework, if you wish to use the bundled JS, you need to include JS data attributes, here is an overview of what the options are for the <code>vf-banner--modal</code> variant.</p>
+<ul>
+<li>Enable VF JS:
+<ul>
+<li>data-vf-js-banner</li>
+</ul>
+</li>
+<li>Banner type:
+<ul>
+<li><code>dismissible</code>: standard messaging type</li>
+<li><code>blocking</code>: full screen</li>
+<li><code>persistent</code>: no close button</li>
+<li>data-vf-js-banner-state=&quot;name_of_type&quot;</li>
+</ul>
+</li>
+<li>ESC to close:
+<ul>
+<li>Only works with <code>blocking</code> banner state</li>
+<li>data-vf-js-banner-esc-close=<code>&quot;y&quot;</code></li>
+</ul>
+</li>
+<li>Button text:
+<ul>
+<li>Optional, leaving off will not incekt a close button</li>
+<li>data-vf-js-banner-button-text=&quot;Accept and close&quot;</li>
+</ul>
+</li>
+<li>Cookies:
+<ul>
+<li>Both are optional, leaving either off will deactivate cookie storage</li>
+<li>data-vf-js-banner-cookie-name=<code>&quot;myServiceName&quot;</code></li>
+<li>data-vf-js-banner-cookie-version=<code>&quot;0.1&quot;</code> Incrementing this string will invalidate old cookies.</li>
+</ul>
+</li>
+<li>Extra buttons:
+<ul>
+<li>data-vf-js-banner-extra-button=<code>&quot;&lt;a href='#'&gt;Optional button&lt;/a&gt;&lt;a target='_blank' href='#'&gt;New tab button&lt;/a&gt;&quot;&gt;</code> This HTML string will be converted into VF markup for extra buttons. Optional.</li>
+</ul>
+</li>
+<li>Message:
+<ul>
+<li>data-vf-js-banner-modal-text: the <code>.innerHTML</code> of this element will be used as the markup for the message itself</li>
+</ul>
+</li>
+</ul>
+<h2>Install</h2>
+<p>This repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install <code>primer-buttons</code> with this command.</p>
+<pre><code>$ yarn add --dev @visual-framework/vf-banner
+</code></pre>
+<h2>Usage</h2>
+<p>The source files included are written in [Sass][sass] (<code>scss</code>) You can simply point your sass <code>include-path</code> at your <code>node_modules</code> directory and import it like this.</p>
+<pre><code>@import &quot;@visual-framework/vf-banner/index.scss&quot;;
+</code></pre>
+<p><em>Make sure you import any requirements along with the modules.</em></p>
+
+    
+
+    <hr/>
+    <small><p>File system location: <code>components/vf-banner</code></p>
+</small>
+
+
+    
+  </section>
+</div>
+
+
+  <div class="vf-grid">
+    <section>
+       <h1 class="vf-text vf-text-heading--display vf-text--invert">Variants</h1> 
+    </section>
+  </div>
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Default
+           <span class="vf-badge vf-badge--pill">alhpa</span> 
+
+           <span class="vf-badge vf-badge--pill">container</span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-banner--default', {
+  &quot;component-type&quot;: &quot;container&quot;,
+  &quot;data-service-id&quot;: &quot;MyService&quot;,
+  &quot;data-protection-version&quot;: 0.1,
+  &quot;vf-data-protection-banner__text&quot;: &quot;I agree, dismiss this banner&quot;,
+  &quot;vf-data-protection-banner__link&quot;: null
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+          Intentionally blank.
+
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre>Intentionally blank.
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-banner/vf-banner.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-banner/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-banner/index.scss">index.scss</a></li>
+<li><a href="components/vf-core-components/vf-banner/package.json">package.json</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner.css">vf-banner.css</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner.js">vf-banner.js</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner.scss">vf-banner.scss</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner.variables.scss">vf-banner.variables.scss</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Fixed
+           <span class="vf-badge vf-badge--pill">alhpa</span> 
+
+           <span class="vf-badge vf-badge--pill">container</span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-banner--fixed', {
+  &quot;component-type&quot;: &quot;container&quot;,
+  &quot;data-service-id&quot;: &quot;MyService&quot;,
+  &quot;data-protection-version&quot;: 0.1,
+  &quot;vf-data-protection-banner__text&quot;: &quot;I agree, dismiss this banner&quot;,
+  &quot;vf-data-protection-banner__link&quot;: null
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+          <!-- dismissible banner -->
+<div class="vf-banner vf-banner--fixed vf-banner--bottom vf-banner--notice"
+data-vf-js-banner
+data-vf-js-banner-state="dismissible"
+data-vf-js-banner-button-text="NaN"
+data-vf-js-banner-cookie-name="NaN"
+data-vf-js-banner-cookie-version="NaN"
+data-vf-js-banner-extra-button="<a href='#'>Optional button</a><a target='_blank' href='#'>New tab button</a>"
+data-vf-js-banner-auto-accept="false">
+  <div class="vf-banner__content | vf-grid" data-vf-js-banner-text>
+    <p class="vf-text vf-text-body--2">
+      This website uses cookies, and the limiting processing of your personal data to function. By using the site you are agreeing to this as outlined in our <a class="vf-link" href="JavaScript:Void(0);">Privacy Notice</a> and <a class="vf-link" href="JavaScript:Void(0);">Terms Of Use</a>.
+    </p>
+  </div>
+</div>
+
+<!-- persistent banner -->
+<!-- <div class="vf-banner vf-banner--fixed vf-banner--bottom vf-banner--notice"
+data-vf-js-banner
+data-vf-js-banner-state="persistent"
+data-vf-js-banner-extra-button="<a href='#'>Optional button</a><a target='_blank' href='#'>New tab button</a>">
+  <div class="vf-banner__content | vf-grid" data-vf-js-banner-notice-text>
+    <p class="vf-text vf-text-body--2">
+      A persistent banner <a class="vf-link" href="JavaScript:Void(0);">Privacy Notice</a> and <a class="vf-link" href="JavaScript:Void(0);">Terms Of Use</a>.
+    </p>
+  </div>
+</div> -->
+
+<!-- Blocking, dismissible banner -->
+<!-- <div class="vf-banner vf-banner--blocking vf-banner--notice"
+data-vf-js-banner
+data-vf-js-banner-state="blocking" data-vf-js-banner-esc-close="y"
+data-vf-js-banner-cookie-name="NaN"
+data-vf-js-banner-cookie-version="NaN">
+  <div class="vf-banner__content | vf-grid" data-vf-js-banner-notice-text>
+
+    <div class="vf-box">
+        <h2 class="vf-text vf-text-heading-2">A blocking banner</h2>
+        <p class="vf-text vf-text-body--3">This might have a richer layout. Note, this implementation is not yet feature complete.</p>
+    </div>
+
+  </div>
+</div> -->
+
+<!-- programatic banner -->
+<!-- <div class="vf-banner vf-banner--fixed vf-banner--bottom vf-banner--notice"
+      data-vf-js-banner-id="32423"
+></div> -->
+
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre><span class="hljs-comment">&lt;!-- dismissible banner --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-banner vf-banner--fixed vf-banner--bottom vf-banner--notice"</span> <span class="hljs-attr">data-vf-js-banner</span> <span class="hljs-attr">data-vf-js-banner-state</span>=<span class="hljs-string">"dismissible"</span> <span class="hljs-attr">data-vf-js-banner-button-text</span>=<span class="hljs-string">"NaN"</span> <span class="hljs-attr">data-vf-js-banner-cookie-name</span>=<span class="hljs-string">"NaN"</span> <span class="hljs-attr">data-vf-js-banner-cookie-version</span>=<span class="hljs-string">"NaN"</span> <span class="hljs-attr">data-vf-js-banner-extra-button</span>=<span class="hljs-string">"&lt;a href='#'&gt;Optional button&lt;/a&gt;&lt;a target='_blank' href='#'&gt;New tab button&lt;/a&gt;"</span> <span class="hljs-attr">data-vf-js-banner-auto-accept</span>=<span class="hljs-string">"false"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-banner__content | vf-grid"</span> <span class="hljs-attr">data-vf-js-banner-text</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-text vf-text-body--2"</span>&gt;</span>
+      This website uses cookies, and the limiting processing of your personal data to function. By using the site you are agreeing to this as outlined in our <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"JavaScript:Void(0);"</span>&gt;</span>Privacy Notice<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> and <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"JavaScript:Void(0);"</span>&gt;</span>Terms Of Use<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.
+    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- persistent banner --&gt;</span>
+<span class="hljs-comment">&lt;!-- &lt;div class="vf-banner vf-banner--fixed vf-banner--bottom vf-banner--notice"
+data-vf-js-banner
+data-vf-js-banner-state="persistent"
+data-vf-js-banner-extra-button="&lt;a href='#'&gt;Optional button&lt;/a&gt;&lt;a target='_blank' href='#'&gt;New tab button&lt;/a&gt;"&gt;
+  &lt;div class="vf-banner__content | vf-grid" data-vf-js-banner-notice-text&gt;
+    &lt;p class="vf-text vf-text-body--2"&gt;
+      A persistent banner &lt;a class="vf-link" href="JavaScript:Void(0);"&gt;Privacy Notice&lt;/a&gt; and &lt;a class="vf-link" href="JavaScript:Void(0);"&gt;Terms Of Use&lt;/a&gt;.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt; --&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Blocking, dismissible banner --&gt;</span>
+<span class="hljs-comment">&lt;!-- &lt;div class="vf-banner vf-banner--blocking vf-banner--notice"
+data-vf-js-banner
+data-vf-js-banner-state="blocking" data-vf-js-banner-esc-close="y"
+data-vf-js-banner-cookie-name="NaN"
+data-vf-js-banner-cookie-version="NaN"&gt;
+  &lt;div class="vf-banner__content | vf-grid" data-vf-js-banner-notice-text&gt;
+
+    &lt;div class="vf-box"&gt;
+        &lt;h2 class="vf-text vf-text-heading-2"&gt;A blocking banner&lt;/h2&gt;
+        &lt;p class="vf-text vf-text-body--3"&gt;This might have a richer layout. Note, this implementation is not yet feature complete.&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt; --&gt;</span>
+
+<span class="hljs-comment">&lt;!-- programatic banner --&gt;</span>
+<span class="hljs-comment">&lt;!-- &lt;div class="vf-banner vf-banner--fixed vf-banner--bottom vf-banner--notice"
+      data-vf-js-banner-id="32423"
+&gt;&lt;/div&gt; --&gt;</span>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-banner/vf-banner--fixed.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-banner/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-banner/index.scss">index.scss</a></li>
+<li><a href="components/vf-core-components/vf-banner/package.json">package.json</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner--fixed.scss">vf-banner--fixed.scss</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner.css">vf-banner.css</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner.js">vf-banner.js</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner.scss">vf-banner.scss</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner.variables.scss">vf-banner.variables.scss</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Inline
+           <span class="vf-badge vf-badge--pill">alhpa</span> 
+
+           <span class="vf-badge vf-badge--pill">container</span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-banner--inline', {
+  &quot;component-type&quot;: &quot;container&quot;,
+  &quot;data-service-id&quot;: &quot;MyService&quot;,
+  &quot;data-protection-version&quot;: 0.1,
+  &quot;vf-data-protection-banner__text&quot;: &quot;I agree, dismiss this banner&quot;,
+  &quot;vf-data-protection-banner__link&quot;: null
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+          <div class="vf-banner vf-banner--phase">
+  <div class="vf-banner__content">
+    <p class="vf-text-body--3">This is a new web page. <a href="" class="vf-link">Complete our quick survey</a> to help us make it better.</p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-banner vf-banner--phase"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-banner__content"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-text-body--3"</span>&gt;</span>This is a new web page. <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-link"</span>&gt;</span>Complete our quick survey<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> to help us make it better.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-banner/vf-banner--inline.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-banner/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-banner/index.scss">index.scss</a></li>
+<li><a href="components/vf-core-components/vf-banner/package.json">package.json</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner.css">vf-banner.css</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner.js">vf-banner.js</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner.scss">vf-banner.scss</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner.variables.scss">vf-banner.variables.scss</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Top
+           <span class="vf-badge vf-badge--pill">alhpa</span> 
+
+           <span class="vf-badge vf-badge--pill">container</span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-banner--top', {
+  &quot;component-type&quot;: &quot;container&quot;,
+  &quot;data-service-id&quot;: &quot;MyService&quot;,
+  &quot;data-protection-version&quot;: 0.1,
+  &quot;vf-data-protection-banner__text&quot;: &quot;I agree, dismiss this banner&quot;,
+  &quot;vf-data-protection-banner__link&quot;: null
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+          <div class="vf-banner vf-banner--fixed vf-banner--top vf-banner--phase"
+data-vf-js-banner
+data-vf-js-banner-state="dismissible"
+data-vf-js-banner-button-text="Close notice">
+  <div class="vf-banner__content" data-vf-js-banner-text>
+    <span class="vf-badge vf-badge--primary">BETA</span>
+    <p class="vf-text-body--3">This is the new EMBL.org <a href="" class="vf-link">Complete our quick survey</a> to help us make it better.</p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-banner vf-banner--fixed vf-banner--top vf-banner--phase"</span> <span class="hljs-attr">data-vf-js-banner</span> <span class="hljs-attr">data-vf-js-banner-state</span>=<span class="hljs-string">"dismissible"</span> <span class="hljs-attr">data-vf-js-banner-button-text</span>=<span class="hljs-string">"Close notice"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-banner__content"</span> <span class="hljs-attr">data-vf-js-banner-text</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-badge vf-badge--primary"</span>&gt;</span>BETA<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-text-body--3"</span>&gt;</span>This is the new EMBL.org <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-link"</span>&gt;</span>Complete our quick survey<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> to help us make it better.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-banner/vf-banner--top.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-banner/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-banner/index.scss">index.scss</a></li>
+<li><a href="components/vf-core-components/vf-banner/package.json">package.json</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner.css">vf-banner.css</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner.js">vf-banner.js</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner.scss">vf-banner.scss</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner.variables.scss">vf-banner.variables.scss</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+<div class="vf-grid">
+  <section>
+    <h2>All components in this design system</h2>
+
+
+    <ul class="vf-list vf-list--unordered">
+        <li class="vf-list__item vf-content"><a class="vf-link" href="../vf-componenet-rollup">Visual Framework Componet Rollup</a> <code> vf-componenet-rollup </code></li>
+      
+        <li class="vf-list__item vf-content"><a class="vf-link" href="../vf-core-components">Vf Core Components</a> <code> vf-core-components </code></li>
+      
+        <li class="vf-list__item vf-content"><a class="vf-link" href="../vf-sample">Visual Framework Sample Component</a> <code> vf-sample </code></li>
+      </ul>
+  </section>
+</div>
+
+<div class="vf-grid">
+  <div class="footnote">
+    <p class="vf-text--body">
+      This page is part of the components section.
+    </p>
+  </div>
+</div>
+
+    
+
+<!-- This page was generated on Invalid DateTime -->
+<script src="/vf-demo-design-system/scripts/srcipts.js"></script>
+
+  </body>
+</html>

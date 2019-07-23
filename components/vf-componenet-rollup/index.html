@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" media="all" href="/vf-demo-design-system/css/styles.css" />
+    <link rel="stylesheet" media="all" href="/vf-demo-design-system/css/app.css" />
+    <title>vf-componenet-rollup | Design system boilerplate</title>
+  </head>
+  <body class=" vf-body" >
+    <header class="vf-global-header">
+
+      <div class="vf-global-header__inner">
+
+        <a href="https://visual-framework.github.io/vf-welcome/" class="vf-logo--responsive" title="Visual Framework 2.0">
+          <span class="vf-sr-only">Visual Framework 2.0</span>
+        </a>
+        
+
+        <nav class="vf-navigation vf-navigation--global">
+          <ul class="vf-navigation__list | vf-list--inline">
+            <li class="vf-navigation__item">
+              <a href="https://visual-framework.github.io/vf-welcome/" class="vf-navigation__link">About the Visual Framework</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a href="https://visual-framework.github.io/vf-welcome/documentation" class="vf-navigation__link">Documentation</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a href="https://discord.gg/XHAvkUX" class="vf-navigation__link">Help, chat</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </header>
+    
+    
+    <nav class="vf-breadcrumbs" aria-label="Breadcrumb">
+      <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
+        <li class="vf-breadcrumbs__item">
+          <a href="/vf-demo-design-system/" class="vf-breadcrumbs__link">Design system boilerplate</a>
+        </li>
+        
+        
+          
+          <li class="vf-breadcrumbs__item">
+            <a href="/vf-demo-design-system/components" class="vf-breadcrumbs__link">Components</a>
+          </li>
+        
+        <li class="vf-breadcrumbs__item">
+          
+            vf-componenet-rollup
+          
+        </li>
+      </ul>
+    </nav>
+    
+
+    
+<div class="vf-grid">
+  <section class="vf-content component-library-notes">
+
+    <!-- no special content -->
+
+
+    
+    
+
+    
+
+    
+      <h1>vf-componenet-rollup Component</h1>
+<p><a href="https://badge.fury.io/js/%40visual-framework%2Fvf-componenet-rollup"><img src="https://badge.fury.io/js/%40visual-framework%2Fvf-componenet-rollup.svg" alt="npm version"></a></p>
+<p>The <code>vf-componenet-rollup</code> compiles component Sass and JS into style.css and scripts.js files, retrospectively.</p>
+<h2>Install</h2>
+<p>This repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install <code>vf-componenet-rollup</code> with this command.</p>
+<pre><code>$ npm install --save @visual-framework/vf-componenet-rollup
+</code></pre>
+<h2>Usage</h2>
+<p>The source files included are written in [Sass][sass] (<code>scss</code>) You can simply point your sass <code>include-path</code> at your <code>node_modules</code> directory and import it like this.</p>
+<pre><code>@import &quot;@visual-framework/vf-componenet-rollup/index.scss&quot;;
+</code></pre>
+<p><em>Make sure you import any requirements along with the modules.</em></p>
+
+    
+
+    <hr/>
+    <small><p>File system location: <code>components/vf-componenet-rollup</code></p>
+</small>
+
+
+    
+  </section>
+</div>
+
+
+  <div class="vf-grid">
+    <section>
+       <h1 class="vf-text vf-text-heading--display vf-text--invert">Variants</h1> 
+    </section>
+  </div>
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Default
+           <span class="vf-badge vf-badge--pill">beta</span> 
+
+           <span class="vf-badge vf-badge--pill">element</span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-componenet-rollup--default', {
+  &quot;component-type&quot;: &quot;element&quot;
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+          
+
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-componenet-rollup/vf-componenet-rollup.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-componenet-rollup/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-componenet-rollup/index.scss">index.scss</a></li>
+<li><a href="components/vf-componenet-rollup/scripts.js">scripts.js</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+<div class="vf-grid">
+  <section>
+    <h2>All components in this design system</h2>
+
+
+    <ul class="vf-list vf-list--unordered">
+        <li class="vf-list__item vf-content"><a class="vf-link" href="../vf-componenet-rollup">Visual Framework Componet Rollup</a> <code> vf-componenet-rollup </code></li>
+      
+        <li class="vf-list__item vf-content"><a class="vf-link" href="../vf-core-components">Vf Core Components</a> <code> vf-core-components </code></li>
+      
+        <li class="vf-list__item vf-content"><a class="vf-link" href="../vf-sample">Visual Framework Sample Component</a> <code> vf-sample </code></li>
+      </ul>
+  </section>
+</div>
+
+<div class="vf-grid">
+  <div class="footnote">
+    <p class="vf-text--body">
+      This page is part of the components section.
+    </p>
+  </div>
+</div>
+
+    
+
+<!-- This page was generated on Invalid DateTime -->
+<script src="/vf-demo-design-system/scripts/srcipts.js"></script>
+
+  </body>
+</html>
