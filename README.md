@@ -11,9 +11,17 @@ You can use this configuration add and create VF components and component librar
 - access to the Visual Framework component system
 - a `/components` url to document and demonstrate all components available
 
-## Cloning this repo
+## Creating a design system
 
-[todo: update with info on npm template]
+There are two methods you can use:
+
+1. Use the interactive npm template [RECOMMENDED]
+    - If you don't have npm, [install it](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+    - The [`create-vf-eleventy`](https://github.com/visual-framework/create-vf-eleventy) project allows you to interactively create a new site by typing<br/> `npm init @visual-framework/vf-eleventy your-new-site-name vf-demo-design-system`
+    - Follow the prompts
+1. The GitHub template
+    - Click the "[Use this template](https://help.github.com/en/articles/creating-a-repository-from-a-template)" method; quick url: https://github.com/visual-framework/vf-demo-design-system/generate
+    - Follow the prompts and then clone the new project to your local machine
 
 ## Configuring and developing
 
