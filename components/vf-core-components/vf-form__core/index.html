@@ -144,31 +144,31 @@
 <p class="vf-form__helper">Form helper text</p>
 
 <form action="" class="vf-form">
-  <div class="vf-form__item">
-    <label class="vf-form__label" for="text">Text</label>
-    <input type="text" id="text" class="vf-form__input">
+  <div class="vf-form__item" data-vf-js-form-floatlabel>
+    <label class="vf-form__label | vf-sr-only" for="text">Text</label>
+    <input type="text" id="text" class="vf-form__input" placeholder="Text">
+  </div>
+
+  <div class="vf-form__item" data-vf-js-form-floatlabel>
+    <label class="vf-form__label | vf-sr-only" for="password">Password</label>
+    <input type="password" id="password" class="vf-form__input" placeholder="Password">
   </div>
 
   <div class="vf-form__item">
-    <label class="vf-form__label" for="password">Password</label>
-    <input type="password" id="password" class="vf-form__input">
-  </div>
-
-  <div class="vf-form__item">
-    <label class="vf-form__label" for="email">Disabled email</label>
-    <input type="email" id="email" class="vf-form__input" disabled>
+    <label class="vf-form__label | vf-sr-only" for="email">Disabled email</label>
+    <input type="email" id="email" class="vf-form__input" disabled placeholder="disabled">
   </div>
 </form>
 
-<div class="vf-form__item">
-  <label for="text" class="vf-form__label">Form Label</label>
-  <input type="text" id="text" class="vf-form__input">
+<div class="vf-form__item" data-vf-js-form-floatlabel>
+  <label for="text" class="vf-form__label | vf-sr-only">Form Label</label>
+  <input type="text" id="text" class="vf-form__input" placeholder="for item example">
   <p class="vf-form__helper">Form helper text</p>
 </div>
 
-<div class="vf-form__item">
-  <label for="text" class="vf-form__label">Form Label</label>
-  <input type="text" id="text" class="vf-form__input">
+<div class="vf-form__item" data-vf-js-form-floatlabel>
+  <label for="text" class="vf-form__label | vf-sr-only">Form Label</label>
+  <input type="text" id="text" class="vf-form__input" placeholder="form label example">
 </div>
 
 <div class="vf-form__item vf-form__item--radio">
@@ -209,9 +209,9 @@
 
 </div>
 
-<div class="vf-form__item">
-  <label class="vf-form__label" for="vf-form__textarea">Write Some More details</label>
-  <textarea class="vf-form__textarea" id="vf-form__textarea" name="vf-form__textarea" rows="5"></textarea>
+<div class="vf-form__item" data-vf-js-form-floatlabel>
+  <label class="vf-form__label | vf-sr-only" for="vf-form__textarea">Write Some More details</label>
+  <textarea class="vf-form__textarea" id="vf-form__textarea" name="vf-form__textarea" rows="5" placeholder="Write Some More details"></textarea>
 </div>
 
         </section>
@@ -239,31 +239,31 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__helper"</span>&gt;</span>Form helper text<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__item"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"text"</span>&gt;</span>Text<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__input"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__item"</span> <span class="hljs-attr">data-vf-js-form-floatlabel</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__label | vf-sr-only"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"text"</span>&gt;</span>Text<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__input"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Text"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__item"</span> <span class="hljs-attr">data-vf-js-form-floatlabel</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__label | vf-sr-only"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"password"</span>&gt;</span>Password<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__input"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Password"</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__item"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"password"</span>&gt;</span>Password<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__input"</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__item"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"email"</span>&gt;</span>Disabled email<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__input"</span> <span class="hljs-attr">disabled</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__label | vf-sr-only"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"email"</span>&gt;</span>Disabled email<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__input"</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"disabled"</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__item"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__label"</span>&gt;</span>Form Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__input"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__item"</span> <span class="hljs-attr">data-vf-js-form-floatlabel</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__label | vf-sr-only"</span>&gt;</span>Form Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__input"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"for item example"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__helper"</span>&gt;</span>Form helper text<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__item"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__label"</span>&gt;</span>Form Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__input"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__item"</span> <span class="hljs-attr">data-vf-js-form-floatlabel</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__label | vf-sr-only"</span>&gt;</span>Form Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__input"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"form label example"</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__item vf-form__item--radio"</span>&gt;</span>
@@ -304,9 +304,9 @@
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__item"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"vf-form__textarea"</span>&gt;</span>Write Some More details<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__textarea"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"vf-form__textarea"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"vf-form__textarea"</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">"5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__item"</span> <span class="hljs-attr">data-vf-js-form-floatlabel</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__label | vf-sr-only"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"vf-form__textarea"</span>&gt;</span>Write Some More details<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__textarea"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"vf-form__textarea"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"vf-form__textarea"</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">"5"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Write Some More details"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         </pre>
 
