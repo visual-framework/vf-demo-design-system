@@ -5,7 +5,7 @@
   <subtitle>This demonstrates how a design system can be built using the the Visual Framework component system.</subtitle>
   <link href="https://visual-framework.github.io/vf-eleventy/feed.xml" rel="self"/>
   <link href="https://visual-framework.github.io/vf-demo-design-system/"/>
-  <updated>2019-08-07T07:43:21.538+00:00</updated>
+  <updated>2019-08-09T09:10:07.260+00:00</updated>
   <id>https://visual-framework.github.io/vf-eleventy</id>
   <author>
     <name>Visual Framework system</name>
@@ -119,7 +119,7 @@ a good idea to reference it.&lt;/p&gt;
 &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;https://dev.assets.emblstatic.net/vf/develop/scripts/scripts.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;
         &lt;/pre&gt;&lt;/code&gt;
       &lt;/div&gt;
-    &lt;/div&gt; 
+    &lt;/div&gt;
   &lt;/section&gt;
 
 
@@ -141,7 +141,7 @@ a good idea to reference it.&lt;/p&gt;
   
 
   &lt;!-- This page was generated on Invalid DateTime --&gt;
-  &lt;script src=&quot;https://visual-framework.github.io/vf-demo-design-system/scripts/srcipts.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;https://visual-framework.github.io/vf-demo-design-system/scripts/scripts.js&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </content>
@@ -240,7 +240,7 @@ a good idea to reference it.&lt;/p&gt;
   <entry>
     <title>Colours</title>
     <link href="https://visual-framework.github.io/vf-eleventy/styles/colour/"/>
-    <updated>2019-08-07T07:43:21.538+00:00</updated>
+    <updated>2019-08-09T09:10:07.260+00:00</updated>
     <id>https://visual-framework.github.io/vf-eleventy/styles/colour/</id>
     <content type="html">&lt;p&gt;The set below shows all the colours for the EMBL brand. Other colours are not allowed. Any kind of colour coding in alignment with a service, group etc. is not allowed. Our main colour is white, in order to underline the bespoke usage of white space in our visual example.&lt;/p&gt;
 &lt;h2&gt;The colour set: Overview&lt;/h2&gt;
@@ -318,7 +318,7 @@ a good idea to reference it.&lt;/p&gt;
   <entry>
     <title>Spacing</title>
     <link href="https://visual-framework.github.io/vf-eleventy/styles/spacing/"/>
-    <updated>2019-08-07T07:43:21.538+00:00</updated>
+    <updated>2019-08-09T09:10:07.260+00:00</updated>
     <id>https://visual-framework.github.io/vf-eleventy/styles/spacing/</id>
     <content type="html">&lt;style&gt;
 .swatches {
