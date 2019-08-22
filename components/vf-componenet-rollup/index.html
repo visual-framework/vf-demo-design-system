@@ -72,17 +72,19 @@
     
 
     
-      <h1>vf-componenet-rollup Component</h1>
+      <h1>Componenet Rollup</h1>
 <p><a href="https://badge.fury.io/js/%40visual-framework%2Fvf-componenet-rollup"><img src="https://badge.fury.io/js/%40visual-framework%2Fvf-componenet-rollup.svg" alt="npm version"></a></p>
 <p>The <code>vf-componenet-rollup</code> compiles component Sass and JS into style.css and scripts.js files, retrospectively.</p>
 <h2>Install</h2>
-<p>This repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install <code>vf-componenet-rollup</code> with this command.</p>
-<pre><code>$ npm install --save @visual-framework/vf-componenet-rollup
+<p>You'll likely want to configure this component to include or exclude Sass and JS files, we suggest cloning it to your local <code>./src/components</code>.</p>
+<p>Get an tarball of this component with:</p>
+<pre><code>yarn pack @visual-framework/vf-componenet-rollup
+</code></pre>
+<p>However for very generic VF projects, this component is also distributed with [npm][npm]. After [installing npm][install-npm], you can install <code>vf-componenet-rollup</code> with this command.</p>
+<pre><code>$ yarn add --dev @visual-framework/vf-componenet-rollup
 </code></pre>
 <h2>Usage</h2>
-<p>The source files included are written in [Sass][sass] (<code>scss</code>) You can simply point your sass <code>include-path</code> at your <code>node_modules</code> directory and import it like this.</p>
-<pre><code>@import &quot;@visual-framework/vf-componenet-rollup/index.scss&quot;;
-</code></pre>
+<p>Unlike other components, you probably won't want to <code>@import</code> this. Instead the <code>vf-core</code> project will compile this into a style.css and scripts.js.</p>
 <p><em>Make sure you import any requirements along with the modules.</em></p>
 
     
@@ -132,7 +134,8 @@
     
       <div class="vf-grid">
         <section class="">
-          
+          <!-- The vf-component-rollup does not have an html output,
+     it is only used to collect css and js for a project. -->
 
         </section>
       </div>
@@ -145,7 +148,8 @@
 
 
         
-        <pre>
+        <pre><span class="hljs-comment">&lt;!-- The vf-component-rollup does not have an html output,
+     it is only used to collect css and js for a project. --&gt;</span>
         </pre>
 
         <h3>Assets</h3>
@@ -154,6 +158,8 @@
 <ul>
 <li><a href="components/vf-componenet-rollup/CHANGELOG.md">CHANGELOG.md</a></li>
 <li><a href="components/vf-componenet-rollup/index.scss">index.scss</a></li>
+<li><a href="components/vf-componenet-rollup/package.json">package.json</a></li>
+<li><a href="components/vf-componenet-rollup/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-componenet-rollup/scripts.js">scripts.js</a></li>
 </ul>
 </li>
