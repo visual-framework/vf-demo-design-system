@@ -14,9 +14,13 @@
 
       <div class="vf-global-header__inner">
 
-        <a href="https://visual-framework.github.io/vf-welcome/" class="vf-logo--responsive" title="Visual Framework 2.0">
-          <span class="vf-sr-only">Visual Framework 2.0</span>
-        </a>
+        <a href="https://visual-framework.github.io/vf-welcome/"
+
+class="vf-logo">
+  <img class="vf-logo__image" src="https://visual-framework.github.io/vf-demo-design-system/assets/vf-logo/assets/logo.svg" alt="">
+  <span class="vf-logo__text"></span>
+</a>
+
         
 
         <nav class="vf-navigation vf-navigation--global">
@@ -72,9 +76,11 @@
     
 
     
-      <p><a href="https://badge.fury.io/js/%40visual-framework%2Fvf-code-example"><img src="https://badge.fury.io/js/%40visual-framework%2Fvf-code-example.svg" alt="npm version"></a></p>
+      <h1>Code Example Component</h1>
+<p><a href="https://badge.fury.io/js/%40visual-framework%2Fvf-code-example"><img src="https://badge.fury.io/js/%40visual-framework%2Fvf-code-example.svg" alt="npm version"></a></p>
 <h2>About</h2>
-<h2>Installation and Implementation</h2>
+<p>If you're using the VF Nunjucks environment, you can utilise the <code>{% codeblock 'html' -%}{% endcodeblock %}</code> tag to assist generating pre-formatted content.</p>
+<h2>Install</h2>
 <p>This component is distributed with npm. After <a href="https://www.npmjs.com/get-npm">installing npm</a>, you can install the <code>vf-code-example</code> with this command.</p>
 <pre><code>$ yarn add --dev @visual-framework/vf-code-example
 </code></pre>
@@ -130,11 +136,15 @@
     
       <div class="vf-grid">
         <section class="">
-          <code class="vf-code-example">
-  <pre class="vf-code-example__pre">
-    &lt;your special code here /&gt;
-  </pre>
-</code>
+          <pre class="vf-code-example__pre"><code class="Code Code--lang-html vf-code-example"><span class="hljs-tag">&lt;<span class="hljs-name">pre</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-code-example__pre"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-code-example"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">your</span> <span class="hljs-attr">special</span> <span class="hljs-attr">code</span> <span class="hljs-attr">here</span>&gt;</span>
+Maybe some html tags?
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://aurl"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://aurl"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+</code></pre>
 
         </section>
       </div>
@@ -147,11 +157,15 @@
 
 
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-code-example"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">pre</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-code-example__pre"</span>&gt;</span>
-    &amp;lt;your special code here /&amp;gt;
-  <span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">pre</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-code-example__pre"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"Code Code--lang-html vf-code-example"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-tag"</span>&gt;</span>&amp;lt;<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-name"</span>&gt;</span>pre<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-attr"</span>&gt;</span>class<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>=<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-string"</span>&gt;</span>"vf-code-example__pre"<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>&amp;gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-tag"</span>&gt;</span>&amp;lt;<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-name"</span>&gt;</span>code<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-attr"</span>&gt;</span>class<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>=<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-string"</span>&gt;</span>"vf-code-example"<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>&amp;gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-tag"</span>&gt;</span>&amp;lt;<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-name"</span>&gt;</span>your<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-attr"</span>&gt;</span>special<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-attr"</span>&gt;</span>code<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-attr"</span>&gt;</span>here<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>&amp;gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+Maybe some html tags?
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-tag"</span>&gt;</span>&amp;lt;<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-name"</span>&gt;</span>link<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-attr"</span>&gt;</span>rel<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>=<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-string"</span>&gt;</span>"stylesheet"<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-attr"</span>&gt;</span>href<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>=<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-string"</span>&gt;</span>"https://aurl"<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>&amp;gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-tag"</span>&gt;</span>&amp;lt;<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-name"</span>&gt;</span>script<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-attr"</span>&gt;</span>src<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>=<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-string"</span>&gt;</span>"https://aurl"<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>&amp;gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-tag"</span>&gt;</span>&amp;lt;/<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-name"</span>&gt;</span>script<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>&amp;gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-tag"</span>&gt;</span>&amp;lt;/<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-name"</span>&gt;</span>code<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>&amp;gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-tag"</span>&gt;</span>&amp;lt;/<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hljs-name"</span>&gt;</span>pre<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>&amp;gt;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
         </pre>
 
         <h3>Assets</h3>

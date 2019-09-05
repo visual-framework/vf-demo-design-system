@@ -14,9 +14,13 @@
 
       <div class="vf-global-header__inner">
 
-        <a href="https://visual-framework.github.io/vf-welcome/" class="vf-logo--responsive" title="Visual Framework 2.0">
-          <span class="vf-sr-only">Visual Framework 2.0</span>
-        </a>
+        <a href="https://visual-framework.github.io/vf-welcome/"
+
+class="vf-logo">
+  <img class="vf-logo__image" src="https://visual-framework.github.io/vf-demo-design-system/assets/vf-logo/assets/logo.svg" alt="">
+  <span class="vf-logo__text"></span>
+</a>
+
         
 
         <nav class="vf-navigation vf-navigation--global">
@@ -72,11 +76,12 @@
     
 
     
-      <p><a href="https://badge.fury.io/js/%40visual-framework%2Fembl-grid"><img src="https://badge.fury.io/js/%40visual-framework%2Fembl-grid.svg" alt="npm version"></a></p>
+      <h1>EMBL Grid Component</h1>
+<p><a href="https://badge.fury.io/js/%40visual-framework%2Fembl-grid"><img src="https://badge.fury.io/js/%40visual-framework%2Fembl-grid.svg" alt="npm version"></a></p>
 <h2>About</h2>
 <p>The EMBL Layout System is applied to the Container components. It is an asymmetrical grid of four columns. There are 3 layout options.</p>
 <p>All EMBL Layouts are single column until the viewport is 768px or more. EMBL Layouts have two classes. One to define the grid area and where it is in the Page Grid another to determine what columns there are available.</p>
-<h2>Installation and Implementation</h2>
+<h2>Install</h2>
 <p>This component is distributed with npm. After <a href="https://www.npmjs.com/get-npm">installing npm</a>, you can install the <code>embl-grid</code> with this command.</p>
 <pre><code>$ yarn add --dev @visual-framework/embl-grid
 </code></pre>
@@ -85,7 +90,7 @@
 </code></pre>
 <p><em>Make sure you import any requirements along with the modules.</em></p>
 <h2>Usage</h2>
-<p>The CSS classnames available should be used on their own on a Container or added to a Containers exisitng classname declaration in the HTML.</p>
+<p>The CSS classnames available should be used on their own on a Container or added to a Containers existing classname declaration in the HTML.</p>
 <p>A EMBL Layout should only be applied to Containers. For Blocks you should use the [Visual Framework Grid System]({{ '/docs/grids/grid-system' | path }}).</p>
 <p>If the EMBL Layout System is being added to a Container that has a classname we separate the classes in the HTML with a <code>|</code>.</p>
 

@@ -14,9 +14,13 @@
 
       <div class="vf-global-header__inner">
 
-        <a href="https://visual-framework.github.io/vf-welcome/" class="vf-logo--responsive" title="Visual Framework 2.0">
-          <span class="vf-sr-only">Visual Framework 2.0</span>
-        </a>
+        <a href="https://visual-framework.github.io/vf-welcome/"
+
+class="vf-logo">
+  <img class="vf-logo__image" src="https://visual-framework.github.io/vf-demo-design-system/assets/vf-logo/assets/logo.svg" alt="">
+  <span class="vf-logo__text"></span>
+</a>
+
         
 
         <nav class="vf-navigation vf-navigation--global">
@@ -72,18 +76,11 @@
     
 
     
-      <p><a href="https://badge.fury.io/js/%40visual-framework%2Fvf-badge"><img src="https://badge.fury.io/js/%40visual-framework%2Fvf-badge.svg" alt="npm version"></a></p>
-<p>{% render &quot;@vf-badge&quot;, {
-href: &quot;https://www.kens-home.com&quot;,
-id: &quot;harsh&quot;,
-override_class: &quot;override&quot;,
-style: [&quot;outline&quot;, &quot;pill&quot;],
-text: &quot;alpha&quot;,
-theme: &quot;primary&quot;
-} %}</p>
+      <h1>Badge Component</h1>
+<p><a href="https://badge.fury.io/js/%40visual-framework%2Fvf-badge"><img src="https://badge.fury.io/js/%40visual-framework%2Fvf-badge.svg" alt="npm version"></a></p>
 <h2>About</h2>
 <p>The <code>vf-badge</code> component is used to label a page, part of a page, or a component. The <code>vf-badge</code> component can also be a link using <code>&lt;a class=&quot;vf-badge&quot; href=&quot;&quot;&gt;badge title&lt;/a&gt;</code>.</p>
-<h2>Installation and Implementation</h2>
+<h2>Install</h2>
 <p>This component is distributed with npm. After <a href="https://www.npmjs.com/get-npm">installing npm</a>, you can install the <code>vf-badge</code> with this command.</p>
 <pre><code>$ yarn add --dev @visual-framework/vf-badge
 </code></pre>

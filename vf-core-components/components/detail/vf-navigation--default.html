@@ -247,7 +247,7 @@
 All notable changes to this project will be documented in this file.
 See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-link">https://conventionalcommits.org</span>) for commit guidelines.
 
-<span class="hljs-section"># 1.0.0-alpha.4 (2019-08-22)</span>
+<span class="hljs-section"># 1.0.0-alpha.5 (2019-09-05)</span>
 
 <span class="hljs-strong">**Note:**</span> Version bump only for package @visual-framework/vf-navigation
 
@@ -348,7 +348,7 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
                             
                             <code class="Code Code--lang-JSON FileBrowser-code">
                                 <pre>{
-  <span class="hljs-attr">"version"</span>: <span class="hljs-string">"1.0.0-alpha.4"</span>,
+  <span class="hljs-attr">"version"</span>: <span class="hljs-string">"1.0.0-alpha.5"</span>,
   <span class="hljs-attr">"name"</span>: <span class="hljs-string">"@visual-framework/vf-navigation"</span>,
   <span class="hljs-attr">"description"</span>: <span class="hljs-string">"vf-navigation component"</span>,
   <span class="hljs-attr">"homepage"</span>: <span class="hljs-string">"https://visual-framework.github.io/vf-core/"</span>,
@@ -368,7 +368,7 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
     <span class="hljs-string">"fractal"</span>,
     <span class="hljs-string">"component"</span>
   ],
-  <span class="hljs-attr">"gitHead"</span>: <span class="hljs-string">"eebdc5903c527fef28a321e670b1320054eb182e"</span>
+  <span class="hljs-attr">"gitHead"</span>: <span class="hljs-string">"f5967acecacdadcd78ade0fbaeecfbec0977b1db"</span>
 }
 </pre>
                             </code>
@@ -401,9 +401,9 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
                             <code class="Code Code--lang-SCSS FileBrowser-code">
                                 <pre><span class="hljs-variable">$componentInfo</span>: (
              name: <span class="hljs-string">"@visual-framework/vf-navigation"</span>,
-             version: <span class="hljs-string">"1.0.0-alpha.4"</span>,
+             version: <span class="hljs-string">"1.0.0-alpha.5"</span>,
              location: <span class="hljs-string">"components/vf-core-"</span>,
-             vfCoreVersion: <span class="hljs-string">"2.0.0-alpha.1"</span>
+             vfCoreVersion: <span class="hljs-string">"2.0.0-alpha.2"</span>
           );</pre>
                             </code>
                             
@@ -589,7 +589,10 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
 <span class="hljs-selector-class">.vf-navigation--main</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#54585a</span>;
   <span class="hljs-attribute">grid-column</span>: main;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">76.5em</span>;
   <span class="hljs-attribute">position</span>: relative;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 }
 
 <span class="hljs-selector-class">.vf-navigation--main</span><span class="hljs-selector-pseudo">::before</span> {
@@ -617,6 +620,7 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
     <span class="hljs-attribute">display</span>: -ms-flexbox;
     <span class="hljs-attribute">display</span>: flex;
     <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">margin-left</span>: -<span class="hljs-number">1rem</span>;
   }
 }
 
@@ -709,8 +713,12 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
 
 <span class="hljs-selector-class">.vf-navigation--additional</span><span class="hljs-selector-pseudo">::before</span> {
   <span class="hljs-attribute">background-color</span>: inherit;
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">0px</span> solid <span class="hljs-number">#707372</span>;
+  <span class="hljs-attribute">border-width</span>: <span class="hljs-number">1px</span> <span class="hljs-number">0</span> <span class="hljs-number">1px</span> <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">-webkit-box-sizing</span>: border-box;
+          <span class="hljs-attribute">box-sizing</span>: border-box;
   <span class="hljs-attribute">content</span>: <span class="hljs-string">''</span>;
-  <span class="hljs-attribute">height</span>: <span class="hljs-number">35px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-built_in">calc</span>(100% + 1px);
   <span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
   <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> -<span class="hljs-number">50vw</span>;
   <span class="hljs-attribute">position</span>: absolute;
@@ -737,6 +745,7 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
 <span class="hljs-selector-class">.vf-navigation--additional</span> <span class="hljs-selector-class">.vf-navigation__link</span> {
   <span class="hljs-attribute">border-bottom</span>: none;
   <span class="hljs-attribute">text-decoration</span>: underline;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#fafafa</span>;
   <span class="hljs-attribute">text-decoration</span>: none;
 }
 
@@ -767,7 +776,7 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">6.6 KB</span>
+                    <span class="Meta-value">6.8 KB</span>
                 </li>
             </ul>
         </div>
@@ -951,9 +960,10 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
     <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-36eb71dd7d5af8668790d67beabd1d96-panel-notes">
     <div class="Prose Prose--condensed">
         
-        <p><a href="https://badge.fury.io/js/%40visual-framework%2Fvf-navigation"><img src="https://badge.fury.io/js/%40visual-framework%2Fvf-navigation.svg" alt="npm version"></a></p>
+        <h1 id="navigation-component">Navigation Component</h1>
+<p><a href="https://badge.fury.io/js/%40visual-framework%2Fvf-navigation"><img src="https://badge.fury.io/js/%40visual-framework%2Fvf-navigation.svg" alt="npm version"></a></p>
 <h2 id="about">About</h2>
-<h2 id="installation-and-implementation">Installation and Implementation</h2>
+<h2 id="install">Install</h2>
 <p>This component is distributed with npm. After <a href="https://www.npmjs.com/get-npm">installing npm</a>, you can install the <code>vf-navigation</code> with this command.</p>
 <pre><code>$ yarn <span class="hljs-keyword">add</span><span class="bash"> --dev @visual-framework/vf-navigation</span></code></pre><p>The source files included are written in <a href="http://sass-lang.com">Sass</a>(<code>scss</code>). You can point your Sass <code>include-path</code> at your <code>node_modules</code> directory and import it like this.</p>
 <pre><code>@<span class="hljs-keyword">import</span> <span class="hljs-string">"@visual-framework/vf-navigation/index.scss"</span>;</code></pre><p><em>Make sure you import any requirements along with the modules.</em></p>
@@ -3655,8 +3665,8 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="vf-logo--responsive.html" data-pjax>
-                <span>Responsive</span>
+            <a class="Tree-entityLink" href="vf-logo--hidden-text.html" data-pjax>
+                <span>Hidden Text</span>
                 
 
 <div class="Status Status--unlabelled">

@@ -5,7 +5,7 @@
   <subtitle>This demonstrates how a design system can be built using the the Visual Framework component system.</subtitle>
   <link href="https://visual-framework.github.io/vf-eleventy/feed.xml" rel="self"/>
   <link href="https://visual-framework.github.io/vf-demo-design-system/"/>
-  <updated>2019-08-22T13:59:40.047+00:00</updated>
+  <updated>2019-09-05T11:54:43.089+00:00</updated>
   <id>https://visual-framework.github.io/vf-eleventy</id>
   <author>
     <name>Visual Framework system</name>
@@ -78,8 +78,9 @@ a good idea to reference it.&lt;/p&gt;
 
   &lt;div class=&quot;vf-global-header__inner&quot;&gt;
 
-&lt;a href=&quot;http://www.embl.de/&quot; class=&quot;vf-logo--responsive&quot;&gt;
-  &lt;span class=&quot;vf-sr-only&quot;&gt;Visual Framework 2.0&lt;/span&gt;
+&lt;a href=&quot;http://www.embl.de/&quot; class=&quot;vf-logo&quot;&gt;
+  &lt;img class=&quot;vf-logo__image&quot; src=&quot;https://visual-framework.github.io/vf-eleventy/assets/vf-logo/assets/logo.svg&quot; alt=&quot;Visual Framework 2.0&quot;&gt;
+  &lt;span class=&quot;vf-logo__text&quot;&gt;Visual Framework 2.0&lt;/span&gt;
 &lt;/a&gt;
 
     &lt;p class=&quot;vf-global-header__site-name&quot;&gt;Visual Framework for Life Science websites&lt;/p&gt;
@@ -115,9 +116,9 @@ a good idea to reference it.&lt;/p&gt;
           Don&#39;t need to customise the EMBL Design Language for Websites?
         &lt;/h3&gt;
         &lt;p class=&quot;vf-banner__text&quot;&gt;Here&#39;s the core CSS and JS you need. Don&#39;t forget to &lt;a href=&quot;http://dev.beta.embl.org/guidelines/visual-framework/dev-docs/&quot; class=&quot;vf-link&quot;&gt;consult the component library&lt;/a&gt;.&lt;/p&gt;
-        &lt;code class=&quot;Code Code--lang-html vf-code-example&quot;&gt;&lt;pre class=&quot;vf-code-example__pre&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;rel&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;https://dev.assets.emblstatic.net/vf/develop/css/styles.css&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+        &lt;pre class=&quot;vf-code-example__pre&quot;&gt;&lt;code class=&quot;Code Code--lang-html vf-code-example&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;rel&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;https://dev.assets.emblstatic.net/vf/develop/css/styles.css&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;https://dev.assets.emblstatic.net/vf/develop/scripts/scripts.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;
-        &lt;/pre&gt;&lt;/code&gt;
+        &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/section&gt;
@@ -240,7 +241,7 @@ a good idea to reference it.&lt;/p&gt;
   <entry>
     <title>Colours</title>
     <link href="https://visual-framework.github.io/vf-eleventy/styles/colour/"/>
-    <updated>2019-08-22T13:59:40.047+00:00</updated>
+    <updated>2019-09-05T11:54:43.089+00:00</updated>
     <id>https://visual-framework.github.io/vf-eleventy/styles/colour/</id>
     <content type="html">&lt;p&gt;The set below shows all the colours for the EMBL brand. Other colours are not allowed. Any kind of colour coding in alignment with a service, group etc. is not allowed. Our main colour is white, in order to underline the bespoke usage of white space in our visual example.&lt;/p&gt;
 &lt;h2&gt;The colour set: Overview&lt;/h2&gt;
@@ -318,7 +319,7 @@ a good idea to reference it.&lt;/p&gt;
   <entry>
     <title>Spacing</title>
     <link href="https://visual-framework.github.io/vf-eleventy/styles/spacing/"/>
-    <updated>2019-08-22T13:59:40.047+00:00</updated>
+    <updated>2019-09-05T11:54:43.089+00:00</updated>
     <id>https://visual-framework.github.io/vf-eleventy/styles/spacing/</id>
     <content type="html">&lt;style&gt;
 .swatches {

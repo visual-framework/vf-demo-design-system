@@ -14,9 +14,13 @@
 
       <div class="vf-global-header__inner">
 
-        <a href="https://visual-framework.github.io/vf-welcome/" class="vf-logo--responsive" title="Visual Framework 2.0">
-          <span class="vf-sr-only">Visual Framework 2.0</span>
-        </a>
+        <a href="https://visual-framework.github.io/vf-welcome/"
+
+class="vf-logo">
+  <img class="vf-logo__image" src="https://visual-framework.github.io/vf-demo-design-system/assets/vf-logo/assets/logo.svg" alt="">
+  <span class="vf-logo__text"></span>
+</a>
+
         
 
         <nav class="vf-navigation vf-navigation--global">
@@ -72,7 +76,8 @@
     
 
     
-      <p><a href="https://badge.fury.io/js/%40visual-framework%2Fvf-content"><img src="https://badge.fury.io/js/%40visual-framework%2Fvf-content.svg" alt="npm version"></a></p>
+      <h1>Content Area Component</h1>
+<p><a href="https://badge.fury.io/js/%40visual-framework%2Fvf-content"><img src="https://badge.fury.io/js/%40visual-framework%2Fvf-content.svg" alt="npm version"></a></p>
 <h2>About</h2>
 <p>Use this container to get simple support for narrative content where it is not
 practical to assign classes, such as Markdown or WYSIWYG text.</p>
@@ -90,7 +95,7 @@ html elements. Some components may also add specific support for <code>.vf-conte
 {% endmarkdown %}</li>
 </ul>
 </div>
-<h2>Installation and Implementation</h2>
+<h2>Install</h2>
 <p>This component is distributed with npm. After <a href="https://www.npmjs.com/get-npm">installing npm</a>, you can install the <code>vf-content</code> with this command.</p>
 <pre><code>$ yarn add --dev @visual-framework/vf-content
 </code></pre>
@@ -126,14 +131,14 @@ html elements. Some components may also add specific support for <code>.vf-conte
           Variant: Default
            <span class="vf-badge vf-badge--pill">beta</span> 
 
-           <span class="vf-badge vf-badge--pill">container</span> 
+           <span class="vf-badge vf-badge--pill">utility</span> 
         </h3>
 
         <h4>Nunjucks demo</h4>
 
 
         <pre><code>{% render '@vf-content--default', {
-  &quot;component-type&quot;: &quot;container&quot;
+  &quot;component-type&quot;: &quot;utility&quot;
 } %}
         </code></pre>
 

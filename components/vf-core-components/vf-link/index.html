@@ -14,9 +14,13 @@
 
       <div class="vf-global-header__inner">
 
-        <a href="https://visual-framework.github.io/vf-welcome/" class="vf-logo--responsive" title="Visual Framework 2.0">
-          <span class="vf-sr-only">Visual Framework 2.0</span>
-        </a>
+        <a href="https://visual-framework.github.io/vf-welcome/"
+
+class="vf-logo">
+  <img class="vf-logo__image" src="https://visual-framework.github.io/vf-demo-design-system/assets/vf-logo/assets/logo.svg" alt="">
+  <span class="vf-logo__text"></span>
+</a>
+
         
 
         <nav class="vf-navigation vf-navigation--global">
@@ -72,100 +76,10 @@
     
 
     
-      <p><a href="https://badge.fury.io/js/%40visual-framework%2Fvf-link"><img src="https://badge.fury.io/js/%40visual-framework%2Fvf-link.svg" alt="npm version"></a></p>
+      <h1>Link Component</h1>
+<p><a href="https://badge.fury.io/js/%40visual-framework%2Fvf-link"><img src="https://badge.fury.io/js/%40visual-framework%2Fvf-link.svg" alt="npm version"></a></p>
 <h2>About</h2>
-<h2>Demonstration</h2>
-<p>{% render &quot;@vf-link&quot;, {
-href: &quot;#&quot;,
-id: &quot;harsh&quot;,
-text: &quot;A default link&quot;
-} %}
-<br/>
-{% render &quot;@vf-link&quot;, {
-href: &quot;#&quot;,
-id: &quot;harsh&quot;,
-style: [&quot;hover&quot;],
-text: &quot;A default:hover link&quot;
-} %}
-<br/>
-{% render &quot;@vf-link&quot;, {
-href: &quot;#&quot;,
-id: &quot;harsh&quot;,
-style: [&quot;visited&quot;],
-text: &quot;A default:visited link&quot;
-} %}
-<br/>
-{% render &quot;@vf-link&quot;, {
-href: &quot;#&quot;,
-id: &quot;harsh&quot;,
-style: [&quot;disable&quot;],
-text: &quot;A disabled default link&quot;
-} %}</p>
-<h3>Primary links</h3>
-<p>{% render &quot;@vf-link&quot;, {
-href: &quot;#&quot;,
-id: &quot;harsh&quot;,
-theme: &quot;primary&quot;,
-text: &quot;A primary link&quot;
-} %}
-<br/>
-{% render &quot;@vf-link&quot;, {
-href: &quot;#&quot;,
-id: &quot;harsh&quot;,
-theme: &quot;primary&quot;,
-style: [&quot;hover&quot;],
-text: &quot;A primary:hover link&quot;
-} %}
-<br/>
-{% render &quot;@vf-link&quot;, {
-href: &quot;#&quot;,
-id: &quot;harsh&quot;,
-theme: &quot;primary&quot;,
-style: [&quot;visited&quot;],
-target: &quot;blank&quot;,
-text: &quot;A primary:visited link&quot;
-} %}
-<br/>
-{% render &quot;@vf-link&quot;, {
-href: &quot;#&quot;,
-id: &quot;harsh&quot;,
-theme: &quot;primary&quot;,
-style: [&quot;disabled&quot;],
-text: &quot;A disabled primary link&quot;
-} %}</p>
-<h3>Secondary links</h3>
-<p>{% render &quot;@vf-link&quot;, {
-href: &quot;#&quot;,
-id: &quot;harsh&quot;,
-theme: &quot;secondary&quot;,
-text: &quot;A secondary link&quot;
-} %}
-<br/>
-{% render &quot;@vf-link&quot;, {
-href: &quot;#&quot;,
-id: &quot;harsh&quot;,
-theme: &quot;secondary&quot;,
-style: [&quot;hover&quot;],
-text: &quot;A secondary:hover link&quot;
-} %}
-<br/>
-{% render &quot;@vf-link&quot;, {
-href: &quot;#&quot;,
-id: &quot;harsh&quot;,
-theme: &quot;secondary&quot;,
-style: [&quot;visited&quot;],
-target: &quot;blank&quot;,
-text: &quot;A secondary:visited link&quot;
-} %}
-<br/>
-{% render &quot;@vf-link&quot;, {
-href: &quot;#&quot;,
-id: &quot;harsh&quot;,
-theme: &quot;secondary&quot;,
-style: [&quot;disabled&quot;],
-text: &quot;A disabled secondary link&quot;
-} %}</p>
-<h2>Installation and Implementation</h2>
+<h2>Install</h2>
 <p>This component is distributed with npm. After <a href="https://www.npmjs.com/get-npm">installing npm</a>, you can install the <code>vf-link</code> with this command.</p>
 <pre><code>$ yarn add --dev @visual-framework/vf-link
 </code></pre>
