@@ -22,7 +22,7 @@
   {
     "url": "/",
     "title": "",
-    "index": " Design system boilerplate alphaThis demonstrates how design can built using Visual Framework component system Use this componentbased deliver document your system Still need install Follow guide Quickstart npm init @visualframework/vfeleventy yournewsitename vfdemodesignsystem This will new folder named yournewsitenameThen follow onscreen prompts links below develop configureLonger install above too easy have questions Read guide sections Customising systemNow that &#39;ve installed vfdemodesignsystem learn works adapt needs Brand guidelinesHigh level guidance brand StylesColours illustrations images type: lowerlevel styling Component overviewThese components are available Patterns boilerplatesMore than components should things"
+    "index": " Design system boilerplate alphaThis demonstrates how design can built using Visual Framework component system Use this componentbased deliver document your system Still need install Follow guide Quickstart yarn create @visualframework/vfeleventy yournewsitename vfdemodesignsystem This will new folder named yournewsitenameThen follow onscreen prompts links below develop configureLonger install above too easy have questions Read guide sections Customising systemNow that &#39;ve installed vfdemodesignsystem learn works adapt needs Brand guidelinesHigh level guidance brand StylesColours illustrations images type: lowerlevel styling Component overviewThese components are available Patterns boilerplatesMore than components should things"
   },
   {
     "url": "/patterns/boilerplate-generic/",
