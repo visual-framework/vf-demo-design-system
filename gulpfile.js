@@ -33,9 +33,6 @@ const componentPath = path.resolve('.', global.vfComponentPath).replace(/\\/g, '
 const componentDirectories = config.vfConfig.vfComponentDirectories || ['vf-core-components'];
 const buildDestionation = path.resolve('.', global.vfBuildDestination).replace(/\\/g, '/');
 
-// Some Gulp tasks live in their own files, for the sake of clarity.
-require('require-dir')('./gulp-tasks');
-
 // HACK: in vf-core@beta.2 a bug was introduced where it would erronously try to generate a version from the component template, this works around it by renaming the file
 // this can be removed once beta.3 is released
 
@@ -64,8 +61,6 @@ process.argv.push('--config=eleventy.js');
 gulp.task('watch', function() {
   gulp.watch(['./src/components/**/*.scss'], gulp.parallel('vf-css'));
   gulp.watch(['./src/components/**/*.js'], gulp.parallel('vf-scripts'));
-  gulp.watch(['./src/scss/**/*.scss','./src/scss/*.scss'], gulp.parallel('css'));
-  gulp.watch(['./src/js/**/*.js','./src/js/*.js'], gulp.parallel('js'));
 });
 
 gulp.task('elventy-set-to-serve', function(done) {
@@ -105,7 +100,7 @@ let fractalBuildMode = 'build';
 gulp.task('build', gulp.series(
   'component-bug-hack',
   'vf-clean',
-  gulp.parallel('css','js','vf-css','vf-scripts','vf-component-assets'),
+  gulp.parallel('vf-css','vf-scripts','vf-component-assets'),
   'elventy-set-to-build',
   'eleventy'
 ));
@@ -114,7 +109,7 @@ gulp.task('build', gulp.series(
 gulp.task('dev', gulp.series(
   'component-bug-hack',
   'vf-clean',
-  gulp.parallel('css','js','vf-css','vf-scripts','vf-component-assets'),
+  gulp.parallel('vf-css','vf-scripts','vf-component-assets'),
   'elventy-set-to-serve',
   'eleventy',
   'watch'
