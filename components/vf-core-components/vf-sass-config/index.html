@@ -76,38 +76,185 @@ class="vf-logo">
     
 
     
-      <h1>Sass config functions</h1>
+      <h1>Sass Config and templates</h1>
+<p><a href="https://badge.fury.io/js/%40visual-framework%2Fvf-sass-config"><img src="https://badge.fury.io/js/%40visual-framework%2Fvf-sass-config.svg" alt="npm version"></a></p>
+<p>Mixins, functions and variables to power all <code>vf-core</code> components. If you're using a Visual Framework component it's a near-certainty that you'll need this component.</p>
+<p>Note: these utilise <code>vf-design-tokens</code></p>
+<h2>Functions</h2>
+<h3>set-color.scss</h3>
+<p><code>set-color($color-name)</code></p>
+<h3>map-deep-get.scss</h3>
+<p><code>map-deep-get($map, $keys)</code></p>
+<h3>set-layer.scss</h3>
+<p><code>set-layer($layer)</code></p>
+<h3>string-replace.scss</h3>
+<p><code>str-replace($name, $number)</code></p>
+<p>Slice off the first amount($number) of characters from the $name value passed. Primarily used to replace the start of variables for the utility class generation.</p>
+<h3>vf-functions.scss</h3>
+<p>Rollup of all functions.</p>
+<h2>Mixins</h2>
+<h3>blockquote.scss</h3>
+<p>Reusable styling for html blockquote elements.</p>
+<p><code>@include blockquote;</code></p>
+<h3>button.scss</h3>
+<p>Reusable styling for button elements</p>
+<p><code>@include vf-button;</code></p>
+<h3>divider.scss</h3>
+<p>Reusable styling for divider elements and styling</p>
+<p><code>@include vf-divider;</code></p>
+<h3>figure.scss</h3>
+<p>Reusable styling for figures with optional caption styling</p>
+<p><code>@include figure($has-caption: true);</code></p>
+<h3>helpers.scss</h3>
+<p>Nothing, yet.</p>
+<h3>links.scss</h3>
+<p>Styling for links.</p>
+<p><code>@include inline-link( $vf-link--color: $vf-link--color, $vf-link--hover-color: $vf-link--hover-color, $vf-link--visited-color: $vf-link--visited-color, $vf-include-normalisations: $vf-include-normalisations);</code></p>
+<p><code>@include button-link( $vf-link--color: $vf-link--color, $vf-link--hover-color: $vf-link--hover-color, $vf-link--visited-color: $vf-link--visited-color);</code></p>
+<p><code>button-link--ghost( $vf-link--color: $vf-link--color, $vf-link--hover-color: $vf-link--hover-color, $vf-link--visited-color: $vf-link--visited-color);</code></p>
+<h3>lists.scss</h3>
+<p>Styling for list types</p>
+<p><code>@include($classname: optional-classname-to-usm, $type: null, unordered, ordered or inline);</code></p>
+<h3>margin.scss</h3>
+<p>Margin, recommended to use with sizing maps</p>
+<p><code>@include margin--block(bottom, map-get($vf-spacing-map, vf-spacing--lg));</code></p>
+<ul>
+<li><code>margin-block</code>: specify one value for bottom and top, top or bottom</li>
+<li><code>margin-all</code>: specify one value for left or right, left or right</li>
+<li><code>margin</code>: specify all or a value for each</li>
+</ul>
+<h3>padding.scss</h3>
+<p>Padding, recommended to use with sizing maps</p>
+<p><code>@include padding--block(bottom, map-get($vf-spacing-map, vf-spacing--lg));</code></p>
+<ul>
+<li><code>padding-block</code>: specify one value for bottom and top, top or bottom</li>
+<li><code>padding-all</code>: specify one value for left or right, left or right</li>
+<li><code>padding</code>: specify all or a value for each</li>
+</ul>
+<h3>text-color.scss</h3>
+<p><strong>Currently not used</strong>. Intelligently pick if white or black should be used as a contrasting colour</p>
+<h3>typography.scss</h3>
+<p>Generate correct font information when included into an element.
+Recommended to use with typography and sizing maps</p>
+<p><code>@include set-type(text-body--3, $global-font-family, $custom-margin-bottom: vf-spacing--lg)</code></p>
+<h3>utility--color.scss</h3>
+<p>Generate lists of values in design token maps. Intended for use by the <code>vf-utility-classes</code> component</p>
+<h3>utility--slide.scss</h3>
+<p>A non-jitter causing way to slide elements up/down on hover.</p>
+<p><code>@include vf-slide-on-hover($shift-distance, $direction:up);</code></p>
+<h3>utility--spacing.scss</h3>
+<p>Generate lists of values in design token maps. Intended for use by the <code>vf-utility-classes</code> component</p>
+<h3>utility--typography.scss</h3>
+<p>Generate lists of values in design token maps. Intended for use by the <code>vf-utility-classes</code> component</p>
+<h3>vf-mixins.scss</h3>
+<p>Rollup of all mixins.</p>
+<h3>vf-utility-mixins.scss</h3>
+<p>Rollup of all utility mixins.</p>
+<h3>vf-disabled.scss</h3>
+<p>For disable link elements, actions
+@include vf-disabled($vf-link--disabled-color);</p>
+<h2>Variables</h2>
+<h3>vf-global-custom-properties.scss</h3>
+<p>Native CSS properties, currently limited to document spacing.</p>
+<h3>vf-global-variables.scss</h3>
+<p>Global Sass variable defaults for the high-level page look of typography, page width,
+deprecated component text, if normalisations should be included.</p>
+<h3>vf-variables.scss</h3>
+<p>Rollup of global Sass variables.</p>
+<h2>Install</h2>
+<p>This repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install <code>vf-sass-config</code> with this command.</p>
+<pre><code>$ yarn add --dev @visual-framework/vf-sass-config
+</code></pre>
+<h2>Usage</h2>
+<p>The source files included are written in [Sass][sass] (<code>scss</code>) You can simply point your sass <code>include-path</code> at your <code>node_modules</code> directory and import it like this.</p>
+<pre><code>@import 'vf-global-variables';
+@import 'vf-variables';
+@import 'vf-functions';
+@import 'vf-mixins';
+</code></pre>
+<p><em>Make sure you import any requirements along with the modules.</em></p>
 
     
 
     <hr/>
-    <small><p>File system location: <code>components/</code></p>
+    <small><p>File system location: <code>components/vf-sass-config</code></p>
 </small>
 
-
-    
-
-       <h1 class="vf-text vf-text-heading--display vf-text--invert">There are sub-components</h1> 
-
-      <ul class="vf-list vf-list--unordered">
-          
-            <li class="vf-list__item"><a class="vf-link" href="functions">Functions</a> <code> functions </code></li>
-          
-        
-          
-            <li class="vf-list__item"><a class="vf-link" href="mixins">Mixins</a> <code> mixins </code></li>
-          
-        
-          
-            <li class="vf-list__item"><a class="vf-link" href="variables">Variables</a> <code> variables </code></li>
-          
-        </ul>
 
     
   </section>
 </div>
 
 
+  <div class="vf-grid">
+    <section>
+       <h1 class="vf-text vf-text-heading--display vf-text--invert">Variants</h1> 
+    </section>
+  </div>
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Default
+           <span class="vf-badge vf-badge--pill">beta</span> 
+
+           <span class="vf-badge vf-badge--pill">utility</span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-sass-config--default', {
+  &quot;component-type&quot;: &quot;utility&quot;
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+          <!-- no template -->
+
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre><span class="hljs-comment">&lt;!-- no template --&gt;</span>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-sass-config/vf-sass-config.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-sass-config/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-sass-config/index.scss">index.scss</a></li>
+<li><a href="components/vf-core-components/vf-sass-config/package.json">package.json</a></li>
+<li><a href="components/vf-core-components/vf-sass-config/package.variables.scss">package.variables.scss</a></li>
+<li><a href="components/vf-core-components/vf-sass-config/vf-sass-config.css">vf-sass-config.css</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
 
 <div class="vf-grid">
   <section>

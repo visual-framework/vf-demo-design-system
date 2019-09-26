@@ -189,6 +189,85 @@ class="vf-logo">
         <hr class="vf-divider" />
 
         <h3>
+          Variant: Responsive
+           <span class="vf-badge vf-badge--pill">alhpa</span> 
+
+           <span class="vf-badge vf-badge--pill">element</span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-logo--responsive', {
+  &quot;component-type&quot;: &quot;element&quot;,
+  &quot;href&quot;: &quot;http://www.embl.de&quot;,
+  &quot;logo_text&quot;: &quot;Visual Framework 2.0&quot;,
+  &quot;image&quot;: &quot;../../assets/vf-logo/assets/logo.svg&quot;,
+  &quot;hidden_text&quot;: false,
+  &quot;deprecated_text&quot;: &quot;&#39;@vf-logo--responsive&#39; is deprecated, use &#39;@vf-logo&#39;&quot;
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+          <a href="http://www.embl.de"
+
+class="vf-logo">
+  <img class="vf-logo__image" src="../../assets/vf-logo/assets/logo.svg" alt="Visual Framework 2.0">
+  <span class="vf-logo__text">Visual Framework 2.0</span>
+</a>
+<!-- '@vf-logo--responsive' is deprecated, use '@vf-logo' -->
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://www.embl.de"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-logo"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-logo__image"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../assets/vf-logo/assets/logo.svg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Visual Framework 2.0"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-logo__text"</span>&gt;</span>Visual Framework 2.0<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- '@vf-logo--responsive' is deprecated, use '@vf-logo' --&gt;</span>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-logo/vf-logo.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-logo/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-logo/index.scss">index.scss</a></li>
+<li><a href="components/vf-core-components/vf-logo/package.json">package.json</a></li>
+<li><a href="components/vf-core-components/vf-logo/package.variables.scss">package.variables.scss</a></li>
+<li><a href="components/vf-core-components/vf-logo/vf-logo.css">vf-logo.css</a></li>
+<li><a href="components/vf-core-components/vf-logo/vf-logo.scss">vf-logo.scss</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
           Variant: Hidden Text
            <span class="vf-badge vf-badge--pill">alhpa</span> 
 
