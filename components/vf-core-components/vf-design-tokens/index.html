@@ -14,7 +14,7 @@
 
       <div class="vf-global-header__inner">
 
-        <a href="https://visual-framework.github.io/vf-welcome/"
+        <a href=""
 
 class="vf-logo">
   <img class="vf-logo__image" src="https://visual-framework.github.io/vf-demo-design-system/assets/vf-logo/assets/logo.svg" alt="">
@@ -105,7 +105,7 @@ class="vf-logo">
         <hr class="vf-divider" />
 
         <h3>
-          Variant: Default
+          Variant: Welcome
            <span class="vf-badge vf-badge--pill">beta</span> 
 
            <span class="vf-badge vf-badge--pill">utility</span> 
@@ -131,7 +131,20 @@ class="vf-logo">
     
       <div class="vf-grid">
         <section class="">
-          There is no "default" token, see the colours, spacing and typography variants.
+          <div class="vf-content embl-grid embl-grid--has-centered-content">
+  <div></div>
+  <section>
+    <p>The Design Tokens used within `vf-core` are generated from several `.yml` files. These are then compiled into various Sass files as needed.</p>
+    <p>In the future we hope to offer Sketch and Photoshop colour palettes.</p>
+    <p>If you required a different format (LESS, iOS, Android). Please get in touch.</p>
+    <blockquote class="vf-u-margin-bottom--xl">
+    Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development.
+    <br>
+    <br>
+    — <a href="https://www.lightningdesignsystem.com/design-tokens/">Salesforce, Lightning Design System.</a>
+    </blockquote>
+  </section>
+</div>
 
         </section>
       </div>
@@ -144,7 +157,20 @@ class="vf-logo">
 
 
         
-        <pre>There is no "default" token, see the colours, spacing and typography variants.
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-content embl-grid embl-grid--has-centered-content"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>The Design Tokens used within `vf-core` are generated from several `.yml` files. These are then compiled into various Sass files as needed.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>In the future we hope to offer Sketch and Photoshop colour palettes.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>If you required a different format (LESS, iOS, Android). Please get in touch.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-u-margin-bottom--xl"</span>&gt;</span>
+      Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development.
+      <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+      — <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://www.lightningdesignsystem.com/design-tokens/"</span>&gt;</span>Salesforce, Lightning Design System.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         </pre>
 
         <h3>Assets</h3>
@@ -155,7 +181,9 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-design-tokens/gulpfile.js">gulpfile.js</a></li>
 <li><a href="components/vf-core-components/vf-design-tokens/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-design-tokens/package.variables.scss">package.variables.scss</a></li>
+<li><a href="components/vf-core-components/vf-design-tokens/vf-design-tokens.precompiled.js">vf-design-tokens.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-design-tokens/vf-design-tokens.scss">vf-design-tokens.scss</a></li>
+<li><a href="components/vf-core-components/vf-design-tokens/yarn.lock">yarn.lock</a></li>
 </ul>
 </li>
 </ul>
@@ -235,7 +263,9 @@ class="vf-logo">
 .vf-swatch__css-property {
   margin: 0 0 12px 0;
 }
-
+.vf-swatch__colour-hex {
+  text-transform: uppercase;
+}
 .vf-swatch__colour-hex,
 .vf-swatch__sass-variable,
 .vf-swatch__css-property {
@@ -336,6 +366,10 @@ class="vf-logo">
     <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">12px</span> <span class="hljs-number">0</span>;
   }
 
+  <span class="hljs-selector-class">.vf-swatch__colour-hex</span> {
+    <span class="hljs-attribute">text-transform</span>: uppercase;
+  }
+
   <span class="hljs-selector-class">.vf-swatch__colour-hex</span>,
   <span class="hljs-selector-class">.vf-swatch__sass-variable</span>,
   <span class="hljs-selector-class">.vf-swatch__css-property</span> {
@@ -394,7 +428,9 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-design-tokens/gulpfile.js">gulpfile.js</a></li>
 <li><a href="components/vf-core-components/vf-design-tokens/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-design-tokens/package.variables.scss">package.variables.scss</a></li>
+<li><a href="components/vf-core-components/vf-design-tokens/vf-design-tokens.precompiled.js">vf-design-tokens.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-design-tokens/vf-design-tokens.scss">vf-design-tokens.scss</a></li>
+<li><a href="components/vf-core-components/vf-design-tokens/yarn.lock">yarn.lock</a></li>
 </ul>
 </li>
 </ul>
@@ -513,7 +549,9 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-design-tokens/gulpfile.js">gulpfile.js</a></li>
 <li><a href="components/vf-core-components/vf-design-tokens/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-design-tokens/package.variables.scss">package.variables.scss</a></li>
+<li><a href="components/vf-core-components/vf-design-tokens/vf-design-tokens.precompiled.js">vf-design-tokens.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-design-tokens/vf-design-tokens.scss">vf-design-tokens.scss</a></li>
+<li><a href="components/vf-core-components/vf-design-tokens/yarn.lock">yarn.lock</a></li>
 </ul>
 </li>
 </ul>
@@ -590,7 +628,9 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-design-tokens/gulpfile.js">gulpfile.js</a></li>
 <li><a href="components/vf-core-components/vf-design-tokens/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-design-tokens/package.variables.scss">package.variables.scss</a></li>
+<li><a href="components/vf-core-components/vf-design-tokens/vf-design-tokens.precompiled.js">vf-design-tokens.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-design-tokens/vf-design-tokens.scss">vf-design-tokens.scss</a></li>
+<li><a href="components/vf-core-components/vf-design-tokens/yarn.lock">yarn.lock</a></li>
 </ul>
 </li>
 </ul>

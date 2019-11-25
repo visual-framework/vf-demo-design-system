@@ -14,7 +14,7 @@
 
       <div class="vf-global-header__inner">
 
-        <a href="https://visual-framework.github.io/vf-welcome/"
+        <a href=""
 
 class="vf-logo">
   <img class="vf-logo__image" src="https://visual-framework.github.io/vf-demo-design-system/assets/vf-logo/assets/logo.svg" alt="">
@@ -86,7 +86,7 @@ class="vf-logo">
 <p>The source files included are written in <a href="http://sass-lang.com">Sass</a>(<code>scss</code>). You can point your Sass <code>include-path</code> at your <code>node_modules</code> directory and import it like this.</p>
 <pre><code>@import &quot;@visual-framework/vf-button/index.scss&quot;;
 </code></pre>
-<p><em>Make sure you import any requirements along with the modules.</em></p>
+<p><em>Make sure you import Sass requirements along with the modules.</em></p>
 
     
 
@@ -112,71 +112,6 @@ class="vf-logo">
         <hr class="vf-divider" />
 
         <h3>
-          Variant: Default
-           <span class="vf-badge vf-badge--pill">beta</span> 
-
-           <span class="vf-badge vf-badge--pill">element</span> 
-        </h3>
-
-        <h4>Nunjucks demo</h4>
-
-
-        <pre><code>{% render '@vf-button--default', {
-  &quot;component-type&quot;: &quot;element&quot;,
-  &quot;text&quot;: &quot;alpha&quot;
-} %}
-        </code></pre>
-
-        <h4>Sample output</h4>
-
-
-      </section>
-    </div>
-
-    
-      <div class="vf-grid">
-        <section class="">
-           <button class="vf-button ">alpha</button> 
-        </section>
-      </div>
-    
-
-    <div class="vf-grid">
-      <section class="vf-content">
-
-        <h4>Sample output as HTML</h4>
-
-
-        
-        <pre> <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-button "</span>&gt;</span>alpha<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        </pre>
-
-        <h3>Assets</h3>
-<ul>
-<li><a href="/src/components/vf-core-components/vf-button/vf-button.njk">Nunjucks template</a>
-<ul>
-<li><a href="components/vf-core-components/vf-button/CHANGELOG.md">CHANGELOG.md</a></li>
-<li><a href="components/vf-core-components/vf-button/index.scss">index.scss</a></li>
-<li><a href="components/vf-core-components/vf-button/package.json">package.json</a></li>
-<li><a href="components/vf-core-components/vf-button/package.variables.scss">package.variables.scss</a></li>
-<li><a href="components/vf-core-components/vf-button/vf-button.css">vf-button.css</a></li>
-<li><a href="components/vf-core-components/vf-button/vf-button.scss">vf-button.scss</a></li>
-</ul>
-</li>
-</ul>
-
-
-
-      </section>
-    </div>
-  
-
-  <div class="vf-grid">
-    <section class="vf-content">
-
-        <hr class="vf-divider" />
-
-        <h3>
           Variant: Primary
            <span class="vf-badge vf-badge--pill">beta</span> 
 
@@ -186,7 +121,7 @@ class="vf-logo">
         <h4>Nunjucks demo</h4>
 
 
-        <pre><code>{% render '@vf-button--primary', {
+        <pre><code>{% render '@vf-button--default', {
   &quot;component-type&quot;: &quot;element&quot;,
   &quot;text&quot;: &quot;a primary button&quot;,
   &quot;theme&quot;: &quot;primary&quot;
@@ -226,6 +161,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-button/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-button/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-button/vf-button.css">vf-button.css</a></li>
+<li><a href="components/vf-core-components/vf-button/vf-button.precompiled.js">vf-button.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-button/vf-button.scss">vf-button.scss</a></li>
 </ul>
 </li>
@@ -292,6 +228,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-button/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-button/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-button/vf-button.css">vf-button.css</a></li>
+<li><a href="components/vf-core-components/vf-button/vf-button.precompiled.js">vf-button.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-button/vf-button.scss">vf-button.scss</a></li>
 </ul>
 </li>
@@ -358,6 +295,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-button/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-button/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-button/vf-button.css">vf-button.css</a></li>
+<li><a href="components/vf-core-components/vf-button/vf-button.precompiled.js">vf-button.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-button/vf-button.scss">vf-button.scss</a></li>
 </ul>
 </li>
@@ -388,7 +326,7 @@ class="vf-logo">
   &quot;component-type&quot;: &quot;element&quot;,
   &quot;text&quot;: &quot;a small button&quot;,
   &quot;theme&quot;: &quot;primary&quot;,
-  &quot;size&quot;: 2
+  &quot;size&quot;: &quot;sm&quot;
 } %}
         </code></pre>
 
@@ -401,7 +339,7 @@ class="vf-logo">
     
       <div class="vf-grid">
         <section class="">
-           <button class="vf-button vf-button--primary vf-text-button--2 ">a small button</button> 
+           <button class="vf-button vf-button--primary vf-button--sm ">a small button</button> 
         </section>
       </div>
     
@@ -413,7 +351,7 @@ class="vf-logo">
 
 
         
-        <pre> <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-button vf-button--primary vf-text-button--2 "</span>&gt;</span>a small button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <pre> <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-button vf-button--primary vf-button--sm "</span>&gt;</span>a small button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
         </pre>
 
         <h3>Assets</h3>
@@ -425,6 +363,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-button/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-button/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-button/vf-button.css">vf-button.css</a></li>
+<li><a href="components/vf-core-components/vf-button/vf-button.precompiled.js">vf-button.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-button/vf-button.scss">vf-button.scss</a></li>
 </ul>
 </li>
@@ -491,6 +430,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-button/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-button/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-button/vf-button.css">vf-button.css</a></li>
+<li><a href="components/vf-core-components/vf-button/vf-button.precompiled.js">vf-button.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-button/vf-button.scss">vf-button.scss</a></li>
 </ul>
 </li>
@@ -521,7 +461,7 @@ class="vf-logo">
   &quot;component-type&quot;: &quot;element&quot;,
   &quot;text&quot;: &quot;a large button&quot;,
   &quot;theme&quot;: &quot;primary&quot;,
-  &quot;size&quot;: 1
+  &quot;size&quot;: &quot;lg&quot;
 } %}
         </code></pre>
 
@@ -534,7 +474,7 @@ class="vf-logo">
     
       <div class="vf-grid">
         <section class="">
-           <button class="vf-button vf-button--primary vf-text-button--1 ">a large button</button> 
+           <button class="vf-button vf-button--primary vf-button--lg ">a large button</button> 
         </section>
       </div>
     
@@ -546,7 +486,7 @@ class="vf-logo">
 
 
         
-        <pre> <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-button vf-button--primary vf-text-button--1 "</span>&gt;</span>a large button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <pre> <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-button vf-button--primary vf-button--lg "</span>&gt;</span>a large button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
         </pre>
 
         <h3>Assets</h3>
@@ -558,6 +498,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-button/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-button/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-button/vf-button.css">vf-button.css</a></li>
+<li><a href="components/vf-core-components/vf-button/vf-button.precompiled.js">vf-button.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-button/vf-button.scss">vf-button.scss</a></li>
 </ul>
 </li>
@@ -627,6 +568,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-button/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-button/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-button/vf-button.css">vf-button.css</a></li>
+<li><a href="components/vf-core-components/vf-button/vf-button.precompiled.js">vf-button.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-button/vf-button.scss">vf-button.scss</a></li>
 </ul>
 </li>
@@ -696,6 +638,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-button/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-button/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-button/vf-button.css">vf-button.css</a></li>
+<li><a href="components/vf-core-components/vf-button/vf-button.precompiled.js">vf-button.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-button/vf-button.scss">vf-button.scss</a></li>
 </ul>
 </li>
@@ -765,6 +708,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-button/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-button/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-button/vf-button.css">vf-button.css</a></li>
+<li><a href="components/vf-core-components/vf-button/vf-button.precompiled.js">vf-button.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-button/vf-button.scss">vf-button.scss</a></li>
 </ul>
 </li>
@@ -793,8 +737,8 @@ class="vf-logo">
 
         <pre><code>{% render '@vf-button--link', {
   &quot;component-type&quot;: &quot;element&quot;,
-  &quot;text&quot;: &quot;an link variant&quot;,
-  &quot;href&quot;: &quot;https://example.com/&quot;,
+  &quot;text&quot;: &quot;a link variant&quot;,
+  &quot;button_href&quot;: &quot;https://example.com/&quot;,
   &quot;theme&quot;: &quot;primary&quot;
 } %}
         </code></pre>
@@ -808,7 +752,7 @@ class="vf-logo">
     
       <div class="vf-grid">
         <section class="">
-           <a href="https://example.com/" class="vf-button vf-button--primary">an link variant</a> 
+           <button class="vf-button vf-button--primary">a link variant</button> 
         </section>
       </div>
     
@@ -820,7 +764,7 @@ class="vf-logo">
 
 
         
-        <pre> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://example.com/"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-button vf-button--primary"</span>&gt;</span>an link variant<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <pre> <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-button vf-button--primary"</span>&gt;</span>a link variant<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
         </pre>
 
         <h3>Assets</h3>
@@ -832,6 +776,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-button/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-button/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-button/vf-button.css">vf-button.css</a></li>
+<li><a href="components/vf-core-components/vf-button/vf-button.precompiled.js">vf-button.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-button/vf-button.scss">vf-button.scss</a></li>
 </ul>
 </li>

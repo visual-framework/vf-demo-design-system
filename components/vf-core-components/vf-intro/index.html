@@ -14,7 +14,7 @@
 
       <div class="vf-global-header__inner">
 
-        <a href="https://visual-framework.github.io/vf-welcome/"
+        <a href=""
 
 class="vf-logo">
   <img class="vf-logo__image" src="https://visual-framework.github.io/vf-demo-design-system/assets/vf-logo/assets/logo.svg" alt="">
@@ -86,7 +86,7 @@ class="vf-logo">
 <p>The source files included are written in <a href="http://sass-lang.com">Sass</a>(<code>scss</code>). You can point your Sass <code>include-path</code> at your <code>node_modules</code> directory and import it like this.</p>
 <pre><code>@import &quot;@visual-framework/vf-intro/index.scss&quot;;
 </code></pre>
-<p><em>Make sure you import any requirements along with the modules.</em></p>
+<p><em>Make sure you import Sass requirements along with the modules.</em></p>
 
     
 
@@ -129,7 +129,8 @@ class="vf-logo">
   &quot;vf_intro_text&quot;: [
     &quot;Cancer is a multi-stage process. Normal cells begin to divide abnormally, spreading beyond their normal boundaries, and abnormal tissue growth causes swellings called tumours to form. Tumours can be benign – with no harmful effect on the body – or malignant, invading healthy tissue and interfering with normal bodily functions.&quot;,
     &quot;There are more than 100 types of cancer and symptoms vary depending on the type. &lt;a class=\&quot;vf-link\&quot; href=\&quot;JavaScript:Void(0);\&quot;&gt;Read more about Cancer&lt;/a&gt;.&quot;
-  ]
+  ],
+  &quot;intro_heading_href&quot;: &quot;JavaScript:Void(0);&quot;
 } %}
         </code></pre>
 
@@ -145,7 +146,7 @@ class="vf-logo">
           <section class="vf-intro | embl-grid embl-grid--has-centered-content">
   <div><!-- empty --></div>
   <div>
-    <h1 class="vf-intro__heading vf-intro__heading--has-tag">Cancer <a href="" class="vf-badge vf-badge--primary vf-badge--phases">beta</a></h1>
+    <h1 class="vf-intro__heading vf-intro__heading--has-tag">Cancer <a href="JavaScript:Void(0);" class="vf-badge vf-badge--primary vf-badge--phases">beta</a></h1>
 <p class="vf-lede">Cancer is a generic term for lots of different diseases in which cells divide many more times than usual. This abnormal growth can affect many cell types in almost any part of the body.</p>
 <p class="vf-intro__text">Cancer is a multi-stage process. Normal cells begin to divide abnormally, spreading beyond their normal boundaries, and abnormal tissue growth causes swellings called tumours to form. Tumours can be benign – with no harmful effect on the body – or malignant, invading healthy tissue and interfering with normal bodily functions.</p>
 <p class="vf-intro__text">There are more than 100 types of cancer and symptoms vary depending on the type. <a class="vf-link" href="JavaScript:Void(0);">Read more about Cancer</a>.</p>
@@ -168,7 +169,7 @@ class="vf-logo">
     <span class="hljs-comment">&lt;!-- empty --&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-intro__heading vf-intro__heading--has-tag"</span>&gt;</span>Cancer <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-badge vf-badge--primary vf-badge--phases"</span>&gt;</span>beta<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-intro__heading vf-intro__heading--has-tag"</span>&gt;</span>Cancer <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"JavaScript:Void(0);"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-badge vf-badge--primary vf-badge--phases"</span>&gt;</span>beta<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-lede"</span>&gt;</span>Cancer is a generic term for lots of different diseases in which cells divide many more times than usual. This abnormal growth can affect many cell types in almost any part of the body.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-intro__text"</span>&gt;</span>Cancer is a multi-stage process. Normal cells begin to divide abnormally, spreading beyond their normal boundaries, and abnormal tissue growth causes swellings called tumours to form. Tumours can be benign – with no harmful effect on the body – or malignant, invading healthy tissue and interfering with normal bodily functions.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-intro__text"</span>&gt;</span>There are more than 100 types of cancer and symptoms vary depending on the type. <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"JavaScript:Void(0);"</span>&gt;</span>Read more about Cancer<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
@@ -185,6 +186,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-intro/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-intro/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-intro/vf-intro.css">vf-intro.css</a></li>
+<li><a href="components/vf-core-components/vf-intro/vf-intro.precompiled.js">vf-intro.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-intro/vf-intro.scss">vf-intro.scss</a></li>
 <li><a href="components/vf-core-components/vf-intro/yarn.lock">yarn.lock</a></li>
 </ul>

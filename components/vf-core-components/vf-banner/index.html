@@ -14,7 +14,7 @@
 
       <div class="vf-global-header__inner">
 
-        <a href="https://visual-framework.github.io/vf-welcome/"
+        <a href=""
 
 class="vf-logo">
   <img class="vf-logo__image" src="https://visual-framework.github.io/vf-demo-design-system/assets/vf-logo/assets/logo.svg" alt="">
@@ -140,7 +140,7 @@ class="vf-logo">
 <p>The source files included are written in [Sass][sass] (<code>scss</code>) You can simply point your sass <code>include-path</code> at your <code>node_modules</code> directory and import it like this.</p>
 <pre><code>@import &quot;@visual-framework/vf-banner/index.scss&quot;;
 </code></pre>
-<p><em>Make sure you import any requirements along with the modules.</em></p>
+<p><em>Make sure you import Sass requirements along with the modules.</em></p>
 
     
 
@@ -180,7 +180,8 @@ class="vf-logo">
   &quot;data-service-id&quot;: &quot;MyService&quot;,
   &quot;data-protection-version&quot;: 0.1,
   &quot;vf-data-protection-banner__text&quot;: &quot;I agree, dismiss this banner&quot;,
-  &quot;vf-data-protection-banner__link&quot;: null
+  &quot;vf-data-protection-banner__link&quot;: null,
+  &quot;vf-banner--inline_href&quot;: &quot;JavaScript:Void(0);&quot;
 } %}
         </code></pre>
 
@@ -219,6 +220,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-banner/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-banner/vf-banner.css">vf-banner.css</a></li>
 <li><a href="components/vf-core-components/vf-banner/vf-banner.js">vf-banner.js</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner.precompiled.js">vf-banner.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-banner/vf-banner.scss">vf-banner.scss</a></li>
 <li><a href="components/vf-core-components/vf-banner/vf-banner.variables.scss">vf-banner.variables.scss</a></li>
 </ul>
@@ -251,7 +253,8 @@ class="vf-logo">
   &quot;data-service-id&quot;: &quot;MyService&quot;,
   &quot;data-protection-version&quot;: 0.1,
   &quot;vf-data-protection-banner__text&quot;: &quot;I agree, dismiss this banner&quot;,
-  &quot;vf-data-protection-banner__link&quot;: null
+  &quot;vf-data-protection-banner__link&quot;: null,
+  &quot;vf-banner--inline_href&quot;: &quot;JavaScript:Void(0);&quot;
 } %}
         </code></pre>
 
@@ -378,6 +381,7 @@ data-vf-js-banner-cookie-version="NaN"&gt;
 <li><a href="components/vf-core-components/vf-banner/vf-banner--fixed.scss">vf-banner--fixed.scss</a></li>
 <li><a href="components/vf-core-components/vf-banner/vf-banner.css">vf-banner.css</a></li>
 <li><a href="components/vf-core-components/vf-banner/vf-banner.js">vf-banner.js</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner.precompiled.js">vf-banner.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-banner/vf-banner.scss">vf-banner.scss</a></li>
 <li><a href="components/vf-core-components/vf-banner/vf-banner.variables.scss">vf-banner.variables.scss</a></li>
 </ul>
@@ -410,7 +414,8 @@ data-vf-js-banner-cookie-version="NaN"&gt;
   &quot;data-service-id&quot;: &quot;MyService&quot;,
   &quot;data-protection-version&quot;: 0.1,
   &quot;vf-data-protection-banner__text&quot;: &quot;I agree, dismiss this banner&quot;,
-  &quot;vf-data-protection-banner__link&quot;: null
+  &quot;vf-data-protection-banner__link&quot;: null,
+  &quot;vf-banner--inline_href&quot;: &quot;JavaScript:Void(0);&quot;
 } %}
         </code></pre>
 
@@ -425,7 +430,7 @@ data-vf-js-banner-cookie-version="NaN"&gt;
         <section class="">
           <div class="vf-banner vf-banner--phase">
   <div class="vf-banner__content">
-    <p class="vf-text-body--3">This is a new web page. <a href="" class="vf-link">Complete our quick survey</a> to help us make it better.</p>
+    <p class="vf-text-body--3">This is a new web page. <a href="NaN" class="vf-link">Complete our quick survey</a> to help us make it better.</p>
   </div>
 </div>
 
@@ -442,7 +447,7 @@ data-vf-js-banner-cookie-version="NaN"&gt;
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-banner vf-banner--phase"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-banner__content"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-text-body--3"</span>&gt;</span>This is a new web page. <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-link"</span>&gt;</span>Complete our quick survey<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> to help us make it better.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-text-body--3"</span>&gt;</span>This is a new web page. <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"NaN"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-link"</span>&gt;</span>Complete our quick survey<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> to help us make it better.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         </pre>
@@ -457,6 +462,7 @@ data-vf-js-banner-cookie-version="NaN"&gt;
 <li><a href="components/vf-core-components/vf-banner/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-banner/vf-banner.css">vf-banner.css</a></li>
 <li><a href="components/vf-core-components/vf-banner/vf-banner.js">vf-banner.js</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner.precompiled.js">vf-banner.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-banner/vf-banner.scss">vf-banner.scss</a></li>
 <li><a href="components/vf-core-components/vf-banner/vf-banner.variables.scss">vf-banner.variables.scss</a></li>
 </ul>
@@ -489,7 +495,8 @@ data-vf-js-banner-cookie-version="NaN"&gt;
   &quot;data-service-id&quot;: &quot;MyService&quot;,
   &quot;data-protection-version&quot;: 0.1,
   &quot;vf-data-protection-banner__text&quot;: &quot;I agree, dismiss this banner&quot;,
-  &quot;vf-data-protection-banner__link&quot;: null
+  &quot;vf-data-protection-banner__link&quot;: null,
+  &quot;vf-banner--inline_href&quot;: &quot;JavaScript:Void(0);&quot;
 } %}
         </code></pre>
 
@@ -508,7 +515,7 @@ data-vf-js-banner-state="dismissible"
 data-vf-js-banner-button-text="Close notice">
   <div class="vf-banner__content" data-vf-js-banner-text>
     <span class="vf-badge vf-badge--primary">BETA</span>
-    <p class="vf-text-body--3">This is the new EMBL.org <a href="" class="vf-link">Complete our quick survey</a> to help us make it better.</p>
+    <p class="vf-text-body--3">This is the new EMBL.org <a href="NaN" class="vf-link">Complete our quick survey</a> to help us make it better.</p>
   </div>
 </div>
 
@@ -526,7 +533,7 @@ data-vf-js-banner-button-text="Close notice">
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-banner vf-banner--fixed vf-banner--top vf-banner--phase"</span> <span class="hljs-attr">data-vf-js-banner</span> <span class="hljs-attr">data-vf-js-banner-state</span>=<span class="hljs-string">"dismissible"</span> <span class="hljs-attr">data-vf-js-banner-button-text</span>=<span class="hljs-string">"Close notice"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-banner__content"</span> <span class="hljs-attr">data-vf-js-banner-text</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-badge vf-badge--primary"</span>&gt;</span>BETA<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-text-body--3"</span>&gt;</span>This is the new EMBL.org <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-link"</span>&gt;</span>Complete our quick survey<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> to help us make it better.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-text-body--3"</span>&gt;</span>This is the new EMBL.org <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"NaN"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-link"</span>&gt;</span>Complete our quick survey<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> to help us make it better.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         </pre>
@@ -541,6 +548,7 @@ data-vf-js-banner-button-text="Close notice">
 <li><a href="components/vf-core-components/vf-banner/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-banner/vf-banner.css">vf-banner.css</a></li>
 <li><a href="components/vf-core-components/vf-banner/vf-banner.js">vf-banner.js</a></li>
+<li><a href="components/vf-core-components/vf-banner/vf-banner.precompiled.js">vf-banner.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-banner/vf-banner.scss">vf-banner.scss</a></li>
 <li><a href="components/vf-core-components/vf-banner/vf-banner.variables.scss">vf-banner.variables.scss</a></li>
 </ul>

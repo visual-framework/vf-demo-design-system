@@ -14,7 +14,7 @@
 
       <div class="vf-global-header__inner">
 
-        <a href="https://visual-framework.github.io/vf-welcome/"
+        <a href=""
 
 class="vf-logo">
   <img class="vf-logo__image" src="https://visual-framework.github.io/vf-demo-design-system/assets/vf-logo/assets/logo.svg" alt="">
@@ -86,7 +86,7 @@ class="vf-logo">
 <p>The source files included are written in <a href="http://sass-lang.com">Sass</a>(<code>scss</code>). You can point your Sass <code>include-path</code> at your <code>node_modules</code> directory and import it like this.</p>
 <pre><code>@import &quot;@visual-framework/vf-link/index.scss&quot;;
 </code></pre>
-<p><em>Make sure you import any requirements along with the modules.</em></p>
+<p><em>Make sure you import Sass requirements along with the modules.</em></p>
 
     
 
@@ -123,7 +123,7 @@ class="vf-logo">
 
         <pre><code>{% render '@vf-link--default', {
   &quot;component-type&quot;: &quot;element&quot;,
-  &quot;href&quot;: &quot;#&quot;,
+  &quot;link_href&quot;: &quot;#&quot;,
   &quot;id&quot;: &quot;harsh&quot;,
   &quot;text&quot;: &quot;A default link&quot;
 } %}
@@ -162,6 +162,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-link/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-link/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.css">vf-link.css</a></li>
+<li><a href="components/vf-core-components/vf-link/vf-link.precompiled.js">vf-link.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.scss">vf-link.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.variables.scss">vf-link.variables.scss</a></li>
 </ul>
@@ -191,7 +192,7 @@ class="vf-logo">
 
         <pre><code>{% render '@vf-link--default-hover', {
   &quot;component-type&quot;: &quot;element&quot;,
-  &quot;href&quot;: &quot;#&quot;,
+  &quot;link_href&quot;: &quot;#&quot;,
   &quot;style&quot;: [
     &quot;hover&quot;
   ],
@@ -232,6 +233,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-link/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-link/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.css">vf-link.css</a></li>
+<li><a href="components/vf-core-components/vf-link/vf-link.precompiled.js">vf-link.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.scss">vf-link.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.variables.scss">vf-link.variables.scss</a></li>
 </ul>
@@ -261,7 +263,7 @@ class="vf-logo">
 
         <pre><code>{% render '@vf-link--default-visited', {
   &quot;component-type&quot;: &quot;element&quot;,
-  &quot;href&quot;: &quot;#&quot;,
+  &quot;link_href&quot;: &quot;#&quot;,
   &quot;style&quot;: [
     &quot;visited&quot;
   ],
@@ -302,6 +304,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-link/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-link/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.css">vf-link.css</a></li>
+<li><a href="components/vf-core-components/vf-link/vf-link.precompiled.js">vf-link.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.scss">vf-link.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.variables.scss">vf-link.variables.scss</a></li>
 </ul>
@@ -331,7 +334,7 @@ class="vf-logo">
 
         <pre><code>{% render '@vf-link--default-disabled', {
   &quot;component-type&quot;: &quot;element&quot;,
-  &quot;href&quot;: &quot;#&quot;,
+  &quot;link_href&quot;: &quot;#&quot;,
   &quot;style&quot;: [
     &quot;disabled&quot;
   ],
@@ -372,6 +375,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-link/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-link/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.css">vf-link.css</a></li>
+<li><a href="components/vf-core-components/vf-link/vf-link.precompiled.js">vf-link.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.scss">vf-link.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.variables.scss">vf-link.variables.scss</a></li>
 </ul>
@@ -401,7 +405,7 @@ class="vf-logo">
 
         <pre><code>{% render '@vf-link--primary', {
   &quot;component-type&quot;: &quot;element&quot;,
-  &quot;href&quot;: &quot;#&quot;,
+  &quot;link_href&quot;: &quot;#&quot;,
   &quot;id&quot;: &quot;harsh&quot;,
   &quot;text&quot;: &quot;A primary link&quot;
 } %}
@@ -441,6 +445,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-link/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link--primary.scss">vf-link--primary.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.css">vf-link.css</a></li>
+<li><a href="components/vf-core-components/vf-link/vf-link.precompiled.js">vf-link.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.scss">vf-link.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.variables.scss">vf-link.variables.scss</a></li>
 </ul>
@@ -470,7 +475,7 @@ class="vf-logo">
 
         <pre><code>{% render '@vf-link--primary-hover', {
   &quot;component-type&quot;: &quot;element&quot;,
-  &quot;href&quot;: &quot;#&quot;,
+  &quot;link_href&quot;: &quot;#&quot;,
   &quot;style&quot;: [
     &quot;hover&quot;
   ],
@@ -511,6 +516,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-link/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-link/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.css">vf-link.css</a></li>
+<li><a href="components/vf-core-components/vf-link/vf-link.precompiled.js">vf-link.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.scss">vf-link.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.variables.scss">vf-link.variables.scss</a></li>
 </ul>
@@ -540,7 +546,7 @@ class="vf-logo">
 
         <pre><code>{% render '@vf-link--primary-visited', {
   &quot;component-type&quot;: &quot;element&quot;,
-  &quot;href&quot;: &quot;#&quot;,
+  &quot;link_href&quot;: &quot;#&quot;,
   &quot;style&quot;: [
     &quot;visited&quot;
   ],
@@ -581,6 +587,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-link/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-link/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.css">vf-link.css</a></li>
+<li><a href="components/vf-core-components/vf-link/vf-link.precompiled.js">vf-link.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.scss">vf-link.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.variables.scss">vf-link.variables.scss</a></li>
 </ul>
@@ -610,7 +617,7 @@ class="vf-logo">
 
         <pre><code>{% render '@vf-link--primary-disabled', {
   &quot;component-type&quot;: &quot;element&quot;,
-  &quot;href&quot;: &quot;#&quot;,
+  &quot;link_href&quot;: &quot;#&quot;,
   &quot;style&quot;: [
     &quot;disabled&quot;
   ],
@@ -651,6 +658,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-link/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-link/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.css">vf-link.css</a></li>
+<li><a href="components/vf-core-components/vf-link/vf-link.precompiled.js">vf-link.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.scss">vf-link.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.variables.scss">vf-link.variables.scss</a></li>
 </ul>
@@ -680,7 +688,7 @@ class="vf-logo">
 
         <pre><code>{% render '@vf-link--secondary', {
   &quot;component-type&quot;: &quot;element&quot;,
-  &quot;href&quot;: &quot;#&quot;,
+  &quot;link_href&quot;: &quot;#&quot;,
   &quot;text&quot;: &quot;A secondary link&quot;,
   &quot;theme&quot;: &quot;secondary&quot;
 } %}
@@ -720,6 +728,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-link/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link--secondary.scss">vf-link--secondary.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.css">vf-link.css</a></li>
+<li><a href="components/vf-core-components/vf-link/vf-link.precompiled.js">vf-link.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.scss">vf-link.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.variables.scss">vf-link.variables.scss</a></li>
 </ul>
@@ -749,7 +758,7 @@ class="vf-logo">
 
         <pre><code>{% render '@vf-link--secondary-hover', {
   &quot;component-type&quot;: &quot;element&quot;,
-  &quot;href&quot;: &quot;#&quot;,
+  &quot;link_href&quot;: &quot;#&quot;,
   &quot;text&quot;: &quot;A secondary:hover link&quot;,
   &quot;theme&quot;: &quot;secondary&quot;,
   &quot;style&quot;: [
@@ -791,6 +800,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-link/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-link/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.css">vf-link.css</a></li>
+<li><a href="components/vf-core-components/vf-link/vf-link.precompiled.js">vf-link.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.scss">vf-link.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.variables.scss">vf-link.variables.scss</a></li>
 </ul>
@@ -820,7 +830,7 @@ class="vf-logo">
 
         <pre><code>{% render '@vf-link--secondary-visited', {
   &quot;component-type&quot;: &quot;element&quot;,
-  &quot;href&quot;: &quot;#&quot;,
+  &quot;link_href&quot;: &quot;#&quot;,
   &quot;text&quot;: &quot;A secondary:visited link&quot;,
   &quot;theme&quot;: &quot;secondary&quot;,
   &quot;style&quot;: [
@@ -862,6 +872,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-link/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-link/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.css">vf-link.css</a></li>
+<li><a href="components/vf-core-components/vf-link/vf-link.precompiled.js">vf-link.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.scss">vf-link.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.variables.scss">vf-link.variables.scss</a></li>
 </ul>
@@ -891,7 +902,7 @@ class="vf-logo">
 
         <pre><code>{% render '@vf-link--secondary-disabled', {
   &quot;component-type&quot;: &quot;element&quot;,
-  &quot;href&quot;: &quot;#&quot;,
+  &quot;link_href&quot;: &quot;#&quot;,
   &quot;text&quot;: &quot;A disabled secondary link&quot;,
   &quot;theme&quot;: &quot;secondary&quot;,
   &quot;style&quot;: [
@@ -933,6 +944,7 @@ class="vf-logo">
 <li><a href="components/vf-core-components/vf-link/package.json">package.json</a></li>
 <li><a href="components/vf-core-components/vf-link/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.css">vf-link.css</a></li>
+<li><a href="components/vf-core-components/vf-link/vf-link.precompiled.js">vf-link.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.scss">vf-link.scss</a></li>
 <li><a href="components/vf-core-components/vf-link/vf-link.variables.scss">vf-link.variables.scss</a></li>
 </ul>
