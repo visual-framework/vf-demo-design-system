@@ -5,7 +5,7 @@
   <subtitle>This demonstrates how a design system can be built using the the Visual Framework component system.</subtitle>
   <link href="https://visual-framework.github.io/vf-eleventy/feed.xml" rel="self"/>
   <link href="https://visual-framework.github.io/vf-demo-design-system/"/>
-  <updated>2020-01-08T07:55:08.864+00:00</updated>
+  <updated>2020-01-08T07:56:21.086+00:00</updated>
   <id>https://visual-framework.github.io/vf-eleventy</id>
   <author>
     <name>Visual Framework system</name>
@@ -241,7 +241,7 @@ a good idea to reference it.&lt;/p&gt;
   <entry>
     <title>Colours</title>
     <link href="https://visual-framework.github.io/vf-eleventy/styles/colour/"/>
-    <updated>2020-01-08T07:55:08.864+00:00</updated>
+    <updated>2020-01-08T07:56:21.086+00:00</updated>
     <id>https://visual-framework.github.io/vf-eleventy/styles/colour/</id>
     <content type="html">&lt;p&gt;The set below shows all the colours for the EMBL brand. Other colours are not allowed. Any kind of colour coding in alignment with a service, group etc. is not allowed. Our main colour is white, in order to underline the bespoke usage of white space in our visual example.&lt;/p&gt;
 &lt;h2&gt;The colour set: Overview&lt;/h2&gt;
@@ -319,7 +319,7 @@ a good idea to reference it.&lt;/p&gt;
   <entry>
     <title>Spacing</title>
     <link href="https://visual-framework.github.io/vf-eleventy/styles/spacing/"/>
-    <updated>2020-01-08T07:55:08.864+00:00</updated>
+    <updated>2020-01-08T07:56:21.086+00:00</updated>
     <id>https://visual-framework.github.io/vf-eleventy/styles/spacing/</id>
     <content type="html">&lt;style&gt;
 .swatches {
