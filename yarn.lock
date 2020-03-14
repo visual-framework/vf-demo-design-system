@@ -551,10 +551,10 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-badge/-/vf-badge-1.0.0.tgz#1d21cdec70b236b92321cf5e641f27c7a9b0b602"
   integrity sha512-QewrJJvFeuu3iqUH9k33aOC0Qoj3nieGolPB/ujrJECFlrKTXX9848iAHzRvqd0a3YfpGYYzf3RS59hnw2a6qQ==
 
-"@visual-framework/vf-banner@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-banner/-/vf-banner-1.0.1.tgz#8bb6eb0943b44a87c2c667d91902bb1b4ce51f0a"
-  integrity sha512-B/jSyRQTMkqMlUQRi2uJ17bgb+1mXKhTh2aXqsP4nAw/jvkT1jGx9yh7bCleFISWISSV7mlAkA36qzFIxj6Ulg==
+"@visual-framework/vf-banner@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-banner/-/vf-banner-1.0.3.tgz#6caf916f29efea02235123634139f1dd842a9fe7"
+  integrity sha512-h64AxWV5w3daMhuPxW6iVYkGO37vBuqMCubOI5KzM5tPeKNGlYXLOq12zu6mvB8ttvEY97y+KsItk2m9GF4AHw==
 
 "@visual-framework/vf-blockquote@^1.0.1":
   version "1.0.1"
