@@ -14,11 +14,11 @@
 
       <div class="vf-global-header__inner">
 
-        <a href=""
+        <a href="http://www.embl.de"
 
 class="vf-logo">
-  <img class="vf-logo__image" src="https://visual-framework.github.io/vf-demo-design-system/assets/vf-logo/assets/logo.svg" alt="">
-  <span class="vf-logo__text"></span>
+  <img class="vf-logo__image" src="https://visual-framework.github.io/vf-demo-design-system/assets/vf-logo/assets/logo.svg" alt="Visual Framework 2.0">
+  <span class="vf-logo__text">Visual Framework 2.0</span>
 </a>
 
         
@@ -114,9 +114,9 @@ class="vf-logo">
 
         <h3>
           Variant: Default
-           <span class="vf-badge vf-badge--pill">live</span> 
+           <span class="vf-badge vf-badge--primary vf-badge--pill">live</span> 
 
-           <span class="vf-badge vf-badge--pill">block</span> 
+           <span class="vf-badge vf-badge--primary vf-badge--pill">block</span> 
         </h3>
 
         <h4>Nunjucks demo</h4>
@@ -137,10 +137,7 @@ class="vf-logo">
     
       <div class="vf-grid">
         <section class="">
-          <div class="vf-section-header">
-  <h2 class="vf-section-header__heading">Projects</h2>
-</div>
-
+           <div class="vf-section-header"><h2 class="vf-section-header__heading" > Projects </h2></div> 
         </section>
       </div>
     
@@ -152,9 +149,454 @@ class="vf-logo">
 
 
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__heading"</span>&gt;</span>Projects<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <pre> <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header"</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__heading"</span>&gt;</span> Projects <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-section-header/vf-section-header.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-section-header/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-section-header/index.scss">index.scss</a></li>
+<li><a href="components/vf-core-components/vf-section-header/package.json">package.json</a></li>
+<li><a href="components/vf-core-components/vf-section-header/package.variables.scss">package.variables.scss</a></li>
+<li><a href="components/vf-core-components/vf-section-header/vf-section-header.css">vf-section-header.css</a></li>
+<li><a href="components/vf-core-components/vf-section-header/vf-section-header.precompiled.js">vf-section-header.precompiled.js</a></li>
+<li><a href="components/vf-core-components/vf-section-header/vf-section-header.scss">vf-section-header.scss</a></li>
+<li><a href="components/vf-core-components/vf-section-header/yarn.lock">yarn.lock</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Is A Link
+           <span class="vf-badge vf-badge--primary vf-badge--pill">live</span> 
+
+           <span class="vf-badge vf-badge--primary vf-badge--pill">block</span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-section-header--is-a-link', {
+  &quot;component-type&quot;: &quot;block&quot;,
+  &quot;section_title&quot;: &quot;Projects&quot;,
+  &quot;href&quot;: &quot;JavaScript:Void(0);&quot;
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+           <div class="vf-section-header"><a class="vf-section-header__heading vf-section-header__heading--is-link" href="JavaScript:Void(0);"> Projects <svg class="vf-section-header__icon | vf-icon vf-icon-arrow--inline-end" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z" fill="" fill-rule="nonzero"></path></svg></a></div> 
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre> <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__heading vf-section-header__heading--is-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"JavaScript:Void(0);"</span>&gt;</span> Projects <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__icon | vf-icon vf-icon-arrow--inline-end"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"24"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"24"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">""</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"nonzero"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-section-header/vf-section-header.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-section-header/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-section-header/index.scss">index.scss</a></li>
+<li><a href="components/vf-core-components/vf-section-header/package.json">package.json</a></li>
+<li><a href="components/vf-core-components/vf-section-header/package.variables.scss">package.variables.scss</a></li>
+<li><a href="components/vf-core-components/vf-section-header/vf-section-header.css">vf-section-header.css</a></li>
+<li><a href="components/vf-core-components/vf-section-header/vf-section-header.precompiled.js">vf-section-header.precompiled.js</a></li>
+<li><a href="components/vf-core-components/vf-section-header/vf-section-header.scss">vf-section-header.scss</a></li>
+<li><a href="components/vf-core-components/vf-section-header/yarn.lock">yarn.lock</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Has A Sub Heading
+           <span class="vf-badge vf-badge--primary vf-badge--pill">live</span> 
+
+           <span class="vf-badge vf-badge--primary vf-badge--pill">block</span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-section-header--has-a-sub-heading', {
+  &quot;component-type&quot;: &quot;block&quot;,
+  &quot;section_title&quot;: &quot;Projects&quot;,
+  &quot;section__subheading&quot;: &quot;News from EMBL’s six sites&quot;
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+           <div class="vf-section-header"><h2 class="vf-section-header__heading" > Projects </h2><p class="vf-section-header__subheading">News from EMBL’s six sites</p></div> 
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre> <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header"</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__heading"</span>&gt;</span> Projects <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__subheading"</span>&gt;</span>News from EMBL’s six sites<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-section-header/vf-section-header.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-section-header/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-section-header/index.scss">index.scss</a></li>
+<li><a href="components/vf-core-components/vf-section-header/package.json">package.json</a></li>
+<li><a href="components/vf-core-components/vf-section-header/package.variables.scss">package.variables.scss</a></li>
+<li><a href="components/vf-core-components/vf-section-header/vf-section-header.css">vf-section-header.css</a></li>
+<li><a href="components/vf-core-components/vf-section-header/vf-section-header.precompiled.js">vf-section-header.precompiled.js</a></li>
+<li><a href="components/vf-core-components/vf-section-header/vf-section-header.scss">vf-section-header.scss</a></li>
+<li><a href="components/vf-core-components/vf-section-header/yarn.lock">yarn.lock</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Has A Sub Heading And Link
+           <span class="vf-badge vf-badge--primary vf-badge--pill">live</span> 
+
+           <span class="vf-badge vf-badge--primary vf-badge--pill">block</span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-section-header--has-a-sub-heading-and-link', {
+  &quot;component-type&quot;: &quot;block&quot;,
+  &quot;section_title&quot;: &quot;Projects&quot;,
+  &quot;href&quot;: &quot;JavaScript:Void(0);&quot;,
+  &quot;section__subheading&quot;: &quot;News from EMBL’s six sites&quot;
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+           <div class="vf-section-header"><a class="vf-section-header__heading vf-section-header__heading--is-link" href="JavaScript:Void(0);"> Projects <svg class="vf-section-header__icon | vf-icon vf-icon-arrow--inline-end" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z" fill="" fill-rule="nonzero"></path></svg></a><p class="vf-section-header__subheading">News from EMBL’s six sites</p></div> 
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre> <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__heading vf-section-header__heading--is-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"JavaScript:Void(0);"</span>&gt;</span> Projects <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__icon | vf-icon vf-icon-arrow--inline-end"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"24"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"24"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">""</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"nonzero"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__subheading"</span>&gt;</span>News from EMBL’s six sites<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-section-header/vf-section-header.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-section-header/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-section-header/index.scss">index.scss</a></li>
+<li><a href="components/vf-core-components/vf-section-header/package.json">package.json</a></li>
+<li><a href="components/vf-core-components/vf-section-header/package.variables.scss">package.variables.scss</a></li>
+<li><a href="components/vf-core-components/vf-section-header/vf-section-header.css">vf-section-header.css</a></li>
+<li><a href="components/vf-core-components/vf-section-header/vf-section-header.precompiled.js">vf-section-header.precompiled.js</a></li>
+<li><a href="components/vf-core-components/vf-section-header/vf-section-header.scss">vf-section-header.scss</a></li>
+<li><a href="components/vf-core-components/vf-section-header/yarn.lock">yarn.lock</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Has A Sub Heading And Link And Text
+           <span class="vf-badge vf-badge--primary vf-badge--pill">live</span> 
+
+           <span class="vf-badge vf-badge--primary vf-badge--pill">block</span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-section-header--has-a-sub-heading-and-link-and-text', {
+  &quot;component-type&quot;: &quot;block&quot;,
+  &quot;section_title&quot;: &quot;Projects&quot;,
+  &quot;href&quot;: &quot;JavaScript:Void(0);&quot;,
+  &quot;section__subheading&quot;: &quot;News from EMBL’s six sites&quot;,
+  &quot;vf_section__content&quot;: [
+    &quot;Hello everyone who are doing?&quot;,
+    &quot;Pizza&quot;
+  ]
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+           <div class="vf-section-header"><a class="vf-section-header__heading vf-section-header__heading--is-link" href="JavaScript:Void(0);"> Projects <svg class="vf-section-header__icon | vf-icon vf-icon-arrow--inline-end" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z" fill="" fill-rule="nonzero"></path></svg></a><p class="vf-section-header__subheading">News from EMBL’s six sites</p><p class="vf-section-header__text">Hello everyone who are doing?</p><p class="vf-section-header__text">Pizza</p></div> 
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre> <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__heading vf-section-header__heading--is-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"JavaScript:Void(0);"</span>&gt;</span> Projects <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__icon | vf-icon vf-icon-arrow--inline-end"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"24"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"24"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">""</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"nonzero"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__subheading"</span>&gt;</span>News from EMBL’s six sites<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__text"</span>&gt;</span>Hello everyone who are doing?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__text"</span>&gt;</span>Pizza<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-section-header/vf-section-header.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-section-header/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-section-header/index.scss">index.scss</a></li>
+<li><a href="components/vf-core-components/vf-section-header/package.json">package.json</a></li>
+<li><a href="components/vf-core-components/vf-section-header/package.variables.scss">package.variables.scss</a></li>
+<li><a href="components/vf-core-components/vf-section-header/vf-section-header.css">vf-section-header.css</a></li>
+<li><a href="components/vf-core-components/vf-section-header/vf-section-header.precompiled.js">vf-section-header.precompiled.js</a></li>
+<li><a href="components/vf-core-components/vf-section-header/vf-section-header.scss">vf-section-header.scss</a></li>
+<li><a href="components/vf-core-components/vf-section-header/yarn.lock">yarn.lock</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Has A Link And Text
+           <span class="vf-badge vf-badge--primary vf-badge--pill">live</span> 
+
+           <span class="vf-badge vf-badge--primary vf-badge--pill">block</span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-section-header--has-a-link-and-text', {
+  &quot;component-type&quot;: &quot;block&quot;,
+  &quot;section_title&quot;: &quot;Projects&quot;,
+  &quot;href&quot;: &quot;JavaScript:Void(0);&quot;,
+  &quot;vf_section__content&quot;: [
+    &quot;Hello everyone who are doing?&quot;,
+    &quot;Pizza&quot;
+  ]
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+           <div class="vf-section-header"><a class="vf-section-header__heading vf-section-header__heading--is-link" href="JavaScript:Void(0);"> Projects <svg class="vf-section-header__icon | vf-icon vf-icon-arrow--inline-end" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z" fill="" fill-rule="nonzero"></path></svg></a><p class="vf-section-header__text">Hello everyone who are doing?</p><p class="vf-section-header__text">Pizza</p></div> 
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre> <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__heading vf-section-header__heading--is-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"JavaScript:Void(0);"</span>&gt;</span> Projects <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__icon | vf-icon vf-icon-arrow--inline-end"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"24"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"24"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">""</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"nonzero"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__text"</span>&gt;</span>Hello everyone who are doing?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__text"</span>&gt;</span>Pizza<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-section-header/vf-section-header.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-section-header/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-section-header/index.scss">index.scss</a></li>
+<li><a href="components/vf-core-components/vf-section-header/package.json">package.json</a></li>
+<li><a href="components/vf-core-components/vf-section-header/package.variables.scss">package.variables.scss</a></li>
+<li><a href="components/vf-core-components/vf-section-header/vf-section-header.css">vf-section-header.css</a></li>
+<li><a href="components/vf-core-components/vf-section-header/vf-section-header.precompiled.js">vf-section-header.precompiled.js</a></li>
+<li><a href="components/vf-core-components/vf-section-header/vf-section-header.scss">vf-section-header.scss</a></li>
+<li><a href="components/vf-core-components/vf-section-header/yarn.lock">yarn.lock</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Has Text
+           <span class="vf-badge vf-badge--primary vf-badge--pill">live</span> 
+
+           <span class="vf-badge vf-badge--primary vf-badge--pill">block</span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-section-header--has-text', {
+  &quot;component-type&quot;: &quot;block&quot;,
+  &quot;section_title&quot;: &quot;Projects&quot;,
+  &quot;vf_section__content&quot;: [
+    &quot;Hello everyone who are doing?&quot;,
+    &quot;Pizza&quot;
+  ]
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+           <div class="vf-section-header"><h2 class="vf-section-header__heading" > Projects </h2><p class="vf-section-header__text">Hello everyone who are doing?</p><p class="vf-section-header__text">Pizza</p></div> 
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre> <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header"</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__heading"</span>&gt;</span> Projects <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__text"</span>&gt;</span>Hello everyone who are doing?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-section-header__text"</span>&gt;</span>Pizza<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         </pre>
 
         <h3>Assets</h3>

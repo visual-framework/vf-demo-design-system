@@ -14,11 +14,11 @@
 
       <div class="vf-global-header__inner">
 
-        <a href=""
+        <a href="http://www.embl.de"
 
 class="vf-logo">
-  <img class="vf-logo__image" src="https://visual-framework.github.io/vf-demo-design-system/assets/vf-logo/assets/logo.svg" alt="">
-  <span class="vf-logo__text"></span>
+  <img class="vf-logo__image" src="https://visual-framework.github.io/vf-demo-design-system/assets/vf-logo/assets/logo.svg" alt="Visual Framework 2.0">
+  <span class="vf-logo__text">Visual Framework 2.0</span>
 </a>
 
         
@@ -119,9 +119,9 @@ class="vf-logo">
 
         <h3>
           Variant: Misc
-           <span class="vf-badge vf-badge--pill">live</span> 
+           <span class="vf-badge vf-badge--primary vf-badge--pill">live</span> 
 
-           <span class="vf-badge vf-badge--pill">utility</span> 
+           <span class="vf-badge vf-badge--primary vf-badge--pill">utility</span> 
         </h3>
 
         <h4>Nunjucks demo</h4>
@@ -154,11 +154,16 @@ class="vf-logo">
 <li><code>.vf-u-sr-only</code> some things should only be shown to screen readers</li>
 </ul>
 <p><span class="vf-u-sr-only">Like this text</span></p>
-<h3 id="no-wrap">No-wrap.</h3>
+<h3 id="no-wrap">No wrap</h3>
 <ul>
-<li><code>.vf-u-text--no-wrap</code> keep text together, as much as possible</li>
+<li><code>.vf-u-text--nowrap</code> keep text together, as much as possible</li>
 </ul>
-<p>I&#39;m some words that can break awkwardly but keep the <span class="vf-u-text--no-wrap">Company Name</span> together.</p>
+<p>I&#39;m some words that can break awkwardly but keep the <span class="vf-u-text--nowrap">Company Name</span> together.</p>
+<h3 id="break-text">Break text</h3>
+<ul>
+<li><code>.vf-u-text--break</code> break long strings of text</li>
+</ul>
+<p>Here&#39;s some long text that would otherwise run off the side of the page <span class="vf-u-text--break">evock2OTIhUP5N9ZgsNCzgYrfFuKd3ktVLTYnVTfX1NPpzjxmYC0RwLiOxwqi7n7VLWgRFUiTa7UK77exxWkpbJwLoERCAU5L0Z8ebvYpjKCtCboKgAxYx4CxmlsP3U66rabF3nxA6sNDhZnYWW6zr1QfR7J7nzKhQG9P2oSnOFNoK7xPr6hgxpePl3Jq9Ml2n5eAeV6evock2OTIhUP5N9ZgsNCzgYrfFuKd3ktVLTYnVTfX1NPpzjxmYC0RwLiOxwqi7n7VLWgRFUiTa7UK77exxWkpbJwLoERCAU5L0Z8ebvYpjKCtCboKgAxYx4CxmlsP3U66rabF3nxA6sNDhZnYWW6zr1QfR7J7nzKhQG9P2oSnOFNoK7xPr6hgxpePl3Jq9Ml2n5eAeV6</span>.</p>
 <h3 id="text-colours">Text-colours</h3>
 <p>Same colour options as background colours, with a prefix of</p>
 
@@ -276,11 +281,16 @@ css documentation tool.</p>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>.vf-u-sr-only<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> some things should only be shown to screen readers<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-u-sr-only"</span>&gt;</span>Like this text<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"no-wrap"</span>&gt;</span>No-wrap.<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"no-wrap"</span>&gt;</span>No wrap<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>.vf-u-text--no-wrap<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> keep text together, as much as possible<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>.vf-u-text--nowrap<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> keep text together, as much as possible<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>I&amp;#39;m some words that can break awkwardly but keep the <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-u-text--no-wrap"</span>&gt;</span>Company Name<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> together.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>I&amp;#39;m some words that can break awkwardly but keep the <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-u-text--nowrap"</span>&gt;</span>Company Name<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> together.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"break-text"</span>&gt;</span>Break text<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>.vf-u-text--break<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> break long strings of text<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Here&amp;#39;s some long text that would otherwise run off the side of the page <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-u-text--break"</span>&gt;</span>evock2OTIhUP5N9ZgsNCzgYrfFuKd3ktVLTYnVTfX1NPpzjxmYC0RwLiOxwqi7n7VLWgRFUiTa7UK77exxWkpbJwLoERCAU5L0Z8ebvYpjKCtCboKgAxYx4CxmlsP3U66rabF3nxA6sNDhZnYWW6zr1QfR7J7nzKhQG9P2oSnOFNoK7xPr6hgxpePl3Jq9Ml2n5eAeV6evock2OTIhUP5N9ZgsNCzgYrfFuKd3ktVLTYnVTfX1NPpzjxmYC0RwLiOxwqi7n7VLWgRFUiTa7UK77exxWkpbJwLoERCAU5L0Z8ebvYpjKCtCboKgAxYx4CxmlsP3U66rabF3nxA6sNDhZnYWW6zr1QfR7J7nzKhQG9P2oSnOFNoK7xPr6hgxpePl3Jq9Ml2n5eAeV6<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"text-colours"</span>&gt;</span>Text-colours<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Same colour options as background colours, with a prefix of<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
@@ -408,9 +418,9 @@ css documentation tool.</p>
 
         <h3>
           Variant: Background
-           <span class="vf-badge vf-badge--pill">live</span> 
+           <span class="vf-badge vf-badge--primary vf-badge--pill">live</span> 
 
-           <span class="vf-badge vf-badge--pill">utility</span> 
+           <span class="vf-badge vf-badge--primary vf-badge--pill">utility</span> 
         </h3>
 
         <h4>Nunjucks demo</h4>
@@ -816,9 +826,9 @@ css documentation tool.</p>
 
         <h3>
           Variant: Border
-           <span class="vf-badge vf-badge--pill">live</span> 
+           <span class="vf-badge vf-badge--primary vf-badge--pill">live</span> 
 
-           <span class="vf-badge vf-badge--pill">utility</span> 
+           <span class="vf-badge vf-badge--primary vf-badge--pill">utility</span> 
         </h3>
 
         <h4>Nunjucks demo</h4>
@@ -1228,9 +1238,9 @@ css documentation tool.</p>
 
         <h3>
           Variant: Float
-           <span class="vf-badge vf-badge--pill">live</span> 
+           <span class="vf-badge vf-badge--primary vf-badge--pill">live</span> 
 
-           <span class="vf-badge vf-badge--pill">utility</span> 
+           <span class="vf-badge vf-badge--primary vf-badge--pill">utility</span> 
         </h3>
 
         <h4>Nunjucks demo</h4>
@@ -1596,9 +1606,9 @@ css documentation tool.</p>
 
         <h3>
           Variant: Width
-           <span class="vf-badge vf-badge--pill">live</span> 
+           <span class="vf-badge vf-badge--primary vf-badge--pill">live</span> 
 
-           <span class="vf-badge vf-badge--pill">utility</span> 
+           <span class="vf-badge vf-badge--primary vf-badge--pill">utility</span> 
         </h3>
 
         <h4>Nunjucks demo</h4>

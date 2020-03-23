@@ -14,11 +14,11 @@
 
       <div class="vf-global-header__inner">
 
-        <a href=""
+        <a href="http://www.embl.de"
 
 class="vf-logo">
-  <img class="vf-logo__image" src="https://visual-framework.github.io/vf-demo-design-system/assets/vf-logo/assets/logo.svg" alt="">
-  <span class="vf-logo__text"></span>
+  <img class="vf-logo__image" src="https://visual-framework.github.io/vf-demo-design-system/assets/vf-logo/assets/logo.svg" alt="Visual Framework 2.0">
+  <span class="vf-logo__text">Visual Framework 2.0</span>
 </a>
 
         
@@ -83,6 +83,7 @@ class="vf-logo">
 <p>A Simple Grid is written to go from single column, to two column, to their respective column count depending on the size of the viewport.</p>
 <p>You can define the number of columns with a modifier class.</p>
 <p><em><strong>Do Not Use</strong></em> with any component that uses the <code>&lt;table&gt;</code> HTML element as this breaks built-in browser accessibility for screen readers etc.</p>
+<p>Currently (16/03/20) The <code>vf-grid</code> is expecting to be a parent of <code>vf-body</code>. It does, however, work inside <code>embl-grid</code> now as we have added CSS to make it respect the boundaries so that it doesn't break.</p>
 <h2>Install</h2>
 <p>This component is distributed with npm. After <a href="https://www.npmjs.com/get-npm">installing npm</a>, you can install the <code>vf-grid</code> with this command.</p>
 <pre><code>$ yarn add --dev @visual-framework/vf-grid
@@ -228,9 +229,9 @@ class="vf-logo">
 
         <h3>
           Variant: Default
-           <span class="vf-badge vf-badge--pill">live</span> 
+           <span class="vf-badge vf-badge--primary vf-badge--pill">live</span> 
 
-           <span class="vf-badge vf-badge--pill">grid</span> 
+           <span class="vf-badge vf-badge--primary vf-badge--pill">grid</span> 
         </h3>
 
         <h4>Nunjucks demo</h4>

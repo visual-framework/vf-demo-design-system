@@ -4,7 +4,7 @@
 
 /*
  * A note on the Visual Framework and JavaScript:
- * The VF is primairly a CSS framework so we've included only a minimal amount
+ * The VF is primarily a CSS framework so we've included only a minimal amount
  * of JS in components and it's fully optional (just remove the JavaScript selectors
  * i.e. `data-vf-js-tabs`). So if you'd rather use Angular or Bootstrap for your
  * tabs, the Visual Framework won't get in the way.
@@ -37,7 +37,10 @@
 // // By default your component should be usable with js imports
 // export { vfcomponentName };
 //
-// // You should also import it at ./components/vf-core/scripts.js
-// // import { vfcomponentName } from '../components/raw/vf-component/vf-component.js';
+// // You should also import it at ./components/vf-component-rollup/scripts.js
+// // import { vfcomponentName } from '<%= componentName %>/<%= componentName %>';
+// // Or import directly
+// // import { vfcomponentName } from '../components/raw/<%= componentName %>/<%= componentName %>.js';
 // // And, if needed, invoke it
 // // vfcomponentName();
+
