@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" media="all" href="/vf-demo-design-system/css/styles.css" />
+    <link rel="stylesheet" media="all" href="/vf-demo-design-system/css/app.css" />
+    <title>vf-form__fieldset | Design system boilerplate</title>
+  </head>
+  <body class=" vf-body" >
+    <header class="vf-global-header">
+
+      <div class="vf-global-header__inner">
+
+        <a href="http://www.embl.de"
+
+class="vf-logo">
+  <img class="vf-logo__image" src="https://visual-framework.github.io/vf-demo-design-system/assets/vf-logo/assets/logo.svg" alt="Visual Framework 2.0">
+  <span class="vf-logo__text">Visual Framework 2.0</span>
+</a>
+
+        
+
+        <nav class="vf-navigation vf-navigation--global">
+          <ul class="vf-navigation__list | vf-list--inline">
+            <li class="vf-navigation__item">
+              <a href="https://visual-framework.github.io/vf-welcome/" class="vf-navigation__link">About the Visual Framework</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a href="https://visual-framework.github.io/vf-welcome/documentation" class="vf-navigation__link">Documentation</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a href="https://discord.gg/XHAvkUX" class="vf-navigation__link">Help, chat</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </header>
+    
+    
+    <nav class="vf-breadcrumbs" aria-label="Breadcrumb">
+      <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
+        <li class="vf-breadcrumbs__item">
+          <a href="/vf-demo-design-system/" class="vf-breadcrumbs__link">Design system boilerplate</a>
+        </li>
+        
+        
+          
+          <li class="vf-breadcrumbs__item">
+            <a href="/vf-demo-design-system/components" class="vf-breadcrumbs__link">Components</a>
+          </li>
+        
+        <li class="vf-breadcrumbs__item">
+          
+            vf-form__fieldset
+          
+        </li>
+      </ul>
+    </nav>
+    
+
+    
+<div class="vf-grid">
+  <section class="vf-content component-library-notes">
+
+    <!-- no special content -->
+
+
+    
+    
+
+    
+
+    
+      <h1>Form Fieldset Component</h1>
+<p><a href="https://badge.fury.io/js/%40visual-framework%2Fvf-form__fieldset"><img src="https://badge.fury.io/js/%40visual-framework%2Fvf-form__fieldset.svg" alt="npm version"></a></p>
+<h2>Usage</h2>
+<p>The dos and don'ts of using this component.</p>
+<h2>Install</h2>
+<p>This repository is distributed with [npm][https://www.npmjs.com/]. After [installing npm][https://www.npmjs.com/get-npm] and <a href="https://classic.yarnpkg.com/en/docs/install">yarn</a>, you can install <code>vf-form__fieldset</code> with this command.</p>
+<pre><code>$ yarn add --dev @visual-framework/vf-form__fieldset
+</code></pre>
+<h2>JS</h2>
+<p>If your component uses JS:</p>
+<p>You should import this component in <code>./components/vf-component-rollup/scripts.js</code> or your other JS process:</p>
+<pre><code class="language-js">import { vfcomponentName } from 'vf-form__fieldset/vf-form__fieldset';
+// Or import directly
+// import { vfcomponentName } from '../components/raw/vf-form__fieldset/vf-form__fieldset.js';
+vfcomponentName(); // if needed, invoke it
+</code></pre>
+<h2>Sass/CSS</h2>
+<p>If your component uses Sass:</p>
+<p>The source files included are written in [Sass][sass] (<code>scss</code>) You can simply point your sass <code>include-path</code> at your <code>node_modules</code> directory and import it like this.</p>
+<pre><code>@import &quot;@visual-framework/vf-form__fieldset/index.scss&quot;;
+</code></pre>
+<p><em>Make sure you import Sass requirements along with the modules.</em></p>
+<h2>Help</h2>
+<ul>
+<li><a href="https://visual-framework.github.io/vf-welcome/troubleshooting/">Read the Visual Framework troubleshooting</a></li>
+<li><a href="https://github.com/visual-framework/vf-core/issues">Open a ticket</a></li>
+<li><a href="https://join.slack.com/t/visual-framework/shared_invite/enQtNDAxNzY0NDg4NTY0LWFhMjEwNGY3ZTk3NWYxNWVjOWQ1ZWE4YjViZmY1YjBkMDQxMTNlNjQ0N2ZiMTQ1ZTZiMGM4NjU5Y2E0MjM3ZGQ">Chat on Slack</a></li>
+</ul>
+
+    
+
+    <hr/>
+    <small><p>File system location: <code>components/vf-form__fieldset</code></p>
+</small>
+
+
+    
+  </section>
+</div>
+
+
+  <div class="vf-grid">
+    <section>
+       <h1 class="vf-text vf-text-heading--display vf-text--invert">Variants</h1> 
+    </section>
+  </div>
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Default
+           <span class="vf-badge vf-badge--primary vf-badge--pill">alpha</span> 
+
+           <span class="vf-badge vf-badge--primary vf-badge--pill">block</span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-form__fieldset--default', {
+  &quot;component-type&quot;: &quot;block&quot;
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+          <fieldset class="vf-form__fieldset">
+</fieldset>
+
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-form__fieldset"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-form__fieldset/vf-form__fieldset.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-form__fieldset/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-form__fieldset/index.scss">index.scss</a></li>
+<li><a href="components/vf-core-components/vf-form__fieldset/package.json">package.json</a></li>
+<li><a href="components/vf-core-components/vf-form__fieldset/package.variables.scss">package.variables.scss</a></li>
+<li><a href="components/vf-core-components/vf-form__fieldset/vf-form__fieldset.css">vf-form__fieldset.css</a></li>
+<li><a href="components/vf-core-components/vf-form__fieldset/vf-form__fieldset.js">vf-form__fieldset.js</a></li>
+<li><a href="components/vf-core-components/vf-form__fieldset/vf-form__fieldset.precompiled.js">vf-form__fieldset.precompiled.js</a></li>
+<li><a href="components/vf-core-components/vf-form__fieldset/vf-form__fieldset.scss">vf-form__fieldset.scss</a></li>
+<li><a href="components/vf-core-components/vf-form__fieldset/vf-form__fieldset.variables.scss">vf-form__fieldset.variables.scss</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+<div class="vf-grid">
+  <section>
+    <h2>All components in this design system</h2>
+
+
+    <ul class="vf-list vf-list--unordered">
+        <li class="vf-list__item vf-content"><a class="vf-link" href="../vf-componenet-rollup">Visual Framework Componet Rollup</a> <code> vf-componenet-rollup </code></li>
+      
+        <li class="vf-list__item vf-content"><a class="vf-link" href="../vf-core-components">Vf Core Components</a> <code> vf-core-components </code></li>
+      
+        <li class="vf-list__item vf-content"><a class="vf-link" href="../vf-local-overrides">vf-local-overrides</a> <code> vf-local-overrides </code></li>
+      
+        <li class="vf-list__item vf-content"><a class="vf-link" href="../vf-sample">Visual Framework Sample Component</a> <code> vf-sample </code></li>
+      </ul>
+  </section>
+</div>
+
+<div class="vf-grid">
+  <div class="footnote">
+    <p class="vf-text--body">
+      This page is part of the components section.
+    </p>
+  </div>
+</div>
+
+    
+
+<!-- This page was generated on Invalid DateTime -->
+<script src="/vf-demo-design-system/scripts/scripts.js"></script>
+
+  </body>
+</html>

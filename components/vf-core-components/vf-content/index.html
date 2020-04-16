@@ -79,22 +79,11 @@ class="vf-logo">
       <h1>Content Area Component</h1>
 <p><a href="https://badge.fury.io/js/%40visual-framework%2Fvf-content"><img src="https://badge.fury.io/js/%40visual-framework%2Fvf-content.svg" alt="npm version"></a></p>
 <h2>About</h2>
-<p>Use this container to get simple support for narrative content where it is not
-practical to assign classes, such as Markdown or WYSIWYG text.</p>
+<p>This container adds support for long form content where it may not be practical to assign classes, such as Markdown or WYSIWYG text.</p>
+<p>It also makes some adjustments for longer form text, such as vertical spacing and making visited links purple.</p>
 <p>This container adds basic support for <code>p</code>, <code>ul</code>, <code>hr</code>, <code>a</code> and other core
-html elements. Some components may also add specific support for <code>.vf-content</code></p>
-<h3>Demonstration</h3>
-<div class="vf-content">
-{{ "#### Sub-header" | marked }}
-<p>{% markdown %}</p>
-<ul>
-<li>list items</li>
-<li>list items</li>
-<li>list item <a href="#">with a link</a></li>
-<li>list items
-{% endmarkdown %}</li>
-</ul>
-</div>
+html elements.</p>
+<p>Some components may also add specific support for <code>.vf-content</code></p>
 <h2>Install</h2>
 <p>This component is distributed with npm. After <a href="https://www.npmjs.com/get-npm">installing npm</a>, you can install the <code>vf-content</code> with this command.</p>
 <pre><code>$ yarn add --dev @visual-framework/vf-content
@@ -131,14 +120,14 @@ html elements. Some components may also add specific support for <code>.vf-conte
           Variant: Default
            <span class="vf-badge vf-badge--primary vf-badge--pill">live</span> 
 
-           <span class="vf-badge vf-badge--primary vf-badge--pill">utility</span> 
+           <span class="vf-badge vf-badge--primary vf-badge--pill">container</span> 
         </h3>
 
         <h4>Nunjucks demo</h4>
 
 
         <pre><code>{% render '@vf-content--default', {
-  &quot;component-type&quot;: &quot;utility&quot;
+  &quot;component-type&quot;: &quot;container&quot;
 } %}
         </code></pre>
 

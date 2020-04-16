@@ -5,7 +5,7 @@
   <subtitle>This demonstrates how a design system can be built using the the Visual Framework component system.</subtitle>
   <link href="https://visual-framework.github.io/vf-eleventy/feed.xml" rel="self"/>
   <link href="https://visual-framework.github.io/vf-demo-design-system/"/>
-  <updated>2020-03-23T20:59:32.731+00:00</updated>
+  <updated>2020-04-16T10:33:53.394+00:00</updated>
   <id>https://visual-framework.github.io/vf-eleventy</id>
   <author>
     <name>Visual Framework system</name>
@@ -59,7 +59,8 @@ a good idea to reference it.&lt;/p&gt;
   &lt;meta charset=&quot;utf-8&quot;&gt;
   &lt;meta content=&quot;width=device-width, initial-scale=1, minimum-scale=1&quot; name=&quot;viewport&quot;&gt;
 
-  &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;180x180&quot; href=&quot;https://dev.assets.emblstatic.net/vf/develop/assets/vf-favicon/assets/apple-touch-icon.png&quot;&gt;
+  &lt;link rel=&quot;shortcut icon&quot; href=&quot;https://dev.assets.emblstatic.net/vf/develop/assets/vf-favicon/assets/favicon.ico&quot;&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;180x180&quot; href=&quot;https://dev.assets.emblstatic.net/vf/develop/assets/vf-favicon/assets/apple-touch-icon.png&quot;&gt;
 &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;32x32&quot; href=&quot;https://dev.assets.emblstatic.net/vf/develop/assets/vf-favicon/assets/favicon-32x32.png&quot;&gt;
 &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;16x16&quot; href=&quot;https://dev.assets.emblstatic.net/vf/develop/assets/vf-favicon/assets/favicon-16x16.png&quot;&gt;
 &lt;link rel=&quot;manifest&quot; href=&quot;https://dev.assets.emblstatic.net/vf/develop/assets/vf-favicon/assets/site.webmanifest&quot;&gt;
@@ -241,7 +242,7 @@ a good idea to reference it.&lt;/p&gt;
   <entry>
     <title>Colours</title>
     <link href="https://visual-framework.github.io/vf-eleventy/styles/colour/"/>
-    <updated>2020-03-23T20:59:32.731+00:00</updated>
+    <updated>2020-04-16T10:33:53.394+00:00</updated>
     <id>https://visual-framework.github.io/vf-eleventy/styles/colour/</id>
     <content type="html">&lt;p&gt;The set below shows all the colours for the EMBL brand. Other colours are not allowed. Any kind of colour coding in alignment with a service, group etc. is not allowed. Our main colour is white, in order to underline the bespoke usage of white space in our visual example.&lt;/p&gt;
 &lt;h2&gt;The colour set: Overview&lt;/h2&gt;
@@ -319,7 +320,7 @@ a good idea to reference it.&lt;/p&gt;
   <entry>
     <title>Spacing</title>
     <link href="https://visual-framework.github.io/vf-eleventy/styles/spacing/"/>
-    <updated>2020-03-23T20:59:32.731+00:00</updated>
+    <updated>2020-04-16T10:33:53.394+00:00</updated>
     <id>https://visual-framework.github.io/vf-eleventy/styles/spacing/</id>
     <content type="html">&lt;style&gt;
 .swatches {
