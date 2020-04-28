@@ -227,18 +227,7 @@ function vfBannerInsert(banner, bannerId, scope) {
 //   vfJsBannerAutoAccept: "true"
 // };
 // vfBannerInsert(programaticalBanner,'32423');
-// vf-form__float-labels
 
-/**
-  * The global function for this component
-  * @example vfcomponentName(firstPassedVar)
-  * @param {string} [firstPassedVar]  - An option to be passed
-  */
-
-
-function vfFormFloatLabels() {
-  console.log('vfFormFloatLabels is no longer required as of 1.0.0-beta.4, you can remove it from your scripts.js');
-}
 /*
  *
  * scripts.css
@@ -249,8 +238,19 @@ function vfFormFloatLabels() {
 
 
 vfBanner();
-vfMasthead.vfMastheadSetStyle();
-vfTabs.vfTabs();
-vfFormFloatLabels();
-emblContentHubLoader.emblContentHub();
-emblBreadcrumbsLookup.emblBreadcrumbs(); // No default invokation
+vfTabs.vfTabs(); // import { vfTree } from 'vf-tree/vf-tree';
+// vfTree();
+// import { vfFormFloatLabels } from 'vf-form__core/assets/vf-form__float-labels.js';
+// vfFormFloatLabels();
+// All EMBL JS
+// import { emblContentHubLoaderHtmlImports } from 'embl-content-hub-loader/embl-content-hub-loader__html-imports';
+// import { emblContentHubFetch } from 'embl-content-hub-loader/embl-content-hub-loader__fetch';
+// import { emblContentHub } from 'embl-content-hub-loader/embl-content-hub-loader';
+// import { emblConditionalEdit } from 'embl-conditional-edit/embl-conditional-edit';
+// emblContentHub();
+// import { emblBreadcrumbs } from 'embl-breadcrumbs-lookup/embl-breadcrumbs-lookup';
+// emblBreadcrumbs();
+// import { emblContentMetaProperties_Read } from 'embl-content-meta-properties/embl-content-meta-properties';
+// import { emblNotifications } from 'embl-notifications/embl-notifications';
+// emblNotifications();
+// No default invokation
