@@ -13,7 +13,7 @@ is_index: true
 
 {% endset %}
 
-{% render '@vf-intro', {"vf_intro_phase": "alpha", "vf_intro_heading": siteConfig.siteInformation.title,
+{% render '@vf-intro', {"vf_intro_heading": siteConfig.siteInformation.title,
   "vf_intro_lede": siteConfig.siteInformation.short_description,
   "vf_intro_text": [
     homepageIntroText | replace("<p>", "<span class='vf-content'>") | replace("</p>", "</span>")
