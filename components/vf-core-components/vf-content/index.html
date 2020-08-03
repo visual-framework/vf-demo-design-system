@@ -15,8 +15,7 @@
       <div class="vf-global-header__inner">
 
         <a href="http://www.embl.de"
-
-class="vf-logo">
+class="vf-logo | vf-logo--has-text">
   <img class="vf-logo__image" src="https://visual-framework.github.io/vf-demo-design-system/assets/vf-logo/assets/logo.svg" alt="Visual Framework 2.0">
   <span class="vf-logo__text">Visual Framework 2.0</span>
 </a>
@@ -162,20 +161,54 @@ html elements.</p>
 </ol>
 <h3 id="further-examples-of-bullets">Further examples of bullets</h3>
 <ul>
-<li>A bulleted item<ul>
+<li>A bulleted item</li>
 <li>A nested bulleted item</li>
 <li>A nested bulleted item</li>
-</ul>
-</li>
 <li>A bulleted item</li>
 <li>A bulleted item</li>
 <li>A bulleted item</li>
 <li>A bulleted item</li>
 </ul>
 
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Event</th>
+        <th scope="col">Date</th>
+        <th scope="col">Type</th>
+        <th scope="col">Location</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>dave</td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusamus a nostrum odit aliquid repudiandae architecto molestiae, dolores.</td>
+        <td>roger</td>
+        <td>London, U.K.</td>
+      </tr>
+      <tr>
+        <td>dave</td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fugit illo officia dignissimos amet.</td>
+        <td>roger</td>
+        <td>London, U.K.</td>
+      </tr>
+      <tr>
+        <td>dave</td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+        <td>roger</td>
+        <td>London, U.K.</td>
+      </tr>
+    </tbody>
+  </table>
+
   <h3>What is EMBL?</h3>
   <p>EMBL is Europe’s flagship laboratory for the life sciences. We are an intergovernmental organisation established in 1974 and are supported by over 20 member states.</p>
   <p>EMBL performs fundamental research in molecular biology, studying the story of life. We offer services to the scientific community; train the next generation of scientists and strive to integrate the life sciences across Europe.</p>
+  <figure class="vf-figure | vf-figure--float vf-figure--float-inline-end">
+    <img class="vf-figure__image" src="../../assets/vf-figure/assets/figure-example.png" alt="hello alt text">
+    <figcaption class="vf-figure__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quasi dolorem eos ratione voluptatum omnis, voluptates adipisci, soluta beatae quo, excepturi, quas id libero rem suscipit! Numquam repellendus consectetur, velit.</figcaption>
+  </figure>
   <p>We are international, innovative and interdisciplinary. We are more than 1600 people, from over 80 countries, operating across six sites in Barcelona (Spain), Cambridge (UK), Grenoble (France), Hamburg (Germany), Heidelberg (Germany), and Rome (Italy). Our scientists work in independent groups and conduct research and offer services in all areas of molecular biology.</p>
   <p>Our research drives the development of new technology and methods in the life sciences. We work to transfer this knowledge for the benefit of society.</p>
 
@@ -241,20 +274,54 @@ html elements.</p>
   <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"further-examples-of-bullets"</span>&gt;</span>Further examples of bullets<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>A bulleted item<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>A nested bulleted item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>A nested bulleted item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>A bulleted item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>A nested bulleted item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>A nested bulleted item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>A bulleted item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>A bulleted item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>A bulleted item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>A bulleted item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 
+  <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span>&gt;</span>Event<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span>&gt;</span>Date<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span>&gt;</span>Type<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span>&gt;</span>Location<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>dave<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusamus a nostrum odit aliquid repudiandae architecto molestiae, dolores.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>roger<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>London, U.K.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>dave<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fugit illo officia dignissimos amet.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>roger<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>London, U.K.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>dave<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>roger<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>London, U.K.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+
   <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>What is EMBL?<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>EMBL is Europe’s flagship laboratory for the life sciences. We are an intergovernmental organisation established in 1974 and are supported by over 20 member states.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>EMBL performs fundamental research in molecular biology, studying the story of life. We offer services to the scientific community; train the next generation of scientists and strive to integrate the life sciences across Europe.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-figure | vf-figure--float vf-figure--float-inline-end"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-figure__image"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../assets/vf-figure/assets/figure-example.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"hello alt text"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-figure__caption"</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quasi dolorem eos ratione voluptatum omnis, voluptates adipisci, soluta beatae quo, excepturi, quas id libero rem suscipit! Numquam repellendus consectetur, velit.<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>We are international, innovative and interdisciplinary. We are more than 1600 people, from over 80 countries, operating across six sites in Barcelona (Spain), Cambridge (UK), Grenoble (France), Hamburg (Germany), Heidelberg (Germany), and Rome (Italy). Our scientists work in independent groups and conduct research and offer services in all areas of molecular biology.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Our research drives the development of new technology and methods in the life sciences. We work to transfer this knowledge for the benefit of society.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
@@ -296,13 +363,8 @@ html elements.</p>
 <li><a href="/src/components/vf-core-components/vf-content/vf-content.njk">Nunjucks template</a>
 <ul>
 <li><a href="components/vf-core-components/vf-content/CHANGELOG.md">CHANGELOG.md</a></li>
-<li><a href="components/vf-core-components/vf-content/index.scss">index.scss</a></li>
-<li><a href="components/vf-core-components/vf-content/package.json">package.json</a></li>
-<li><a href="components/vf-core-components/vf-content/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-content/vf-content.css">vf-content.css</a></li>
-<li><a href="components/vf-core-components/vf-content/vf-content.precompiled.js">vf-content.precompiled.js</a></li>
 <li><a href="components/vf-core-components/vf-content/vf-content.scss">vf-content.scss</a></li>
-<li><a href="components/vf-core-components/vf-content/yarn.lock">yarn.lock</a></li>
 </ul>
 </li>
 </ul>

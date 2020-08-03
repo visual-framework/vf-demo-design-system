@@ -15,8 +15,7 @@
       <div class="vf-global-header__inner">
 
         <a href="http://www.embl.de"
-
-class="vf-logo">
+class="vf-logo | vf-logo--has-text">
   <img class="vf-logo__image" src="https://visual-framework.github.io/vf-demo-design-system/assets/vf-logo/assets/logo.svg" alt="Visual Framework 2.0">
   <span class="vf-logo__text">Visual Framework 2.0</span>
 </a>
@@ -162,9 +161,10 @@ deprecated component text, if normalisations should be included.</p>
 <h3>vf-variables.scss</h3>
 <p>Rollup of global Sass variables.</p>
 <h2>Install</h2>
-<p>This repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install <code>vf-sass-config</code> with this command.</p>
-<pre><code>$ yarn add --dev @visual-framework/vf-sass-config
+<p>This repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install <code>vf-sass-config</code> and its dependencies with this command.</p>
+<pre><code>$ yarn add --dev @visual-framework/vf-sass-config @visual-framework/vf-design-tokens
 </code></pre>
+<p>You might also find the the <a href="https://visual-framework.github.io/vf-core/components/detail/vf-sass-starter.html">vf-sass-starter</a> a useful starting point for setting up a customised Sass build.</p>
 <h2>Usage</h2>
 <p>The source files included are written in [Sass][sass] (<code>scss</code>) You can simply point your sass <code>include-path</code> at your <code>node_modules</code> directory and import it like this.</p>
 <pre><code>@import 'vf-global-variables';
@@ -242,11 +242,7 @@ deprecated component text, if normalisations should be included.</p>
 <li><a href="/src/components/vf-core-components/vf-sass-config/vf-sass-config.njk">Nunjucks template</a>
 <ul>
 <li><a href="components/vf-core-components/vf-sass-config/CHANGELOG.md">CHANGELOG.md</a></li>
-<li><a href="components/vf-core-components/vf-sass-config/index.scss">index.scss</a></li>
-<li><a href="components/vf-core-components/vf-sass-config/package.json">package.json</a></li>
-<li><a href="components/vf-core-components/vf-sass-config/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-sass-config/vf-sass-config.css">vf-sass-config.css</a></li>
-<li><a href="components/vf-core-components/vf-sass-config/vf-sass-config.precompiled.js">vf-sass-config.precompiled.js</a></li>
 </ul>
 </li>
 </ul>

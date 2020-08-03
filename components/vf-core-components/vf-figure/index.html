@@ -15,8 +15,7 @@
       <div class="vf-global-header__inner">
 
         <a href="http://www.embl.de"
-
-class="vf-logo">
+class="vf-logo | vf-logo--has-text">
   <img class="vf-logo__image" src="https://visual-framework.github.io/vf-demo-design-system/assets/vf-logo/assets/logo.svg" alt="Visual Framework 2.0">
   <span class="vf-logo__text">Visual Framework 2.0</span>
 </a>
@@ -78,7 +77,25 @@ class="vf-logo">
     
       <h1>Figure Component</h1>
 <p><a href="https://badge.fury.io/js/%40visual-framework%2Fvf-figure"><img src="https://badge.fury.io/js/%40visual-framework%2Fvf-figure.svg" alt="npm version"></a></p>
-<h2>About</h2>
+<h2>Usage</h2>
+<p>The <code>vf-figure</code> componet defaults to give the image a maximum width of 100% so that it can be placed inside of a grid (like <code>vf-grid</code>) and fill the space of the grid item(s) that have been allocated by its parent.</p>
+<p>If you need to specify the width of the component you can use the CSS custom property <code>--vf-figure__width</code> which will override the width in the CSS.</p>
+<p>The <code>vf-figure</code> component also has some alignment class selectors available.</p>
+<h3>Class Selectors</h3>
+<ul>
+<li><code>vf-figure--align</code>: required to align the component depending on where it is needed. This class also changes the width of the image to <code>auto</code> but can still be overriden with <code>--vf-figure__width</code>. The class also changes the <code>display</code> to <code>display: table</code> so that we can confine the <code>figcaption</code> inside of the <code>figure</code> HTML element without any overflow.</li>
+<li><code>vf-figure--align-inline-start</code>: This class adds <code>float: left;</code>.</li>
+<li><code>vf-figure--align-inline-end</code>: This class adds <code>float: right;</code>.</li>
+<li><code>vf-figure--align-inline-centered</code>: This class adds <code>margin: 0 auto;</code>.</li>
+</ul>
+<h3>Nunjucks Props</h3>
+<p>To avoid any mistyping, forgetfulness, and to aid in future proofing the component. We are using 'pseudo props' in nunjucks to determine which CSS selectors to use. All props do nothing unless included in your data for the component.</p>
+<h4>Props available</h4>
+<ul>
+<li><code>vf_figure__align_inline_start</code>: if set to true (<code>vf_figure__align_inline_start: true</code>) it will apply the class selectors <code>vf-figure--align vf-figure--align-inline-start</code> to <code>vf-figure</code>.</li>
+<li><code>vf_figure__align_inline_end</code>: if set to true (<code>vf_figure__align_inline_end: true</code>) it will apply the class selectors <code>vf-figure--align vf-figure--align-inline-end</code> to <code>vf-figure</code>.</li>
+<li><code>vf_figure__align_inline_centered</code>: if set to true (<code>vf_figure__align_inline_centered: true</code>) it will apply the class selectors <code>vf-figure--align vf-figure--align-inline-centered</code> to <code>vf-figure</code>.</li>
+</ul>
 <h2>Install</h2>
 <p>This component is distributed with npm. After <a href="https://www.npmjs.com/get-npm">installing npm</a>, you can install the <code>vf-figure</code> with this command.</p>
 <pre><code>$ yarn add --dev @visual-framework/vf-figure
@@ -138,9 +155,14 @@ class="vf-logo">
     
       <div class="vf-grid">
         <section class="">
-          <figure class="vf-figure">
+          <figure
+  class="vf-figure"
+>
+
   <img class="vf-figure__image" src="../../assets/vf-figure/assets/figure-example.png" alt="hello alt text">
+
   <figcaption class="vf-figure__caption">Version, 1982, Adenovirus with 217 dots</figcaption>
+
 </figure>
 
         </section>
@@ -155,8 +177,11 @@ class="vf-logo">
 
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-figure"</span>&gt;</span>
+
   <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-figure__image"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../assets/vf-figure/assets/figure-example.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"hello alt text"</span>&gt;</span>
+
   <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-figure__caption"</span>&gt;</span>Version, 1982, Adenovirus with 217 dots<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+
 <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
         </pre>
 
@@ -165,11 +190,247 @@ class="vf-logo">
 <li><a href="/src/components/vf-core-components/vf-figure/vf-figure.njk">Nunjucks template</a>
 <ul>
 <li><a href="components/vf-core-components/vf-figure/CHANGELOG.md">CHANGELOG.md</a></li>
-<li><a href="components/vf-core-components/vf-figure/index.scss">index.scss</a></li>
-<li><a href="components/vf-core-components/vf-figure/package.json">package.json</a></li>
-<li><a href="components/vf-core-components/vf-figure/package.variables.scss">package.variables.scss</a></li>
 <li><a href="components/vf-core-components/vf-figure/vf-figure.css">vf-figure.css</a></li>
-<li><a href="components/vf-core-components/vf-figure/vf-figure.precompiled.js">vf-figure.precompiled.js</a></li>
+<li><a href="components/vf-core-components/vf-figure/vf-figure.scss">vf-figure.scss</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Align Inline Start
+           <span class="vf-badge vf-badge--primary vf-badge--pill">beta</span> 
+
+           <span class="vf-badge vf-badge--primary vf-badge--pill">element</span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-figure--align-inline-start', {
+  &quot;component-type&quot;: &quot;element&quot;,
+  &quot;text&quot;: &quot;Version, 1982, Adenovirus with 217 dots&quot;,
+  &quot;alttext&quot;: &quot;hello alt text&quot;,
+  &quot;imageUrl&quot;: &quot;../../assets/vf-figure/assets/figure-example.png&quot;,
+  &quot;vf_figure__align_inline_start&quot;: true
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+          <figure
+  class="vf-figure vf-figure--align vf-figure--align-inline-start"
+>
+
+  <img class="vf-figure__image" src="../../assets/vf-figure/assets/figure-example.png" alt="hello alt text">
+
+  <figcaption class="vf-figure__caption">Version, 1982, Adenovirus with 217 dots</figcaption>
+
+</figure>
+
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-figure vf-figure--align vf-figure--align-inline-start"</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-figure__image"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../assets/vf-figure/assets/figure-example.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"hello alt text"</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-figure__caption"</span>&gt;</span>Version, 1982, Adenovirus with 217 dots<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-figure/vf-figure.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-figure/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-figure/vf-figure.css">vf-figure.css</a></li>
+<li><a href="components/vf-core-components/vf-figure/vf-figure.scss">vf-figure.scss</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Align Inline End
+           <span class="vf-badge vf-badge--primary vf-badge--pill">beta</span> 
+
+           <span class="vf-badge vf-badge--primary vf-badge--pill">element</span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-figure--align-inline-end', {
+  &quot;component-type&quot;: &quot;element&quot;,
+  &quot;text&quot;: &quot;Version, 1982, Adenovirus with 217 dots&quot;,
+  &quot;alttext&quot;: &quot;hello alt text&quot;,
+  &quot;imageUrl&quot;: &quot;../../assets/vf-figure/assets/figure-example.png&quot;,
+  &quot;vf_figure__align_inline_end&quot;: true
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+          <figure
+  class="vf-figure vf-figure--align vf-figure--align-inline-end"
+>
+
+  <img class="vf-figure__image" src="../../assets/vf-figure/assets/figure-example.png" alt="hello alt text">
+
+  <figcaption class="vf-figure__caption">Version, 1982, Adenovirus with 217 dots</figcaption>
+
+</figure>
+
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-figure vf-figure--align vf-figure--align-inline-end"</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-figure__image"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../assets/vf-figure/assets/figure-example.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"hello alt text"</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-figure__caption"</span>&gt;</span>Version, 1982, Adenovirus with 217 dots<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-figure/vf-figure.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-figure/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-figure/vf-figure.css">vf-figure.css</a></li>
+<li><a href="components/vf-core-components/vf-figure/vf-figure.scss">vf-figure.scss</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+      </section>
+    </div>
+  
+
+  <div class="vf-grid">
+    <section class="vf-content">
+
+        <hr class="vf-divider" />
+
+        <h3>
+          Variant: Align Centered
+           <span class="vf-badge vf-badge--primary vf-badge--pill">beta</span> 
+
+           <span class="vf-badge vf-badge--primary vf-badge--pill">element</span> 
+        </h3>
+
+        <h4>Nunjucks demo</h4>
+
+
+        <pre><code>{% render '@vf-figure--align-centered', {
+  &quot;component-type&quot;: &quot;element&quot;,
+  &quot;text&quot;: &quot;Version, 1982, Adenovirus with 217 dots&quot;,
+  &quot;alttext&quot;: &quot;hello alt text&quot;,
+  &quot;imageUrl&quot;: &quot;../../assets/vf-figure/assets/figure-example.png&quot;,
+  &quot;vf_figure__align_centered&quot;: true
+} %}
+        </code></pre>
+
+        <h4>Sample output</h4>
+
+
+      </section>
+    </div>
+
+    
+      <div class="vf-grid">
+        <section class="">
+          <figure
+  class="vf-figure vf-figure--align vf-figure--align-centered"
+>
+
+  <img class="vf-figure__image" src="../../assets/vf-figure/assets/figure-example.png" alt="hello alt text">
+
+  <figcaption class="vf-figure__caption">Version, 1982, Adenovirus with 217 dots</figcaption>
+
+</figure>
+
+        </section>
+      </div>
+    
+
+    <div class="vf-grid">
+      <section class="vf-content">
+
+        <h4>Sample output as HTML</h4>
+
+
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-figure vf-figure--align vf-figure--align-centered"</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-figure__image"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../assets/vf-figure/assets/figure-example.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"hello alt text"</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-figure__caption"</span>&gt;</span>Version, 1982, Adenovirus with 217 dots<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+        </pre>
+
+        <h3>Assets</h3>
+<ul>
+<li><a href="/src/components/vf-core-components/vf-figure/vf-figure.njk">Nunjucks template</a>
+<ul>
+<li><a href="components/vf-core-components/vf-figure/CHANGELOG.md">CHANGELOG.md</a></li>
+<li><a href="components/vf-core-components/vf-figure/vf-figure.css">vf-figure.css</a></li>
 <li><a href="components/vf-core-components/vf-figure/vf-figure.scss">vf-figure.scss</a></li>
 </ul>
 </li>
